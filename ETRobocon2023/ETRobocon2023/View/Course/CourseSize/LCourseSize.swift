@@ -26,4 +26,9 @@ struct LCourseSize {
 
     // ダブルループに入る部分の青線の長さ
     static let doubleLoopEntranceBlueLineLength: CGFloat = 250
+
+
+    // MARK: ダブルループ
+    // カーブの終わりからダブルループの枝分かれまでの距離
+    static let endOfCornerToBranchingLength: CGFloat = 270
 } // struct LCourseSize
