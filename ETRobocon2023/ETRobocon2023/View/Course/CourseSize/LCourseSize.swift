@@ -31,4 +31,15 @@ struct LCourseSize {
     // MARK: ダブルループ
     // カーブの終わりからダブルループの枝分かれまでの距離
     static let endOfCornerToBranchingLength: CGFloat = 270
+
+
+    // MARK: 配置エリアAとB共通
+    // 配置エリアAとBの中心の点線の円の半径
+    static let blueDottedCircleRadius: CGFloat = 30
+
+    // 配置エリアAとBの中心の点線の円の線の太さ
+    static let blueDottedCircleLineWidth: CGFloat = 7
+
+    // 配置エリアAとBの中心の点線の円における，点線の間隔
+    static let blueDottedCircleSpacing: CGFloat = 8.5
 } // struct LCourseSize
