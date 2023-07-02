@@ -14,4 +14,16 @@ struct LCourseViewSize {
     static var startY: CGFloat {
         0
     }
+
+    // コース全体のビューの幅
+    static var frameWidth: CGFloat {
+        startX
+    }
+
+    // コース全体のビューの高さ
+    static var frameHeight: CGFloat {
+        LCourseSize.startBlueLineLength
+        + LCourseSize.rightBlackStraightLineLength
+        + LCourseSize.blackLineCornerRadius
+    }
 } // struct LCourseViewSize
