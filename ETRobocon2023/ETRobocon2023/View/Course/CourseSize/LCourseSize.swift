@@ -62,6 +62,24 @@ struct LCourseSize {
     static let yellowCircleRadiusOfA: CGFloat = 280
 
 
+    // MARK: 配置エリアB
+    // 配置エリアBの円の中心のx座標
+    static var centerXOfB: CGFloat {
+        LCourseViewSize.startX - blackLineCornerRadius - bottomBlackStraightLineLength - blackLineCornerRadius + 1599.60
+    }
+
+    // 配置エリアBの円の中心のy座標
+    static var centerYOfB: CGFloat {
+        LCourseViewSize.startY + startBlueLineLength + rightBlackStraightLineLength + blackLineCornerRadius - 1023.53
+    }
+
+    // 配置エリアB外側の黒い円の半径
+    static let blackCircleRadiusOfB: CGFloat = 300
+
+    // 配置エリアB内側の黄色い円の半径
+    static let yellowCircleRadiusOfB: CGFloat = 140
+
+
     // MARK: ブロックdeトレジャー
     // ライントレース終端の円と，ブロックdeトレジャーの左下の円の中心間の距離
     static let distanceBetweenLineTraceEndAndTreasure: CGFloat = 587
