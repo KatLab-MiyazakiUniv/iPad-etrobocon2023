@@ -42,4 +42,30 @@ struct LCourseSize {
 
     // 配置エリアAとBの中心の点線の円における，点線の間隔
     static let blueDottedCircleSpacing: CGFloat = 8.5
+
+
+    // MARK: ブロックdeトレジャー
+    // ライントレース終端の円と，ブロックdeトレジャーの左下の円の中心間の距離
+    static let distanceBetweenLineTraceEndAndTreasure: CGFloat = 587
+
+    // ライントレース終端とブロックdeトレジャーの小さい円の半径
+    static let treasureCircleRadius: CGFloat = 40
+
+    // ブロックdeトレジャーの小さい円の最大直径
+    static var treasureCircleMaximumDiameter: CGFloat {
+        lineHalfWidth + treasureCircleRadius*2 + lineHalfWidth
+    }
+
+    // ブロックdeトレジャーの黒線の長さ
+    static let blockDeTreasureBlackLineLength: CGFloat = 250
+
+    // 線の太さの半分
+    static var lineHalfWidth: CGFloat {
+        lineWidth/2
+    }
+
+    // ブロックdeトレジャーの隣接する小さい円の中心間の距離
+    static var distanceBetweenCenterOfCirclesInBlockDeTreasure: CGFloat {
+        treasureCircleRadius + lineHalfWidth + blockDeTreasureBlackLineLength + lineHalfWidth + treasureCircleRadius
+    }
 } // struct LCourseSize
