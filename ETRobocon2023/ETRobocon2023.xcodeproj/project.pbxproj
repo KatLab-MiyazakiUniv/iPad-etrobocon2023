@@ -84,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				AC6D14CC2A51D2E600AADB04 /* CourseSize */,
+				AC6D14D12A51D8FD00AADB04 /* CourseComponentView */,
 			);
 			path = Course;
 			sourceTree = "<group>";
@@ -95,6 +96,13 @@
 				AC6D14CF2A51D58000AADB04 /* LCourseViewSize.swift */,
 			);
 			path = CourseSize;
+			sourceTree = "<group>";
+		};
+		AC6D14D12A51D8FD00AADB04 /* CourseComponentView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CourseComponentView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
