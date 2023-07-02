@@ -26,4 +26,7 @@ struct LCourseViewSize {
         + LCourseSize.rightBlackStraightLineLength
         + LCourseSize.blackLineCornerRadius
     }
+
+    // SwiftUIのプレビューでコース全体が入り切る拡大率
+    static let previewScale: CGFloat = 0.38
 } // struct LCourseViewSize
