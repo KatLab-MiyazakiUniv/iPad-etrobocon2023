@@ -18,4 +18,12 @@ struct LCourseSize {
 
     // コース右下と左下の黒いカーブを円周の1/4としたとき，その円の半径
     static let blackLineCornerRadius: CGFloat = 210
+
+
+    // MARK: 青線
+    // スタート位置の青線の長さ
+    static let startBlueLineLength: CGFloat = 200
+
+    // ダブルループに入る部分の青線の長さ
+    static let doubleLoopEntranceBlueLineLength: CGFloat = 250
 } // struct LCourseSize
