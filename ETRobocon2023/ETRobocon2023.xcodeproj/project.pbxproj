@@ -53,6 +53,7 @@
 			children = (
 				AC6D14BC2A50528C00AADB04 /* ETRobocon2023App.swift */,
 				AC6D14BE2A50528C00AADB04 /* ContentView.swift */,
+				AC6D14CA2A51D21100AADB04 /* View */,
 				AC6D14C02A50528E00AADB04 /* Assets.xcassets */,
 				AC6D14C22A50528E00AADB04 /* Preview Content */,
 			);
@@ -65,6 +66,13 @@
 				AC6D14C32A50528E00AADB04 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AC6D14CA2A51D21100AADB04 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
