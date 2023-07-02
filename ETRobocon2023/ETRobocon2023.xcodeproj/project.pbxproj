@@ -71,8 +71,16 @@
 		AC6D14CA2A51D21100AADB04 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AC6D14CB2A51D2A800AADB04 /* Course */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		AC6D14CB2A51D2A800AADB04 /* Course */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Course;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
