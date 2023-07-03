@@ -13,6 +13,11 @@ struct CourseView: View {
                 LeftBottomBlackCornerView()
                 LeftBlackStraightLineView()
             }
+
+            // ダブルループ
+            Group {
+                DoubleLoopEntranceBlackLineView()
+            }
         } // ZStack
     } // var body
 } // struct CourseView
