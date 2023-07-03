@@ -17,6 +17,7 @@ struct CourseView: View {
             // ダブルループ
             Group {
                 DoubleLoopEntranceBlackLineView()
+                AreaAView()
             }
         } // ZStack
     } // var body
