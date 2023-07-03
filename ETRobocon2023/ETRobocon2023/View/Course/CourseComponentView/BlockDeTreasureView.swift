@@ -10,5 +10,6 @@ struct BlockDeTreasureView: View {
 struct BlockDeTreasureView_Previews: PreviewProvider {
     static var previews: some View {
         BlockDeTreasureView()
+            .scaleEffect(LCourseViewSize.previewScale)
     }
 }
