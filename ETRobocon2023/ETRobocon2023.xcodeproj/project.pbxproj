@@ -26,6 +26,7 @@
 		AC6D14DB2A52743C00AADB04 /* BottomBlackStraightLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D14DA2A52743C00AADB04 /* BottomBlackStraightLineView.swift */; };
 		AC6D14DD2A5275F900AADB04 /* LeftBottomBlackCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D14DC2A5275F900AADB04 /* LeftBottomBlackCornerView.swift */; };
 		AC6D14DF2A52775500AADB04 /* LeftBlackStraightLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D14DE2A52775500AADB04 /* LeftBlackStraightLineView.swift */; };
+		AC720C022A529F7C00406BCB /* BlockDeTreasureCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC720C012A529F7C00406BCB /* BlockDeTreasureCircleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		AC6D14DA2A52743C00AADB04 /* BottomBlackStraightLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBlackStraightLineView.swift; sourceTree = "<group>"; };
 		AC6D14DC2A5275F900AADB04 /* LeftBottomBlackCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftBottomBlackCornerView.swift; sourceTree = "<group>"; };
 		AC6D14DE2A52775500AADB04 /* LeftBlackStraightLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftBlackStraightLineView.swift; sourceTree = "<group>"; };
+		AC720C012A529F7C00406BCB /* BlockDeTreasureCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockDeTreasureCircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 				AC392C802A529B2F003A5C88 /* DoubleLoopExitBlackLineView.swift */,
 				AC392C822A529CE6003A5C88 /* DoubleLoopEntranceBlueStraightLineView.swift */,
 				AC392C842A529E17003A5C88 /* DoubleLoopEntranceBlueCurveLineView.swift */,
+				AC720C012A529F7C00406BCB /* BlockDeTreasureCircleView.swift */,
 			);
 			path = CourseComponentView;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				AC6D14D32A51D9B500AADB04 /* CourseView.swift in Sources */,
 				AC392C7F2A5299A4003A5C88 /* AreaBView.swift in Sources */,
 				AC392C7D2A528E50003A5C88 /* AreaAView.swift in Sources */,
+				AC720C022A529F7C00406BCB /* BlockDeTreasureCircleView.swift in Sources */,
 				AC6D14DD2A5275F900AADB04 /* LeftBottomBlackCornerView.swift in Sources */,
 				AC392C852A529E17003A5C88 /* DoubleLoopEntranceBlueCurveLineView.swift in Sources */,
 				AC392C7B2A528CB5003A5C88 /* DoubleLoopEntranceBlackLineView.swift in Sources */,
