@@ -6,7 +6,15 @@ struct BlockDeTreasureCircleView: View {
     var color: Color
 
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Path { path in
+            path.addArc(center: center,
+                        radius: LCourseSize.treasureCircleRadius,
+                        startAngle: .degrees(0),
+                        endAngle: .degrees(0.001),
+                        clockwise: true)
+        }
+        .stroke(lineWidth: LCourseSize.lineWidth)
+        .fill(color)
     } // var body
 } // struct BlockDeTreasureCircleView
 
