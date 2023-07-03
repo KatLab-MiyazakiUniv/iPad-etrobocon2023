@@ -36,6 +36,7 @@
 		AC720C112A52EA9E00406BCB /* PulsatingLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC720C102A52EA9E00406BCB /* PulsatingLineView.swift */; };
 		ACC550CF2A530A7000DDAC49 /* SegmentNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC550CE2A530A7000DDAC49 /* SegmentNames.swift */; };
 		ACC550D12A530D6400DDAC49 /* PulsatingCourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC550D02A530D6400DDAC49 /* PulsatingCourseView.swift */; };
+		ACC550D32A53191800DDAC49 /* StaticCourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC550D22A53191800DDAC49 /* StaticCourseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,7 @@
 		AC720C102A52EA9E00406BCB /* PulsatingLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsatingLineView.swift; sourceTree = "<group>"; };
 		ACC550CE2A530A7000DDAC49 /* SegmentNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentNames.swift; sourceTree = "<group>"; };
 		ACC550D02A530D6400DDAC49 /* PulsatingCourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsatingCourseView.swift; sourceTree = "<group>"; };
+		ACC550D22A53191800DDAC49 /* StaticCourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticCourseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				AC6D14D22A51D9B500AADB04 /* CourseView.swift */,
+				ACC550D22A53191800DDAC49 /* StaticCourseView.swift */,
 				ACC550D02A530D6400DDAC49 /* PulsatingCourseView.swift */,
 				ACC550CE2A530A7000DDAC49 /* SegmentNames.swift */,
 				AC6D14CC2A51D2E600AADB04 /* CourseSize */,
@@ -253,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC6D14BF2A50528C00AADB04 /* ContentView.swift in Sources */,
+				ACC550D32A53191800DDAC49 /* StaticCourseView.swift in Sources */,
 				AC6D14CE2A51D32100AADB04 /* LCourseSize.swift in Sources */,
 				AC720C112A52EA9E00406BCB /* PulsatingLineView.swift in Sources */,
 				AC720C062A52A1C500406BCB /* BlockDeTreasureFourCirclesView.swift in Sources */,
