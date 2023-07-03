@@ -50,7 +50,23 @@ struct BlockDeTreasureVerticalLinesView: View {
     }
 
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        // 下から上
+        Path { path in
+            // 下側の線分
+            path.move(to: bottomEndPoint)
+            path.addLine(to: topEndPointOfBottomLine)
+
+            // 中央の線分
+            path.move(to: bottomEndPointOfCenterLine)
+            path.addLine(to: topEndPointOfCenterLine)
+
+            // 上側の線分
+            path.move(to: bottomEndPointOfTopLine)
+            path.addLine(to: topEndPointOfTopLine)
+        }
+        .stroke(lineWidth: LCourseSize.lineWidth)
+        .fill(.black)
+        .frame(width: LCourseViewSize.frameWidth, height: LCourseViewSize.frameHeight)
     } // var body
 } // struct BlockDeTreasureVerticalLinesView
 
