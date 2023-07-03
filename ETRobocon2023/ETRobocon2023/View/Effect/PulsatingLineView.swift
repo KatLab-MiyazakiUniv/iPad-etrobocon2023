@@ -43,10 +43,11 @@ struct PulsatingLineView: View {
 
 struct PulsatingLineView_Previews: PreviewProvider {
     @State static var isAnimating: Bool = true
+    static var bluePrint: (inout Path) -> Void = { path in
+        path.move(to: CGPoint(x: 50, y: 50))
+        path.addLine(to: CGPoint(x: 50, y: 250))
+    }
     static var previews: some View {
-        PulsatingLineView(isAnimating: $isAnimating, baseLineWidth: 20.0) { path in
-            path.move(to: CGPoint(x: 50, y: 50))
-            path.addLine(to: CGPoint(x: 50, y: 250))
-        }
+        PulsatingLineView(isAnimating: $isAnimating, baseLineWidth: 20.0, path: bluePrint)
     }
 }
