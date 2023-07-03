@@ -4,31 +4,7 @@ import SwiftUI
 struct CourseView: View {
     @State private var isAnimating = true
 
-    // start point
-    private var startX: CGFloat {
-        LCourseViewSize.startX - LCourseSize.blackLineCornerRadius - LCourseSize.bottomBlackStraightLineLength - LCourseSize.blackLineCornerRadius
-    }
-
-    private var startY: CGFloat {
-        LCourseViewSize.startY + LCourseSize.startBlueLineLength + LCourseSize.rightBlackStraightLineLength - LCourseSize.endOfCornerToBranchingLength
-    }
-
-    private var startPoint: CGPoint {
-        CGPoint(x: startX, y: startY)
-    }
-
-    // end point
-    private var endX: CGFloat {
-        startX
-    }
-
-    private var endY: CGFloat {
-        startY - LCourseSize.doubleLoopEntranceBlueLineLength
-    }
-
-    private var endPoint: CGPoint {
-        CGPoint(x: endX, y: endY)
-    }
+    private var centerPoint = CGPoint(x: LCourseSize.centerXOfA, y: LCourseSize.centerYOfA)
     
     var body: some View {
         ZStack {
@@ -56,8 +32,11 @@ struct CourseView: View {
             BlockDeTreasureView()
             PulsatingLineView(isAnimating: $isAnimating,
                               baseLineWidth: LCourseSize.lineWidth) { path in
-                path.move(to: startPoint)
-                path.addLine(to: endPoint)
+                path.addArc(center: centerPoint,
+                            radius: LCourseSize.blackCircleRadiusOfA,
+                            startAngle: .degrees(0),
+                            endAngle: .degrees(0.001),
+                            clockwise: true)
             }
         } // ZStack
         .frame(width: LCourseViewSize.frameWidth, height: LCourseViewSize.frameHeight)

@@ -5,11 +5,13 @@ struct PulsatingLineView: View {
     @State private var animatedLineWidth: CGFloat
     let path: (inout Path) -> Void
     let baseLineWidth: CGFloat
+    let color: Color  // 新しい引数
 
-    init(isAnimating: Binding<Bool>, baseLineWidth: CGFloat, path: @escaping (inout Path) -> Void) {
+    init(isAnimating: Binding<Bool>, baseLineWidth: CGFloat, color: Color = .black, path: @escaping (inout Path) -> Void) {
         self._isAnimating = isAnimating
         self._animatedLineWidth = State(initialValue: baseLineWidth)
         self.baseLineWidth = baseLineWidth
+        self.color = color  // 引数をプロパティに保存
         self.path = path
     }
 
@@ -17,7 +19,7 @@ struct PulsatingLineView: View {
         Path { path in
             self.path(&path)
         }
-        .stroke(Color.blue.opacity(Double(animatedLineWidth / (3 * baseLineWidth))), lineWidth: animatedLineWidth)
+        .stroke(color.opacity(Double((animatedLineWidth - baseLineWidth) / (2 * baseLineWidth))), lineWidth: animatedLineWidth)
         .onAppear {
             if isAnimating {
                 withAnimation(Animation.easeInOut(duration: 0.5).repeatForever(autoreverses: true)) {
