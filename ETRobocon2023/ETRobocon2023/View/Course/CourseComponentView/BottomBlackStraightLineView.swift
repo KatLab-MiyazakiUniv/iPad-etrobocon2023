@@ -27,14 +27,21 @@ struct BottomBlackStraightLineView: View {
     private var endPoint: CGPoint {
         CGPoint(x: endX, y: endY)
     }
-    
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Path { path in
+            path.move(to: startPoint)
+            path.addLine(to: endPoint)
+        }
+        .stroke(lineWidth: LCourseSize.lineWidth)
+        .fill(.black)
+        .frame(width: LCourseViewSize.frameWidth, height: LCourseViewSize.frameHeight)
     } // var body
 } // struct BottomBlackStraightLineView
 
 struct BottomBlackStraightLineView_Previews: PreviewProvider {
     static var previews: some View {
         BottomBlackStraightLineView()
+            .scaleEffect(LCourseViewSize.previewScale)
     }
 }
