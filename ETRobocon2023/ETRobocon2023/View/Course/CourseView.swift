@@ -4,7 +4,15 @@ import SwiftUI
 struct CourseView: View {
     var body: some View {
         ZStack {
-
+            // ライントレース
+            Group {
+                StartBlueLineView()
+                RightBlackStraightLineView()
+                RightBottomBlackCornerView()
+                BottomBlackStraightLineView()
+                LeftBottomBlackCornerView()
+                LeftBlackStraightLineView()
+            }
         } // ZStack
     } // var body
 } // struct CourseView
