@@ -19,6 +19,7 @@
 		AC6D14D92A52728600AADB04 /* RightBottomBlackCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D14D82A52728600AADB04 /* RightBottomBlackCornerView.swift */; };
 		AC6D14DB2A52743C00AADB04 /* BottomBlackStraightLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D14DA2A52743C00AADB04 /* BottomBlackStraightLineView.swift */; };
 		AC6D14DD2A5275F900AADB04 /* LeftBottomBlackCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D14DC2A5275F900AADB04 /* LeftBottomBlackCornerView.swift */; };
+		AC6D14DF2A52775500AADB04 /* LeftBlackStraightLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D14DE2A52775500AADB04 /* LeftBlackStraightLineView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		AC6D14D82A52728600AADB04 /* RightBottomBlackCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightBottomBlackCornerView.swift; sourceTree = "<group>"; };
 		AC6D14DA2A52743C00AADB04 /* BottomBlackStraightLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBlackStraightLineView.swift; sourceTree = "<group>"; };
 		AC6D14DC2A5275F900AADB04 /* LeftBottomBlackCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftBottomBlackCornerView.swift; sourceTree = "<group>"; };
+		AC6D14DE2A52775500AADB04 /* LeftBlackStraightLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftBlackStraightLineView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				AC6D14D82A52728600AADB04 /* RightBottomBlackCornerView.swift */,
 				AC6D14DA2A52743C00AADB04 /* BottomBlackStraightLineView.swift */,
 				AC6D14DC2A5275F900AADB04 /* LeftBottomBlackCornerView.swift */,
+				AC6D14DE2A52775500AADB04 /* LeftBlackStraightLineView.swift */,
 			);
 			path = CourseComponentView;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 			files = (
 				AC6D14BF2A50528C00AADB04 /* ContentView.swift in Sources */,
 				AC6D14CE2A51D32100AADB04 /* LCourseSize.swift in Sources */,
+				AC6D14DF2A52775500AADB04 /* LeftBlackStraightLineView.swift in Sources */,
 				AC6D14D32A51D9B500AADB04 /* CourseView.swift in Sources */,
 				AC6D14DD2A5275F900AADB04 /* LeftBottomBlackCornerView.swift in Sources */,
 				AC6D14BD2A50528C00AADB04 /* ETRobocon2023App.swift in Sources */,
