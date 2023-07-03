@@ -5,6 +5,45 @@ struct BlockDeTreasureFourCirclesView: View {
     let centerOfBottomLeftCircle: CGPoint
     let color: Color
 
+    // 右下の中心
+    private var bottomRightCenterX: CGFloat {
+        centerOfBottomLeftCircle.x + LCourseSize.distanceBetweenCenterOfCirclesInBlockDeTreasure
+    }
+
+    private var bottomRightCenterY: CGFloat {
+        centerOfBottomLeftCircle.y
+    }
+
+    private var bottomRightCenterPoint: CGPoint {
+        CGPoint(x: bottomRightCenterX, y: bottomRightCenterY)
+    }
+
+    // 左上の中心
+    private var topLeftCenterX: CGFloat {
+        centerOfBottomLeftCircle.x
+    }
+
+    private var topLeftCenterY: CGFloat {
+        centerOfBottomLeftCircle.y - LCourseSize.distanceBetweenCenterOfCirclesInBlockDeTreasure
+    }
+
+    private var topLeftCenterPoint: CGPoint {
+        CGPoint(x: topLeftCenterX, y: topLeftCenterY)
+    }
+
+    // 右上の中心
+    private var topRightCenterX: CGFloat {
+        centerOfBottomLeftCircle.x + LCourseSize.distanceBetweenCenterOfCirclesInBlockDeTreasure
+    }
+
+    private var topRightCenterY: CGFloat {
+        centerOfBottomLeftCircle.y - LCourseSize.distanceBetweenCenterOfCirclesInBlockDeTreasure
+    }
+
+    private var topRightCenterPoint: CGPoint {
+        CGPoint(x: topRightCenterX, y: topRightCenterY)
+    }
+
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     } // var body
