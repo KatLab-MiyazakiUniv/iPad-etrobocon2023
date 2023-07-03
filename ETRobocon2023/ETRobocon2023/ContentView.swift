@@ -1,9 +1,11 @@
 import SwiftUI
 
 struct ContentView: View {
-//    @State private var isAnimating: Bool = false
+    @State private var isAnimating: Bool = true
+    @State private var segment = SegmentNames.DoubleLoopExitBlackLineView
+    
     var body: some View {
-        CourseView()
+        CourseView(isAnimating: $isAnimating, segment: $segment)
             .scaleEffect(0.28)
 //        VStack {
 //            PulsatingLineView(isAnimating: $isAnimating, baseLineWidth: 20.0) { path in
