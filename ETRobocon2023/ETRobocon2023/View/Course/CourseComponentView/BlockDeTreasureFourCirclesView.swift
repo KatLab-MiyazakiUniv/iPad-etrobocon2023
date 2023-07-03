@@ -45,7 +45,20 @@ struct BlockDeTreasureFourCirclesView: View {
     }
 
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            // 左下
+            BlockDeTreasureCircleView(center: centerOfBottomLeftCircle, color: color)
+
+            // 右下
+            BlockDeTreasureCircleView(center: bottomRightCenterPoint, color: color)
+
+            // 左上
+            BlockDeTreasureCircleView(center: topLeftCenterPoint, color: color)
+
+            // 右上
+            BlockDeTreasureCircleView(center: topRightCenterPoint, color: color)
+        } // ZStack
+        .frame(width: LCourseViewSize.frameWidth, height: LCourseViewSize.frameHeight)
     } // var body
 } // struct BlockDeTreasureFourCirclesView
 
