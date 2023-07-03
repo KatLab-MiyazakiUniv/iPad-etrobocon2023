@@ -30,6 +30,7 @@
 		AC720C042A52A07C00406BCB /* LineTraceEndCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC720C032A52A07C00406BCB /* LineTraceEndCircleView.swift */; };
 		AC720C062A52A1C500406BCB /* BlockDeTreasureFourCirclesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC720C052A52A1C500406BCB /* BlockDeTreasureFourCirclesView.swift */; };
 		AC720C082A52A4CD00406BCB /* BlockDeTreasureHorizontalLinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC720C072A52A4CD00406BCB /* BlockDeTreasureHorizontalLinesView.swift */; };
+		AC720C0A2A52A95500406BCB /* BlockDeTreasureVerticalLinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC720C092A52A95500406BCB /* BlockDeTreasureVerticalLinesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		AC720C032A52A07C00406BCB /* LineTraceEndCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineTraceEndCircleView.swift; sourceTree = "<group>"; };
 		AC720C052A52A1C500406BCB /* BlockDeTreasureFourCirclesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockDeTreasureFourCirclesView.swift; sourceTree = "<group>"; };
 		AC720C072A52A4CD00406BCB /* BlockDeTreasureHorizontalLinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockDeTreasureHorizontalLinesView.swift; sourceTree = "<group>"; };
+		AC720C092A52A95500406BCB /* BlockDeTreasureVerticalLinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockDeTreasureVerticalLinesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 				AC720C032A52A07C00406BCB /* LineTraceEndCircleView.swift */,
 				AC720C052A52A1C500406BCB /* BlockDeTreasureFourCirclesView.swift */,
 				AC720C072A52A4CD00406BCB /* BlockDeTreasureHorizontalLinesView.swift */,
+				AC720C092A52A95500406BCB /* BlockDeTreasureVerticalLinesView.swift */,
 			);
 			path = CourseComponentView;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				AC720C082A52A4CD00406BCB /* BlockDeTreasureHorizontalLinesView.swift in Sources */,
 				AC6D14DF2A52775500AADB04 /* LeftBlackStraightLineView.swift in Sources */,
 				AC6D14D32A51D9B500AADB04 /* CourseView.swift in Sources */,
+				AC720C0A2A52A95500406BCB /* BlockDeTreasureVerticalLinesView.swift in Sources */,
 				AC392C7F2A5299A4003A5C88 /* AreaBView.swift in Sources */,
 				AC392C7D2A528E50003A5C88 /* AreaAView.swift in Sources */,
 				AC720C022A529F7C00406BCB /* BlockDeTreasureCircleView.swift in Sources */,
