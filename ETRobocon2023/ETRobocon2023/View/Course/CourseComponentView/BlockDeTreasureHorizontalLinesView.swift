@@ -9,6 +9,10 @@ struct BlockDeTreasureHorizontalLinesView: View {
         leftEndPoint.x + LCourseSize.blockDeTreasureBlackLineLength
     }
 
+    private var rightEndPointOfLeftLine: CGPoint {
+        CGPoint(x: rightEndPointXOfLeftLine, y: leftEndPoint.y)
+    }
+
     // 中央の線分の左端
     private var leftEndPointXOfCenterLine: CGFloat {
         rightEndPointXOfLeftLine + LCourseSize.treasureCircleMaximumDiameter
@@ -20,7 +24,7 @@ struct BlockDeTreasureHorizontalLinesView: View {
 
     // 中央の線分の右端
     private var rightEndPointXOfCenterLine: CGFloat {
-        leftEndPointXOfCenterLine + LCourseSize.treasureCircleMaximumDiameter
+        leftEndPointXOfCenterLine + LCourseSize.blockDeTreasureBlackLineLength
     }
 
     private var rightEndPointOfCenterLine: CGPoint {
@@ -38,7 +42,7 @@ struct BlockDeTreasureHorizontalLinesView: View {
 
     // 右側の線分の右端
     private var rightEndPointXOfRightLine: CGFloat {
-        leftEndPointXOfRightLine + LCourseSize.treasureCircleMaximumDiameter
+        leftEndPointXOfRightLine + LCourseSize.blockDeTreasureBlackLineLength
     }
 
     private var rightEndPointOfRightLine: CGPoint {
@@ -46,7 +50,23 @@ struct BlockDeTreasureHorizontalLinesView: View {
     }
 
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        // 左から右
+        Path { path in
+            // 左側の線分
+            path.move(to: leftEndPoint)
+            path.addLine(to: rightEndPointOfLeftLine)
+
+            // 中央の線分
+            path.move(to: leftEndPointOfCenterLine)
+            path.addLine(to: rightEndPointOfCenterLine)
+
+            // 右側の線分
+            path.move(to: leftEndPointOfRightLine)
+            path.addLine(to: rightEndPointOfRightLine)
+        }
+        .stroke(lineWidth: LCourseSize.lineWidth)
+        .fill(.black)
+        .frame(width: LCourseViewSize.frameWidth, height: LCourseViewSize.frameHeight)
     } // var body
 } // struct BlockDeTreasureHorizontalLinesView
 
