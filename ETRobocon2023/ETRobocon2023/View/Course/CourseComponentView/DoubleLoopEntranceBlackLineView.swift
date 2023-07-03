@@ -49,8 +49,8 @@ struct DoubleLoopEntranceBlackLineView: View {
         .stroke(lineWidth: LCourseSize.lineWidth)
         .fill(.black)
         .frame(width: LCourseViewSize.frameWidth, height: LCourseViewSize.frameHeight)
-    }
-}
+    } // var body
+} // struct DoubleLoopEntranceBlackLineView
 
 struct DoubleLoopEntranceBlackLineView_Previews: PreviewProvider {
     static var previews: some View {
