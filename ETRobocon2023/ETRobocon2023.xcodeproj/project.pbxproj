@@ -35,6 +35,7 @@
 		AC720C0F2A52C41B00406BCB /* BlinkEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC720C0E2A52C41B00406BCB /* BlinkEffect.swift */; };
 		AC720C112A52EA9E00406BCB /* PulsatingLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC720C102A52EA9E00406BCB /* PulsatingLineView.swift */; };
 		ACC550CF2A530A7000DDAC49 /* SegmentNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC550CE2A530A7000DDAC49 /* SegmentNames.swift */; };
+		ACC550D12A530D6400DDAC49 /* PulsatingCourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC550D02A530D6400DDAC49 /* PulsatingCourseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		AC720C0E2A52C41B00406BCB /* BlinkEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlinkEffect.swift; sourceTree = "<group>"; };
 		AC720C102A52EA9E00406BCB /* PulsatingLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsatingLineView.swift; sourceTree = "<group>"; };
 		ACC550CE2A530A7000DDAC49 /* SegmentNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentNames.swift; sourceTree = "<group>"; };
+		ACC550D02A530D6400DDAC49 /* PulsatingCourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsatingCourseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				AC6D14D22A51D9B500AADB04 /* CourseView.swift */,
+				ACC550D02A530D6400DDAC49 /* PulsatingCourseView.swift */,
 				ACC550CE2A530A7000DDAC49 /* SegmentNames.swift */,
 				AC6D14CC2A51D2E600AADB04 /* CourseSize */,
 				AC6D14D12A51D8FD00AADB04 /* CourseComponentView */,
@@ -259,6 +262,7 @@
 				AC720C0A2A52A95500406BCB /* BlockDeTreasureVerticalLinesView.swift in Sources */,
 				AC392C7F2A5299A4003A5C88 /* AreaBView.swift in Sources */,
 				AC392C7D2A528E50003A5C88 /* AreaAView.swift in Sources */,
+				ACC550D12A530D6400DDAC49 /* PulsatingCourseView.swift in Sources */,
 				AC720C0C2A52AD5B00406BCB /* BlockDeTreasureView.swift in Sources */,
 				AC720C022A529F7C00406BCB /* BlockDeTreasureCircleView.swift in Sources */,
 				ACC550CF2A530A7000DDAC49 /* SegmentNames.swift in Sources */,

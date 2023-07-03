@@ -1,6 +1,7 @@
 import Foundation
 
 enum SegmentNames {
+    case NONE
     case StartBlueLineView
     case RightBlackStraightLineView
     case RightBottomBlackCornerView

@@ -57,6 +57,10 @@ struct StartBlueLineView: View {
         path.addLine(to: endPoint)
     }
 
+    func getPath() -> ((inout Path) -> Void) {
+        path
+    }
+
     var body: some View {
         Path { path in
             self.path(&path)
