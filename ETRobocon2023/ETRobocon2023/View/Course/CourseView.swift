@@ -26,7 +26,9 @@ struct CourseView: View {
             }
 
             BlockDeTreasureView()
+                .blinkEffect()
         } // ZStack
+        .frame(width: LCourseViewSize.frameWidth, height: LCourseViewSize.frameHeight)
     } // var body
 } // struct CourseView
 

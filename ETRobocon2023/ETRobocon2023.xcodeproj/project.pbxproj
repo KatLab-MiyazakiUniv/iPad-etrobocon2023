@@ -32,6 +32,7 @@
 		AC720C082A52A4CD00406BCB /* BlockDeTreasureHorizontalLinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC720C072A52A4CD00406BCB /* BlockDeTreasureHorizontalLinesView.swift */; };
 		AC720C0A2A52A95500406BCB /* BlockDeTreasureVerticalLinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC720C092A52A95500406BCB /* BlockDeTreasureVerticalLinesView.swift */; };
 		AC720C0C2A52AD5B00406BCB /* BlockDeTreasureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC720C0B2A52AD5B00406BCB /* BlockDeTreasureView.swift */; };
+		AC720C0F2A52C41B00406BCB /* BlinkEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC720C0E2A52C41B00406BCB /* BlinkEffect.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		AC720C072A52A4CD00406BCB /* BlockDeTreasureHorizontalLinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockDeTreasureHorizontalLinesView.swift; sourceTree = "<group>"; };
 		AC720C092A52A95500406BCB /* BlockDeTreasureVerticalLinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockDeTreasureVerticalLinesView.swift; sourceTree = "<group>"; };
 		AC720C0B2A52AD5B00406BCB /* BlockDeTreasureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockDeTreasureView.swift; sourceTree = "<group>"; };
+		AC720C0E2A52C41B00406BCB /* BlinkEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlinkEffect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				AC6D14CB2A51D2A800AADB04 /* Course */,
+				AC720C0D2A52C3FF00406BCB /* Effect */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -160,6 +163,14 @@
 				AC720C0B2A52AD5B00406BCB /* BlockDeTreasureView.swift */,
 			);
 			path = CourseComponentView;
+			sourceTree = "<group>";
+		};
+		AC720C0D2A52C3FF00406BCB /* Effect */ = {
+			isa = PBXGroup;
+			children = (
+				AC720C0E2A52C41B00406BCB /* BlinkEffect.swift */,
+			);
+			path = Effect;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +260,7 @@
 				AC6D14BD2A50528C00AADB04 /* ETRobocon2023App.swift in Sources */,
 				AC6D14D72A52712B00AADB04 /* RightBlackStraightLineView.swift in Sources */,
 				AC6D14D02A51D58000AADB04 /* LCourseViewSize.swift in Sources */,
+				AC720C0F2A52C41B00406BCB /* BlinkEffect.swift in Sources */,
 				AC6D14D92A52728600AADB04 /* RightBottomBlackCornerView.swift in Sources */,
 				AC6D14D52A526F4F00AADB04 /* StartBlueLineView.swift in Sources */,
 				AC392C832A529CE6003A5C88 /* DoubleLoopEntranceBlueStraightLineView.swift in Sources */,
