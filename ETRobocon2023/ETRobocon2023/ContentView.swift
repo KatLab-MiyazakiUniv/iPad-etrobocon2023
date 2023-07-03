@@ -5,8 +5,9 @@ struct ContentView: View {
     @State private var segment = SegmentNames.DoubleLoopExitBlackLineView
     
     var body: some View {
-        CourseView(isAnimating: $isAnimating, segment: $segment)
-            .scaleEffect(0.28)
+        CourseMapAndListView()
+//        CourseView(isAnimating: $isAnimating, segment: $segment)
+//            .scaleEffect(0.28)
 //        VStack {
 //            PulsatingLineView(isAnimating: $isAnimating, baseLineWidth: 20.0) { path in
 //                path.move(to: CGPoint(x: 50, y: 50))
@@ -25,5 +26,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .previewLayout(.fixed(width: 2732, height: 2048))
     }
 }

@@ -38,6 +38,7 @@
 		ACC550D12A530D6400DDAC49 /* PulsatingCourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC550D02A530D6400DDAC49 /* PulsatingCourseView.swift */; };
 		ACC550D32A53191800DDAC49 /* StaticCourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC550D22A53191800DDAC49 /* StaticCourseView.swift */; };
 		ACC550D52A531C1200DDAC49 /* SegmentNamesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC550D42A531C1200DDAC49 /* SegmentNamesListView.swift */; };
+		ACC550D72A531D0E00DDAC49 /* CourseMapAndListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC550D62A531D0E00DDAC49 /* CourseMapAndListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,7 @@
 		ACC550D02A530D6400DDAC49 /* PulsatingCourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsatingCourseView.swift; sourceTree = "<group>"; };
 		ACC550D22A53191800DDAC49 /* StaticCourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticCourseView.swift; sourceTree = "<group>"; };
 		ACC550D42A531C1200DDAC49 /* SegmentNamesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentNamesListView.swift; sourceTree = "<group>"; };
+		ACC550D62A531D0E00DDAC49 /* CourseMapAndListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseMapAndListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 		AC6D14CB2A51D2A800AADB04 /* Course */ = {
 			isa = PBXGroup;
 			children = (
+				ACC550D62A531D0E00DDAC49 /* CourseMapAndListView.swift */,
 				AC6D14D22A51D9B500AADB04 /* CourseView.swift */,
 				ACC550D22A53191800DDAC49 /* StaticCourseView.swift */,
 				ACC550D02A530D6400DDAC49 /* PulsatingCourseView.swift */,
@@ -260,6 +263,7 @@
 			files = (
 				AC6D14BF2A50528C00AADB04 /* ContentView.swift in Sources */,
 				ACC550D32A53191800DDAC49 /* StaticCourseView.swift in Sources */,
+				ACC550D72A531D0E00DDAC49 /* CourseMapAndListView.swift in Sources */,
 				AC6D14CE2A51D32100AADB04 /* LCourseSize.swift in Sources */,
 				AC720C112A52EA9E00406BCB /* PulsatingLineView.swift in Sources */,
 				AC720C062A52A1C500406BCB /* BlockDeTreasureFourCirclesView.swift in Sources */,
