@@ -1,7 +1,7 @@
 import SwiftUI
 
 /// 配置エリアA．
-/// 外側の黒い円，内側の黄色の円，中心の点線の円を描画する．
+/// 外側の黒い円，内側の黄色の円，中心の点線の円，青線を描画する．
 struct AreaAView: View {
 
     private var centerPoint = CGPoint(x: LCourseSize.centerXOfA, y: LCourseSize.centerYOfA)
@@ -39,6 +39,17 @@ struct AreaAView: View {
             }
             .stroke(style: StrokeStyle(lineWidth: LCourseSize.blueDottedCircleLineWidth,
                                        dash: [LCourseSize.blueDottedCircleSpacing]))
+            .fill(.blue)
+
+            // 青線
+            Path { path in
+                path.addArc(center: centerPoint,
+                            radius: LCourseSize.blackCircleRadiusOfA,
+                            startAngle: .degrees(338),
+                            endAngle: .degrees(314),
+                            clockwise: true)
+            }
+            .stroke(lineWidth: LCourseSize.lineWidth)
             .fill(.blue)
         } // ZStack
         .frame(width: LCourseViewSize.frameWidth, height: LCourseViewSize.frameHeight)
