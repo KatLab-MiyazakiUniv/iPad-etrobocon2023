@@ -28,6 +28,18 @@ struct AreaBView: View {
                             clockwise: true)
             }
             .fill(.yellow)
+
+            // 点線
+            Path { path in
+                path.addArc(center: centerPoint,
+                            radius: LCourseSize.blueDottedCircleRadius,
+                            startAngle: .degrees(0),
+                            endAngle: .degrees(0.001),
+                            clockwise: true)
+            }
+            .stroke(style: StrokeStyle(lineWidth: LCourseSize.blueDottedCircleLineWidth,
+                                       dash: [LCourseSize.blueDottedCircleSpacing]))
+            .fill(.blue)
         } // ZStack
         .frame(width: LCourseViewSize.frameWidth, height: LCourseViewSize.frameHeight)
     } // var body
