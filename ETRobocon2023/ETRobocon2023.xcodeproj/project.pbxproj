@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC392C7B2A528CB5003A5C88 /* DoubleLoopEntranceBlackLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC392C7A2A528CB5003A5C88 /* DoubleLoopEntranceBlackLineView.swift */; };
 		AC6D14BD2A50528C00AADB04 /* ETRobocon2023App.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D14BC2A50528C00AADB04 /* ETRobocon2023App.swift */; };
 		AC6D14BF2A50528C00AADB04 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D14BE2A50528C00AADB04 /* ContentView.swift */; };
 		AC6D14C12A50528E00AADB04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC6D14C02A50528E00AADB04 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC392C7A2A528CB5003A5C88 /* DoubleLoopEntranceBlackLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleLoopEntranceBlackLineView.swift; sourceTree = "<group>"; };
 		AC6D14B92A50528C00AADB04 /* ETRobocon2023.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ETRobocon2023.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC6D14BC2A50528C00AADB04 /* ETRobocon2023App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETRobocon2023App.swift; sourceTree = "<group>"; };
 		AC6D14BE2A50528C00AADB04 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				AC6D14DA2A52743C00AADB04 /* BottomBlackStraightLineView.swift */,
 				AC6D14DC2A5275F900AADB04 /* LeftBottomBlackCornerView.swift */,
 				AC6D14DE2A52775500AADB04 /* LeftBlackStraightLineView.swift */,
+				AC392C7A2A528CB5003A5C88 /* DoubleLoopEntranceBlackLineView.swift */,
 			);
 			path = CourseComponentView;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				AC6D14DF2A52775500AADB04 /* LeftBlackStraightLineView.swift in Sources */,
 				AC6D14D32A51D9B500AADB04 /* CourseView.swift in Sources */,
 				AC6D14DD2A5275F900AADB04 /* LeftBottomBlackCornerView.swift in Sources */,
+				AC392C7B2A528CB5003A5C88 /* DoubleLoopEntranceBlackLineView.swift in Sources */,
 				AC6D14BD2A50528C00AADB04 /* ETRobocon2023App.swift in Sources */,
 				AC6D14D72A52712B00AADB04 /* RightBlackStraightLineView.swift in Sources */,
 				AC6D14D02A51D58000AADB04 /* LCourseViewSize.swift in Sources */,
