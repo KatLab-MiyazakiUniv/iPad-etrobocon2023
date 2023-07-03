@@ -27,9 +27,15 @@ struct DoubleLoopEntranceBlueStraightLineView: View {
     private var endPoint: CGPoint {
         CGPoint(x: endX, y: endY)
     }
-    
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Path { path in
+            path.move(to: startPoint)
+            path.addLine(to: endPoint)
+        }
+        .stroke(lineWidth: LCourseSize.lineWidth)
+        .fill(.blue)
+        .frame(width: LCourseViewSize.frameWidth, height: LCourseViewSize.frameHeight)
     } // var body
 } // struct DoubleLoopEntranceBlueStraightLineView
 
