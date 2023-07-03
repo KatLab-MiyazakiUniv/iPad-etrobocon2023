@@ -40,9 +40,15 @@ struct DoubleLoopEntranceBlackLineView: View {
     private var controlPoint: CGPoint {
         CGPoint(x: controlX, y: controlY)
     }
-    
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Path { path in
+            path.move(to: startPoint)
+            path.addQuadCurve(to: endPoint, control: controlPoint)
+        }
+        .stroke(lineWidth: LCourseSize.lineWidth)
+        .fill(.black)
+        .frame(width: LCourseViewSize.frameWidth, height: LCourseViewSize.frameHeight)
     }
 }
 
