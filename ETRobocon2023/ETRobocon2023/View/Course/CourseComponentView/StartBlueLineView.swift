@@ -1,5 +1,6 @@
 import SwiftUI
 
+/// スタート地点(より上部)の青線
 struct StartBlueLineView: View {
     // start point
     private var startX: CGFloat {
