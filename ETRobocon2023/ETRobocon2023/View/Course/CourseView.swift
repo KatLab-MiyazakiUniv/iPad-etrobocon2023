@@ -22,6 +22,7 @@ struct CourseView: View {
                 AreaBView()
                 DoubleLoopExitBlackLineView()
                 DoubleLoopEntranceBlueStraightLineView()
+                    .blinkEffect()
                 DoubleLoopEntranceBlueCurveLineView()
             }
 
