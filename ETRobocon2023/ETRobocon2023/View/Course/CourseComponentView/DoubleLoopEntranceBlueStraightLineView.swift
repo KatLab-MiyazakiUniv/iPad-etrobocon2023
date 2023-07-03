@@ -33,7 +33,7 @@ struct DoubleLoopEntranceBlueStraightLineView: View {
             path.move(to: startPoint)
             path.addLine(to: endPoint)
         }
-        .stroke(lineWidth: LCourseSize.lineWidth*3)
+        .stroke(lineWidth: LCourseSize.lineWidth)
         .fill(.blue)
         .frame(width: LCourseViewSize.frameWidth, height: LCourseViewSize.frameHeight)
     } // var body

@@ -20,14 +20,14 @@ struct PulsatingLineView: View {
         .stroke(Color.blue.opacity(Double(animatedLineWidth / (3 * baseLineWidth))), lineWidth: animatedLineWidth)
         .onAppear {
             if isAnimating {
-                withAnimation(Animation.easeInOut(duration: 1.0).repeatForever(autoreverses: true)) {
+                withAnimation(Animation.easeInOut(duration: 0.5).repeatForever(autoreverses: true)) {
                     animatedLineWidth = 3 * baseLineWidth
                 }
             }
         }
         .onChange(of: isAnimating) { newValue in
             if newValue {
-                withAnimation(Animation.easeInOut(duration: 1.0).repeatForever(autoreverses: true)) {
+                withAnimation(Animation.easeInOut(duration: 0.5).repeatForever(autoreverses: true)) {
                     animatedLineWidth = 3 * baseLineWidth
                 }
             } else {

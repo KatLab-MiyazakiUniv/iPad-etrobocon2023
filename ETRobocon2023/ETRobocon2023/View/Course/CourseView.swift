@@ -2,6 +2,34 @@ import SwiftUI
 
 /// コースマップ全体を表すビュー
 struct CourseView: View {
+    @State private var isAnimating = true
+
+    // start point
+    private var startX: CGFloat {
+        LCourseViewSize.startX - LCourseSize.blackLineCornerRadius - LCourseSize.bottomBlackStraightLineLength - LCourseSize.blackLineCornerRadius
+    }
+
+    private var startY: CGFloat {
+        LCourseViewSize.startY + LCourseSize.startBlueLineLength + LCourseSize.rightBlackStraightLineLength - LCourseSize.endOfCornerToBranchingLength
+    }
+
+    private var startPoint: CGPoint {
+        CGPoint(x: startX, y: startY)
+    }
+
+    // end point
+    private var endX: CGFloat {
+        startX
+    }
+
+    private var endY: CGFloat {
+        startY - LCourseSize.doubleLoopEntranceBlueLineLength
+    }
+
+    private var endPoint: CGPoint {
+        CGPoint(x: endX, y: endY)
+    }
+    
     var body: some View {
         ZStack {
             // ライントレース
@@ -22,12 +50,15 @@ struct CourseView: View {
                 AreaBView()
                 DoubleLoopExitBlackLineView()
                 DoubleLoopEntranceBlueStraightLineView()
-                    .blinkEffect()
                 DoubleLoopEntranceBlueCurveLineView()
             }
 
             BlockDeTreasureView()
-                .blinkEffect()
+            PulsatingLineView(isAnimating: $isAnimating,
+                              baseLineWidth: LCourseSize.lineWidth) { path in
+                path.move(to: startPoint)
+                path.addLine(to: endPoint)
+            }
         } // ZStack
         .frame(width: LCourseViewSize.frameWidth, height: LCourseViewSize.frameHeight)
     } // var body
