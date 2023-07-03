@@ -10,6 +10,7 @@
 		AC392C7B2A528CB5003A5C88 /* DoubleLoopEntranceBlackLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC392C7A2A528CB5003A5C88 /* DoubleLoopEntranceBlackLineView.swift */; };
 		AC392C7D2A528E50003A5C88 /* AreaAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC392C7C2A528E50003A5C88 /* AreaAView.swift */; };
 		AC392C7F2A5299A4003A5C88 /* AreaBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC392C7E2A5299A4003A5C88 /* AreaBView.swift */; };
+		AC392C812A529B2F003A5C88 /* DoubleLoopExitBlackLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC392C802A529B2F003A5C88 /* DoubleLoopExitBlackLineView.swift */; };
 		AC6D14BD2A50528C00AADB04 /* ETRobocon2023App.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D14BC2A50528C00AADB04 /* ETRobocon2023App.swift */; };
 		AC6D14BF2A50528C00AADB04 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D14BE2A50528C00AADB04 /* ContentView.swift */; };
 		AC6D14C12A50528E00AADB04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC6D14C02A50528E00AADB04 /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 		AC392C7A2A528CB5003A5C88 /* DoubleLoopEntranceBlackLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleLoopEntranceBlackLineView.swift; sourceTree = "<group>"; };
 		AC392C7C2A528E50003A5C88 /* AreaAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaAView.swift; sourceTree = "<group>"; };
 		AC392C7E2A5299A4003A5C88 /* AreaBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaBView.swift; sourceTree = "<group>"; };
+		AC392C802A529B2F003A5C88 /* DoubleLoopExitBlackLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleLoopExitBlackLineView.swift; sourceTree = "<group>"; };
 		AC6D14B92A50528C00AADB04 /* ETRobocon2023.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ETRobocon2023.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC6D14BC2A50528C00AADB04 /* ETRobocon2023App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETRobocon2023App.swift; sourceTree = "<group>"; };
 		AC6D14BE2A50528C00AADB04 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				AC392C7A2A528CB5003A5C88 /* DoubleLoopEntranceBlackLineView.swift */,
 				AC392C7C2A528E50003A5C88 /* AreaAView.swift */,
 				AC392C7E2A5299A4003A5C88 /* AreaBView.swift */,
+				AC392C802A529B2F003A5C88 /* DoubleLoopExitBlackLineView.swift */,
 			);
 			path = CourseComponentView;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				AC6D14D92A52728600AADB04 /* RightBottomBlackCornerView.swift in Sources */,
 				AC6D14D52A526F4F00AADB04 /* StartBlueLineView.swift in Sources */,
 				AC6D14DB2A52743C00AADB04 /* BottomBlackStraightLineView.swift in Sources */,
+				AC392C812A529B2F003A5C88 /* DoubleLoopExitBlackLineView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
