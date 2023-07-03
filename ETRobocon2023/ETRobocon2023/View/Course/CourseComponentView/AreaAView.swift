@@ -5,11 +5,23 @@ import SwiftUI
 struct AreaAView: View {
 
     private var centerPoint = CGPoint(x: LCourseSize.centerXOfA, y: LCourseSize.centerYOfA)
-    
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+        ZStack {
+            // 黒線
+            Path { path in
+                path.addArc(center: centerPoint,
+                            radius: LCourseSize.blackCircleRadiusOfA,
+                            startAngle: .degrees(0),
+                            endAngle: .degrees(0.001),
+                            clockwise: true)
+            }
+            .stroke(lineWidth: LCourseSize.lineWidth)
+            .fill(.black)
+        } // ZStack
+        .frame(width: LCourseViewSize.frameWidth, height: LCourseViewSize.frameHeight)
+    } // var body
+} // AreaAView
 
 struct AreaAView_Previews: PreviewProvider {
     static var previews: some View {
