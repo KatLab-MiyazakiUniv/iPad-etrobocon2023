@@ -28,6 +28,41 @@ struct BottomBlackStraightLineView: View {
         CGPoint(x: endX, y: endY)
     }
 
+    private let path: (inout Path) -> Void = { path in
+        // start point
+        var startX: CGFloat {
+            LCourseViewSize.startX - LCourseSize.blackLineCornerRadius
+        }
+
+        var startY: CGFloat {
+            LCourseViewSize.startY + LCourseSize.startBlueLineLength + LCourseSize.rightBlackStraightLineLength + LCourseSize.blackLineCornerRadius
+        }
+
+        var startPoint: CGPoint {
+            CGPoint(x: startX, y: startY)
+        }
+
+        // end point
+        var endX: CGFloat {
+            startX - LCourseSize.bottomBlackStraightLineLength
+        }
+
+        var endY: CGFloat {
+            startY
+        }
+
+        var endPoint: CGPoint {
+            CGPoint(x: endX, y: endY)
+        }
+
+        path.move(to: startPoint)
+        path.addLine(to: endPoint)
+    }
+
+    func getPath() -> ((inout Path) -> Void) {
+        path
+    }
+
     var body: some View {
         Path { path in
             path.move(to: startPoint)
