@@ -18,6 +18,16 @@ struct AreaAView: View {
             }
             .stroke(lineWidth: LCourseSize.lineWidth)
             .fill(.black)
+
+            // 黄色
+            Path { path in
+                path.addArc(center: centerPoint,
+                            radius: LCourseSize.yellowCircleRadiusOfA,
+                            startAngle: .degrees(0),
+                            endAngle: .degrees(0.001),
+                            clockwise: true)
+            }
+            .fill(.yellow)
         } // ZStack
         .frame(width: LCourseViewSize.frameWidth, height: LCourseViewSize.frameHeight)
     } // var body
