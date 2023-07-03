@@ -27,6 +27,7 @@
 		AC6D14DD2A5275F900AADB04 /* LeftBottomBlackCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D14DC2A5275F900AADB04 /* LeftBottomBlackCornerView.swift */; };
 		AC6D14DF2A52775500AADB04 /* LeftBlackStraightLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D14DE2A52775500AADB04 /* LeftBlackStraightLineView.swift */; };
 		AC720C022A529F7C00406BCB /* BlockDeTreasureCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC720C012A529F7C00406BCB /* BlockDeTreasureCircleView.swift */; };
+		AC720C042A52A07C00406BCB /* LineTraceEndCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC720C032A52A07C00406BCB /* LineTraceEndCircleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		AC6D14DC2A5275F900AADB04 /* LeftBottomBlackCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftBottomBlackCornerView.swift; sourceTree = "<group>"; };
 		AC6D14DE2A52775500AADB04 /* LeftBlackStraightLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftBlackStraightLineView.swift; sourceTree = "<group>"; };
 		AC720C012A529F7C00406BCB /* BlockDeTreasureCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockDeTreasureCircleView.swift; sourceTree = "<group>"; };
+		AC720C032A52A07C00406BCB /* LineTraceEndCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineTraceEndCircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 				AC392C822A529CE6003A5C88 /* DoubleLoopEntranceBlueStraightLineView.swift */,
 				AC392C842A529E17003A5C88 /* DoubleLoopEntranceBlueCurveLineView.swift */,
 				AC720C012A529F7C00406BCB /* BlockDeTreasureCircleView.swift */,
+				AC720C032A52A07C00406BCB /* LineTraceEndCircleView.swift */,
 			);
 			path = CourseComponentView;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 				AC6D14D52A526F4F00AADB04 /* StartBlueLineView.swift in Sources */,
 				AC392C832A529CE6003A5C88 /* DoubleLoopEntranceBlueStraightLineView.swift in Sources */,
 				AC6D14DB2A52743C00AADB04 /* BottomBlackStraightLineView.swift in Sources */,
+				AC720C042A52A07C00406BCB /* LineTraceEndCircleView.swift in Sources */,
 				AC392C812A529B2F003A5C88 /* DoubleLoopExitBlackLineView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
