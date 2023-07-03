@@ -14,9 +14,10 @@ struct LineTraceEndCircleView: View {
     private var centerPoint: CGPoint {
         CGPoint(x: centerX, y: centerY)
     }
-    
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        BlockDeTreasureCircleView(center: centerPoint, color: .red)
+            .frame(width: LCourseViewSize.frameWidth, height: LCourseViewSize.frameHeight)
     } // var body
 } // struct LineTraceEndCircleView
 
