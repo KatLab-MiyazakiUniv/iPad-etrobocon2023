@@ -37,6 +37,7 @@
 		ACC550CF2A530A7000DDAC49 /* SegmentNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC550CE2A530A7000DDAC49 /* SegmentNames.swift */; };
 		ACC550D12A530D6400DDAC49 /* PulsatingCourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC550D02A530D6400DDAC49 /* PulsatingCourseView.swift */; };
 		ACC550D32A53191800DDAC49 /* StaticCourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC550D22A53191800DDAC49 /* StaticCourseView.swift */; };
+		ACC550D52A531C1200DDAC49 /* SegmentNamesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC550D42A531C1200DDAC49 /* SegmentNamesListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,7 @@
 		ACC550CE2A530A7000DDAC49 /* SegmentNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentNames.swift; sourceTree = "<group>"; };
 		ACC550D02A530D6400DDAC49 /* PulsatingCourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsatingCourseView.swift; sourceTree = "<group>"; };
 		ACC550D22A53191800DDAC49 /* StaticCourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticCourseView.swift; sourceTree = "<group>"; };
+		ACC550D42A531C1200DDAC49 /* SegmentNamesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentNamesListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				AC6D14D22A51D9B500AADB04 /* CourseView.swift */,
 				ACC550D22A53191800DDAC49 /* StaticCourseView.swift */,
 				ACC550D02A530D6400DDAC49 /* PulsatingCourseView.swift */,
+				ACC550D42A531C1200DDAC49 /* SegmentNamesListView.swift */,
 				ACC550CE2A530A7000DDAC49 /* SegmentNames.swift */,
 				AC6D14CC2A51D2E600AADB04 /* CourseSize */,
 				AC6D14D12A51D8FD00AADB04 /* CourseComponentView */,
@@ -270,6 +273,7 @@
 				AC720C0C2A52AD5B00406BCB /* BlockDeTreasureView.swift in Sources */,
 				AC720C022A529F7C00406BCB /* BlockDeTreasureCircleView.swift in Sources */,
 				ACC550CF2A530A7000DDAC49 /* SegmentNames.swift in Sources */,
+				ACC550D52A531C1200DDAC49 /* SegmentNamesListView.swift in Sources */,
 				AC6D14DD2A5275F900AADB04 /* LeftBottomBlackCornerView.swift in Sources */,
 				AC392C852A529E17003A5C88 /* DoubleLoopEntranceBlueCurveLineView.swift in Sources */,
 				AC392C7B2A528CB5003A5C88 /* DoubleLoopEntranceBlackLineView.swift in Sources */,

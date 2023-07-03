@@ -1,6 +1,6 @@
 import Foundation
 
-enum SegmentNames {
+enum SegmentNames:String, CaseIterable {
     case NONE
     case StartBlueLineView
     case RightBlackStraightLineView
