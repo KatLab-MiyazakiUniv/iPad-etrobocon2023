@@ -1,6 +1,6 @@
 import SwiftUI
 
-/// コース左側の，スタート直後の直進
+/// コース左側の直進
 struct LeftBlackStraightLineView: View {
     // start point
     private var startX: CGFloat {
