@@ -24,6 +24,8 @@ struct CourseView: View {
                 DoubleLoopEntranceBlueStraightLineView()
                 DoubleLoopEntranceBlueCurveLineView()
             }
+
+            BlockDeTreasureView()
         } // ZStack
     } // var body
 } // struct CourseView
