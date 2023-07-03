@@ -5,11 +5,21 @@ import SwiftUI
 struct AreaBView: View {
 
     private var centerPoint = CGPoint(x: LCourseSize.centerXOfB, y: LCourseSize.centerYOfB)
-    
+
     var body: some View {
         ZStack {
-            
+            // 黒線
+            Path { path in
+                path.addArc(center: centerPoint,
+                            radius: LCourseSize.blackCircleRadiusOfB,
+                            startAngle: .degrees(0),
+                            endAngle: .degrees(0.001),
+                            clockwise: true)
+            }
+            .stroke(lineWidth: LCourseSize.lineWidth)
+            .fill(.black)
         } // ZStack
+        .frame(width: LCourseViewSize.frameWidth, height: LCourseViewSize.frameHeight)
     } // var body
 } // AreaBView
 
