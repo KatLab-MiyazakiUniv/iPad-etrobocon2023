@@ -21,6 +21,7 @@ struct CourseView: View {
                 AreaBView()
                 DoubleLoopExitBlackLineView()
                 DoubleLoopEntranceBlueStraightLineView()
+                DoubleLoopEntranceBlueCurveLineView()
             }
         } // ZStack
     } // var body
