@@ -40,7 +40,10 @@ struct PulsatingCourseView: View {
                                   color: .black,
                                   path: LeftBlackStraightLineView().getPath())
             case .DoubleLoopEntranceBlackLineView:
-                EmptyView()
+                PulsatingLineView(isAnimating: $isAnimating,
+                                  baseLineWidth: LCourseSize.lineWidth,
+                                  color: .black,
+                                  path: DoubleLoopEntranceBlackLineView().getPath())
             case .AreaAView:
                 EmptyView()
             case .AreaBView:
@@ -65,7 +68,7 @@ struct PulsatingCourseView: View {
 
 struct PulsatingCourseView_Previews: PreviewProvider {
     @State static var isAnimating = true
-    @State static var segment = SegmentNames.LeftBlackStraightLineView
+    @State static var segment = SegmentNames.DoubleLoopEntranceBlackLineView
     static var previews: some View {
         PulsatingCourseView(isAnimating: $isAnimating, segment: $segment)
             .scaleEffect(LCourseViewSize.previewScale)
