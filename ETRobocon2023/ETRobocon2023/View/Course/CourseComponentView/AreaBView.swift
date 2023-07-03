@@ -40,6 +40,17 @@ struct AreaBView: View {
             .stroke(style: StrokeStyle(lineWidth: LCourseSize.blueDottedCircleLineWidth,
                                        dash: [LCourseSize.blueDottedCircleSpacing]))
             .fill(.blue)
+
+            // 青線
+            Path { path in
+                path.addArc(center: centerPoint,
+                            radius: LCourseSize.blackCircleRadiusOfB,
+                            startAngle: .degrees(222),
+                            endAngle: .degrees(184),
+                            clockwise: true)
+            }
+            .stroke(lineWidth: LCourseSize.lineWidth)
+            .fill(.blue)
         } // ZStack
         .frame(width: LCourseViewSize.frameWidth, height: LCourseViewSize.frameHeight)
     } // var body
