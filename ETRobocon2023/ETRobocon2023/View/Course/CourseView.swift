@@ -12,6 +12,7 @@ struct CourseView: View {
                 BottomBlackStraightLineView()
                 LeftBottomBlackCornerView()
                 LeftBlackStraightLineView()
+                LineTraceEndCircleView()
             }
 
             // ダブルループ
