@@ -16,6 +16,7 @@
 		AC6D14D32A51D9B500AADB04 /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D14D22A51D9B500AADB04 /* CourseView.swift */; };
 		AC6D14D52A526F4F00AADB04 /* StartBlueLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D14D42A526F4F00AADB04 /* StartBlueLineView.swift */; };
 		AC6D14D72A52712B00AADB04 /* RightBlackStraightLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D14D62A52712B00AADB04 /* RightBlackStraightLineView.swift */; };
+		AC6D14D92A52728600AADB04 /* RightBottomBlackCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D14D82A52728600AADB04 /* RightBottomBlackCornerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		AC6D14D22A51D9B500AADB04 /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
 		AC6D14D42A526F4F00AADB04 /* StartBlueLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartBlueLineView.swift; sourceTree = "<group>"; };
 		AC6D14D62A52712B00AADB04 /* RightBlackStraightLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightBlackStraightLineView.swift; sourceTree = "<group>"; };
+		AC6D14D82A52728600AADB04 /* RightBottomBlackCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightBottomBlackCornerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 			children = (
 				AC6D14D42A526F4F00AADB04 /* StartBlueLineView.swift */,
 				AC6D14D62A52712B00AADB04 /* RightBlackStraightLineView.swift */,
+				AC6D14D82A52728600AADB04 /* RightBottomBlackCornerView.swift */,
 			);
 			path = CourseComponentView;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 				AC6D14BD2A50528C00AADB04 /* ETRobocon2023App.swift in Sources */,
 				AC6D14D72A52712B00AADB04 /* RightBlackStraightLineView.swift in Sources */,
 				AC6D14D02A51D58000AADB04 /* LCourseViewSize.swift in Sources */,
+				AC6D14D92A52728600AADB04 /* RightBottomBlackCornerView.swift in Sources */,
 				AC6D14D52A526F4F00AADB04 /* StartBlueLineView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
