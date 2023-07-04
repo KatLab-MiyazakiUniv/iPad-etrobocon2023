@@ -1,5 +1,6 @@
 import SwiftUI
 
+/// コース全体を表すビュー．
 struct StaticCourseView: View {
     var body: some View {
         ZStack {

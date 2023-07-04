@@ -3,6 +3,8 @@ import SwiftUI
 /// コースマップ全体を表すビュー
 struct CourseView: View {
     @Binding var isAnimating: Bool
+
+    // 点滅する区間
     @Binding var segment: SegmentNames
     
     var body: some View {

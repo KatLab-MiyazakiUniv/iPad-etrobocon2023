@@ -3,6 +3,8 @@ import SwiftUI
 /// コースマップと区間名のリストを横並びで表示するビュー
 struct CourseMapAndListView: View {
     @State private var isAnimating = true
+
+    // 点滅する区間
     @State private var selection = SegmentNames.NONE
 
     var body: some View {

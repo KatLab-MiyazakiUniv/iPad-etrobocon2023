@@ -1,7 +1,10 @@
 import SwiftUI
 
+/// 1つの区間を点滅させるビュー
 struct PulsatingCourseView: View {
     @Binding var isAnimating: Bool
+
+    // 点滅する区間
     @Binding var segment: SegmentNames
 
     var body: some View {

@@ -1,5 +1,7 @@
 import Foundation
 
+/// 区間のリスト．
+/// 区間を選択していない場合は.NONE．
 enum SegmentNames:String, CaseIterable {
     case NONE
     case StartBlueLineView

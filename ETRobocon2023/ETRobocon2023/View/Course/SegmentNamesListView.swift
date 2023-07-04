@@ -1,6 +1,9 @@
 import SwiftUI
 
+/// 区間のリストを表示する．
+/// 選択された区間を@Binding selectionに格納する
 struct SegmentNamesListView: View {
+    // 選択された区間
     @Binding var selection: SegmentNames
 
     var body: some View {
