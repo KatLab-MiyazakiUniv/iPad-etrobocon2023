@@ -2,49 +2,57 @@ import SwiftUI
 
 /// コース左側の直進からダブルループに枝分かれしたカーブ
 struct DoubleLoopEntranceBlackLineView: View {
-    // start point
-    private var startX: CGFloat {
-        LCourseViewSize.startX - LCourseSize.blackLineCornerRadius - LCourseSize.bottomBlackStraightLineLength - LCourseSize.blackLineCornerRadius
+    private let path: (inout Path) -> Void = { path in
+        // start point
+        var startX: CGFloat {
+            LCourseViewSize.startX - LCourseSize.blackLineCornerRadius - LCourseSize.bottomBlackStraightLineLength - LCourseSize.blackLineCornerRadius
+        }
+
+        var startY: CGFloat {
+            LCourseViewSize.startY + LCourseSize.startBlueLineLength + LCourseSize.rightBlackStraightLineLength - LCourseSize.endOfCornerToBranchingLength
+        }
+
+        var startPoint: CGPoint {
+            CGPoint(x: startX, y: startY)
+        }
+
+        // end point
+        var endX: CGFloat {
+            LCourseSize.centerXOfA
+        }
+
+        var endY: CGFloat {
+            LCourseSize.centerYOfA - LCourseSize.blackCircleRadiusOfA
+        }
+
+        var endPoint: CGPoint {
+            CGPoint(x: endX, y: endY)
+        }
+
+        // control point
+        var controlX: CGFloat {
+            startX + 90
+        }
+
+        var controlY: CGFloat {
+            LCourseViewSize.startY + LCourseSize.startBlueLineLength + LCourseSize.rightBlackStraightLineLength + LCourseSize.blackLineCornerRadius - 1285
+        }
+
+        var controlPoint: CGPoint {
+            CGPoint(x: controlX, y: controlY)
+        }
+
+        path.move(to: startPoint)
+        path.addQuadCurve(to: endPoint, control: controlPoint)
     }
 
-    private var startY: CGFloat {
-        LCourseViewSize.startY + LCourseSize.startBlueLineLength + LCourseSize.rightBlackStraightLineLength - LCourseSize.endOfCornerToBranchingLength
+    func getPath() -> ((inout Path) -> Void) {
+        path
     }
-
-    private var startPoint: CGPoint {
-        CGPoint(x: startX, y: startY)
-    }
-
-    // end point
-    private var endX: CGFloat {
-        LCourseSize.centerXOfA
-    }
-
-    private var endY: CGFloat {
-        LCourseSize.centerYOfA - LCourseSize.blackCircleRadiusOfA
-    }
-
-    private var endPoint: CGPoint {
-        CGPoint(x: endX, y: endY)
-    }
-
-    // control point
-    private var controlX: CGFloat {
-        startX + 90
-    }
-
-    private var controlY: CGFloat {
-        LCourseViewSize.startY + LCourseSize.startBlueLineLength + LCourseSize.rightBlackStraightLineLength + LCourseSize.blackLineCornerRadius - 1285
-    }
-
-    private var controlPoint: CGPoint {
-        CGPoint(x: controlX, y: controlY)
-    }
-
+    
     var body: some View {
         Path { path in
-            path.move(to: startPoint)
-            path.addQuadCurve(to: endPoint, control: controlPoint)
+            self.path(&path)
         }
         .stroke(lineWidth: LCourseSize.lineWidth)
         .fill(.black)

@@ -1,19 +1,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isAnimating: Bool = true
+    @State private var segment = SegmentNames.DoubleLoopExitBlackLineView
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        CourseMapAndListView()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .previewLayout(.fixed(width: 2732, height: 2048))
     }
 }
