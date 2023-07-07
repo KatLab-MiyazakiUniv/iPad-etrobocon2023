@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC3056212A58753900BAC46F /* Secret.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC3056202A58753900BAC46F /* Secret.plist */; };
 		AC392C7B2A528CB5003A5C88 /* DoubleLoopEntranceBlackLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC392C7A2A528CB5003A5C88 /* DoubleLoopEntranceBlackLineView.swift */; };
 		AC392C7D2A528E50003A5C88 /* AreaAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC392C7C2A528E50003A5C88 /* AreaAView.swift */; };
 		AC392C7F2A5299A4003A5C88 /* AreaBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC392C7E2A5299A4003A5C88 /* AreaBView.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC3056202A58753900BAC46F /* Secret.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Secret.plist; sourceTree = "<group>"; };
 		AC392C7A2A528CB5003A5C88 /* DoubleLoopEntranceBlackLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleLoopEntranceBlackLineView.swift; sourceTree = "<group>"; };
 		AC392C7C2A528E50003A5C88 /* AreaAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaAView.swift; sourceTree = "<group>"; };
 		AC392C7E2A5299A4003A5C88 /* AreaBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaBView.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 			children = (
 				AC6D14BC2A50528C00AADB04 /* ETRobocon2023App.swift */,
 				AC6D14BE2A50528C00AADB04 /* ContentView.swift */,
+				AC3056202A58753900BAC46F /* Secret.plist */,
 				AC30561F2A5873B700BAC46F /* Model */,
 				AC6D14CA2A51D21100AADB04 /* View */,
 				AC6D14C02A50528E00AADB04 /* Assets.xcassets */,
@@ -257,6 +260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC3056212A58753900BAC46F /* Secret.plist in Resources */,
 				AC6D14C42A50528E00AADB04 /* Preview Assets.xcassets in Resources */,
 				AC6D14C12A50528E00AADB04 /* Assets.xcassets in Resources */,
 			);
