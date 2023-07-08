@@ -18,12 +18,12 @@ struct MachineTransmissionInfo {
         }
         properties = data
 
-        guard let firstMachineIpAddress = properties["firstMachineIpAddress"] as? String else {
+        guard let firstMachineIpAddress = properties["FirstMachineIpAddress"] as? String else {
             fatalError("Cannot convert firstMachineIpAddress to String.")
         }
         firstMachine = firstMachineIpAddress
 
-        guard let secondMachineIpAddress = properties["secondMachineIpAddress"] as? String else {
+        guard let secondMachineIpAddress = properties["SecondMachineIpAddress"] as? String else {
             fatalError("Cannot convert secondMachineIpAddress to String.")
         }
         secondMachine = secondMachineIpAddress
