@@ -5,6 +5,7 @@ struct MachineTransmissionInfo {
     var properties: [String: Any] = [:]
     let firstMachine: String
     let secondMachine: String
+    let port: String
 
     init() {
         guard let plistPath = Bundle.main.path(forResource: "Secret", ofType: "plist") else {
@@ -26,5 +27,10 @@ struct MachineTransmissionInfo {
             fatalError("Cannot convert secondMachineIpAddress to String.")
         }
         secondMachine = secondMachineIpAddress
+
+        guard let portNumber = properties["PortNumber"] as? String else {
+            fatalError("Cannot convert PortNumber to String.")
+        }
+        port = portNumber
     } // init()
 } // struct IpAddress
