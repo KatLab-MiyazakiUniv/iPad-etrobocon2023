@@ -1,7 +1,8 @@
 import Foundation
 
+/// 通信に関する処理を行う
 struct TransmissionManager {
-    // Improved communication process
+    // 文字列にファイル名を付けて，走行体へ送信する
     func sendFile(to whichMachine: WhichMachine, fileName: String, content: String) async throws -> String {
         let machineTransmissionInfo = MachineTransmissionInfo()
 
@@ -38,6 +39,5 @@ struct TransmissionManager {
         let (recievedData, _) = try await URLSession.shared.data(for: request)
         let str = String(data: recievedData, encoding: .utf8)
         return str ?? "No data"
-    }
-
-}
+    } // func sendFile
+} // TransmissionManager

@@ -1,5 +1,6 @@
 import SwiftUI
 
+/// 文字列をターミナル風に表示する
 struct TerminalView: View {
     @Binding var messages: [String]
     var width: CGFloat
@@ -12,6 +13,7 @@ struct TerminalView: View {
             ScrollViewReader { scrollProxy in
                 ScrollView {
                     VStack(alignment: .leading, spacing: 0) {
+                        // idに配列のインデックスを指定することで重複したメッセージに対応する
                         ForEach(Array(messages.enumerated()), id: \.offset) { index, message in
                             Text(message)
                                 .font(.system(size: 15, weight: .regular, design: .monospaced))

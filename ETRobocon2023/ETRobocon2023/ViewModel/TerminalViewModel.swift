@@ -1,5 +1,6 @@
 import Foundation
 
+/// TerminalViewに表示する文字列の保持と更新を行う
 @MainActor
 class TerminalViewModel: ObservableObject {
     @Published var messages: [String] = []

@@ -1,5 +1,6 @@
 import SwiftUI
 
+/// 送信ボタンと結果を表示するターミナルを横並びで表示する
 struct ButtonAndTerminalView: View {
     @ObservedObject var terminalViewModel = TerminalViewModel()
     let fileSendViewModel = FileSendViewModel()
@@ -32,6 +33,8 @@ struct ButtonAndTerminalView: View {
         } // HStack
     } // var body
 
+    /// TerminalViewのデバッグ用
+    /// ランダムな文字列を返す
     private func generateRandomString(_ length: Int) -> String {
         let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
         var randomString = ""
