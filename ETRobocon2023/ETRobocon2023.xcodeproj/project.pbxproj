@@ -13,6 +13,7 @@
 		AC3056272A59541600BAC46F /* CsvFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3056262A59541600BAC46F /* CsvFileManager.swift */; };
 		AC3056292A5957D100BAC46F /* TransmissionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3056282A5957D100BAC46F /* TransmissionManager.swift */; };
 		AC30562C2A59613600BAC46F /* FileSendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30562B2A59613600BAC46F /* FileSendViewModel.swift */; };
+		AC30562E2A59670100BAC46F /* TerminalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30562D2A59670100BAC46F /* TerminalViewModel.swift */; };
 		AC392C7B2A528CB5003A5C88 /* DoubleLoopEntranceBlackLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC392C7A2A528CB5003A5C88 /* DoubleLoopEntranceBlackLineView.swift */; };
 		AC392C7D2A528E50003A5C88 /* AreaAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC392C7C2A528E50003A5C88 /* AreaAView.swift */; };
 		AC392C7F2A5299A4003A5C88 /* AreaBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC392C7E2A5299A4003A5C88 /* AreaBView.swift */; };
@@ -54,6 +55,7 @@
 		AC3056262A59541600BAC46F /* CsvFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CsvFileManager.swift; sourceTree = "<group>"; };
 		AC3056282A5957D100BAC46F /* TransmissionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransmissionManager.swift; sourceTree = "<group>"; };
 		AC30562B2A59613600BAC46F /* FileSendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSendViewModel.swift; sourceTree = "<group>"; };
+		AC30562D2A59670100BAC46F /* TerminalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalViewModel.swift; sourceTree = "<group>"; };
 		AC392C7A2A528CB5003A5C88 /* DoubleLoopEntranceBlackLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleLoopEntranceBlackLineView.swift; sourceTree = "<group>"; };
 		AC392C7C2A528E50003A5C88 /* AreaAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaAView.swift; sourceTree = "<group>"; };
 		AC392C7E2A5299A4003A5C88 /* AreaBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaBView.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				AC30562B2A59613600BAC46F /* FileSendViewModel.swift */,
+				AC30562D2A59670100BAC46F /* TerminalViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				AC6D14DF2A52775500AADB04 /* LeftBlackStraightLineView.swift in Sources */,
 				AC6D14D32A51D9B500AADB04 /* CourseView.swift in Sources */,
 				AC720C0A2A52A95500406BCB /* BlockDeTreasureVerticalLinesView.swift in Sources */,
+				AC30562E2A59670100BAC46F /* TerminalViewModel.swift in Sources */,
 				AC392C7F2A5299A4003A5C88 /* AreaBView.swift in Sources */,
 				AC392C7D2A528E50003A5C88 /* AreaAView.swift in Sources */,
 				ACC550D12A530D6400DDAC49 /* PulsatingCourseView.swift in Sources */,
