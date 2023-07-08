@@ -7,13 +7,13 @@ struct ButtonAndTerminalView: View {
         HStack {
             GeometryReader { geometry in
                 HStack {
-                    TerminalView(messages: $viewModel.messages)
+                    TerminalView(messages: $viewModel.messages, width: geometry.size.width/2)
                         .frame(width: geometry.size.width/2, height: geometry.size.height)
                     
                     Button {
-                        viewModel.addMessage(generateRandomString(20))
+                        viewModel.addMessage(generateRandomString(Int.random(in: 30...150)))
                     } label: {
-                        Text("viewModel.addMessage(generateRandomString(20))")
+                        Text("viewModel.addMessage(generateRandomString())")
                     }
                     .frame(width: geometry.size.width/2)
                 }
