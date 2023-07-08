@@ -12,6 +12,7 @@
 		AC3056252A59526100BAC46F /* WhichMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3056242A59526100BAC46F /* WhichMachine.swift */; };
 		AC3056272A59541600BAC46F /* CsvFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3056262A59541600BAC46F /* CsvFileManager.swift */; };
 		AC3056292A5957D100BAC46F /* TransmissionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3056282A5957D100BAC46F /* TransmissionManager.swift */; };
+		AC30562C2A59613600BAC46F /* FileSendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30562B2A59613600BAC46F /* FileSendViewModel.swift */; };
 		AC392C7B2A528CB5003A5C88 /* DoubleLoopEntranceBlackLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC392C7A2A528CB5003A5C88 /* DoubleLoopEntranceBlackLineView.swift */; };
 		AC392C7D2A528E50003A5C88 /* AreaAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC392C7C2A528E50003A5C88 /* AreaAView.swift */; };
 		AC392C7F2A5299A4003A5C88 /* AreaBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC392C7E2A5299A4003A5C88 /* AreaBView.swift */; };
@@ -52,6 +53,7 @@
 		AC3056242A59526100BAC46F /* WhichMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhichMachine.swift; sourceTree = "<group>"; };
 		AC3056262A59541600BAC46F /* CsvFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CsvFileManager.swift; sourceTree = "<group>"; };
 		AC3056282A5957D100BAC46F /* TransmissionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransmissionManager.swift; sourceTree = "<group>"; };
+		AC30562B2A59613600BAC46F /* FileSendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSendViewModel.swift; sourceTree = "<group>"; };
 		AC392C7A2A528CB5003A5C88 /* DoubleLoopEntranceBlackLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleLoopEntranceBlackLineView.swift; sourceTree = "<group>"; };
 		AC392C7C2A528E50003A5C88 /* AreaAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaAView.swift; sourceTree = "<group>"; };
 		AC392C7E2A5299A4003A5C88 /* AreaBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaBView.swift; sourceTree = "<group>"; };
@@ -109,6 +111,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		AC30562A2A59610D00BAC46F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AC30562B2A59613600BAC46F /* FileSendViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		AC6D14B02A50528C00AADB04 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +142,7 @@
 				AC6D14BE2A50528C00AADB04 /* ContentView.swift */,
 				AC3056202A58753900BAC46F /* Secret.plist */,
 				AC30561F2A5873B700BAC46F /* Model */,
+				AC30562A2A59610D00BAC46F /* ViewModel */,
 				AC6D14CA2A51D21100AADB04 /* View */,
 				AC6D14C02A50528E00AADB04 /* Assets.xcassets */,
 				AC6D14C22A50528E00AADB04 /* Preview Content */,
@@ -313,6 +324,7 @@
 				AC720C0F2A52C41B00406BCB /* BlinkEffect.swift in Sources */,
 				AC3056232A5876A500BAC46F /* MachineTransmissionInfo.swift in Sources */,
 				AC6D14D92A52728600AADB04 /* RightBottomBlackCornerView.swift in Sources */,
+				AC30562C2A59613600BAC46F /* FileSendViewModel.swift in Sources */,
 				AC6D14D52A526F4F00AADB04 /* StartBlueLineView.swift in Sources */,
 				AC392C832A529CE6003A5C88 /* DoubleLoopEntranceBlueStraightLineView.swift in Sources */,
 				AC3056272A59541600BAC46F /* CsvFileManager.swift in Sources */,
