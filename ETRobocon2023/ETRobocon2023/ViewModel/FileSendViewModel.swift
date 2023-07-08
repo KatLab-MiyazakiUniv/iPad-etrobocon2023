@@ -3,18 +3,32 @@ import Foundation
 /// 走行体へファイルの送信を行う
 class FileSendViewModel {
     /// サンプルのCSVファイルを送信する
-    func SendSampleFile() {
+    func SendSampleFile() async -> String {
         let transmissionManager = TransmissionManager()
         let fileName = "PID.csv"
         let content = CsvFileManager.generateSampleFile()
 
-        Task {
-            do {
-                let response = try await transmissionManager.sendFile(to: .First, fileName: fileName, content: content)
-                print("Response from server: \(response)")
-            } catch {
-                print("Error: \(error)")
-            }
-        } // Task
+//        Task {
+//            do {
+//                let response = try await transmissionManager.sendFile(to: .First, fileName: fileName, content: content)
+//                let responseString = "Response from server:\n\(response)"
+//                print(responseString)
+//                return responseString
+//            } catch {
+//                let errorString = "Error:\n\(error)"
+//                print(errorString)
+//                return errorString
+//            }
+//        } // Task
+        do {
+            let response = try await transmissionManager.sendFile(to: .First, fileName: fileName, content: content)
+            let responseString = "Response from server:\n\(response)"
+            print(responseString)
+            return responseString
+        } catch {
+            let errorString = "Error:\n\(error)"
+            print(errorString)
+            return errorString
+        }
     } // func SendSampleFile
 } // FileSendViewModel
