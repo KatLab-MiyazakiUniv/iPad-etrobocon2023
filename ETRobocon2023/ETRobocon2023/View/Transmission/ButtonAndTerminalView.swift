@@ -12,7 +12,6 @@ struct ButtonAndTerminalView: View {
                         .frame(width: geometry.size.width/2, height: geometry.size.height)
                     
                     Button {
-//                        viewModel.addMessage(generateRandomString(Int.random(in: 30...150)))
                         terminalViewModel.addMessage("Send sample CSV file to First machine.")
                         terminalViewModel.addMessage(CsvFileManager.generateSampleFile())
                         Task {
@@ -20,7 +19,6 @@ struct ButtonAndTerminalView: View {
                             terminalViewModel.addMessage("\n" + result + "\n")
                         }
                     } label: {
-//                        Text("viewModel.addMessage(generateRandomString())")
                         Text("Send sample CSV to First machine")
                             .font(.system(size: 35))
                             .foregroundColor(.white)

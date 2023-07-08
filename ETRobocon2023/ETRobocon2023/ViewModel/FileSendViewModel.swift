@@ -8,18 +8,6 @@ class FileSendViewModel {
         let fileName = "PID.csv"
         let content = CsvFileManager.generateSampleFile()
 
-//        Task {
-//            do {
-//                let response = try await transmissionManager.sendFile(to: .First, fileName: fileName, content: content)
-//                let responseString = "Response from server:\n\(response)"
-//                print(responseString)
-//                return responseString
-//            } catch {
-//                let errorString = "Error:\n\(error)"
-//                print(errorString)
-//                return errorString
-//            }
-//        } // Task
         do {
             let response = try await transmissionManager.sendFile(to: .First, fileName: fileName, content: content)
             let responseString = "Response from server:\n\(response)"
