@@ -5,7 +5,8 @@ struct ContentView: View {
     @State private var segment = SegmentNames.DoubleLoopExitBlackLineView
     
     var body: some View {
-        CourseMapAndListView()
+//        CourseMapAndListView()
+        ButtonAndTerminalView()
     }
 }
 
