@@ -12,22 +12,18 @@ struct TerminalView: View {
             ScrollViewReader { scrollProxy in
                 ScrollView {
                     VStack(alignment: .leading, spacing: 0) {
-                        ForEach(messages, id: \.self) { message in
+                        ForEach(Array(messages.enumerated()), id: \.offset) { index, message in
                             Text(message)
                                 .font(.system(size: 15, weight: .regular, design: .monospaced))
                                 .foregroundColor(.white)
                                 .padding([.top, .bottom], 2)
                                 .padding([.leading], 5)
-//                                .frame(width: width)
-//                                .background(.pink)
-                                .id(message)
+                                .id(index)
                         } // ForEach
                     } // VStack
                     .frame(width: width, alignment: .leading)
-//                    .frame(alignment: .leading)
-//                    .background(.green)
                     .onChange(of: messages) { _ in
-                        scrollProxy.scrollTo(messages.last)
+                        scrollProxy.scrollTo(messages.count - 1)
                     }
                 } // ScrollView
             } // ScrollViewReader
