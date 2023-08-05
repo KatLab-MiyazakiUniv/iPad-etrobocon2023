@@ -48,6 +48,7 @@
 		AC9980152A7EB06D009C92CA /* DistanceStraight.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9980142A7EB06D009C92CA /* DistanceStraight.swift */; };
 		AC9980172A7EB0E0009C92CA /* ColorStraight.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9980162A7EB0E0009C92CA /* ColorStraight.swift */; };
 		AC9980192A7EB1A1009C92CA /* SpecifiedAngleTurning.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9980182A7EB1A1009C92CA /* SpecifiedAngleTurning.swift */; };
+		AC99801B2A7EB2C4009C92CA /* DistanceSpecifiedTurning.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC99801A2A7EB2C4009C92CA /* DistanceSpecifiedTurning.swift */; };
 		ACC550CF2A530A7000DDAC49 /* SegmentNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC550CE2A530A7000DDAC49 /* SegmentNames.swift */; };
 		ACC550D12A530D6400DDAC49 /* PulsatingCourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC550D02A530D6400DDAC49 /* PulsatingCourseView.swift */; };
 		ACC550D32A53191800DDAC49 /* StaticCourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC550D22A53191800DDAC49 /* StaticCourseView.swift */; };
@@ -103,6 +104,7 @@
 		AC9980142A7EB06D009C92CA /* DistanceStraight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceStraight.swift; sourceTree = "<group>"; };
 		AC9980162A7EB0E0009C92CA /* ColorStraight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorStraight.swift; sourceTree = "<group>"; };
 		AC9980182A7EB1A1009C92CA /* SpecifiedAngleTurning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecifiedAngleTurning.swift; sourceTree = "<group>"; };
+		AC99801A2A7EB2C4009C92CA /* DistanceSpecifiedTurning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceSpecifiedTurning.swift; sourceTree = "<group>"; };
 		ACC550CE2A530A7000DDAC49 /* SegmentNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentNames.swift; sourceTree = "<group>"; };
 		ACC550D02A530D6400DDAC49 /* PulsatingCourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsatingCourseView.swift; sourceTree = "<group>"; };
 		ACC550D22A53191800DDAC49 /* StaticCourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticCourseView.swift; sourceTree = "<group>"; };
@@ -274,6 +276,7 @@
 				AC9980142A7EB06D009C92CA /* DistanceStraight.swift */,
 				AC9980162A7EB0E0009C92CA /* ColorStraight.swift */,
 				AC9980182A7EB1A1009C92CA /* SpecifiedAngleTurning.swift */,
+				AC99801A2A7EB2C4009C92CA /* DistanceSpecifiedTurning.swift */,
 				ACE8CD802A7E4ACF003CF974 /* TurningToCompensateForAngle.swift */,
 			);
 			path = MotionCommand;
@@ -366,6 +369,7 @@
 				ACC550D72A531D0E00DDAC49 /* CourseMapAndListView.swift in Sources */,
 				AC6D14CE2A51D32100AADB04 /* LCourseSize.swift in Sources */,
 				ACE8CD7E2A7E48C6003CF974 /* MotionCommandEnum.swift in Sources */,
+				AC99801B2A7EB2C4009C92CA /* DistanceSpecifiedTurning.swift in Sources */,
 				AC720C112A52EA9E00406BCB /* PulsatingLineView.swift in Sources */,
 				AC0494562A7E7D9E0032FFF6 /* MotionCommandOptionList.swift in Sources */,
 				AC720C062A52A1C500406BCB /* BlockDeTreasureFourCirclesView.swift in Sources */,
