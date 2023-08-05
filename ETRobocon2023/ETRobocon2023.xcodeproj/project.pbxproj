@@ -52,6 +52,7 @@
 		AC99801D2A7EB323009C92CA /* EdgeSwitching.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC99801C2A7EB323009C92CA /* EdgeSwitching.swift */; };
 		AC99801F2A7EB381009C92CA /* SleepSelf.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC99801E2A7EB381009C92CA /* SleepSelf.swift */; };
 		AC9980212A7EB3E7009C92CA /* RaiseArm.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9980202A7EB3E7009C92CA /* RaiseArm.swift */; };
+		AC9980232A7EB43E009C92CA /* LowerArm.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9980222A7EB43E009C92CA /* LowerArm.swift */; };
 		ACC550CF2A530A7000DDAC49 /* SegmentNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC550CE2A530A7000DDAC49 /* SegmentNames.swift */; };
 		ACC550D12A530D6400DDAC49 /* PulsatingCourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC550D02A530D6400DDAC49 /* PulsatingCourseView.swift */; };
 		ACC550D32A53191800DDAC49 /* StaticCourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC550D22A53191800DDAC49 /* StaticCourseView.swift */; };
@@ -111,6 +112,7 @@
 		AC99801C2A7EB323009C92CA /* EdgeSwitching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeSwitching.swift; sourceTree = "<group>"; };
 		AC99801E2A7EB381009C92CA /* SleepSelf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepSelf.swift; sourceTree = "<group>"; };
 		AC9980202A7EB3E7009C92CA /* RaiseArm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaiseArm.swift; sourceTree = "<group>"; };
+		AC9980222A7EB43E009C92CA /* LowerArm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowerArm.swift; sourceTree = "<group>"; };
 		ACC550CE2A530A7000DDAC49 /* SegmentNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentNames.swift; sourceTree = "<group>"; };
 		ACC550D02A530D6400DDAC49 /* PulsatingCourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsatingCourseView.swift; sourceTree = "<group>"; };
 		ACC550D22A53191800DDAC49 /* StaticCourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticCourseView.swift; sourceTree = "<group>"; };
@@ -286,6 +288,7 @@
 				AC99801C2A7EB323009C92CA /* EdgeSwitching.swift */,
 				AC99801E2A7EB381009C92CA /* SleepSelf.swift */,
 				AC9980202A7EB3E7009C92CA /* RaiseArm.swift */,
+				AC9980222A7EB43E009C92CA /* LowerArm.swift */,
 				ACE8CD802A7E4ACF003CF974 /* TurningToCompensateForAngle.swift */,
 			);
 			path = MotionCommand;
@@ -411,6 +414,7 @@
 				AC99801D2A7EB323009C92CA /* EdgeSwitching.swift in Sources */,
 				AC720C0F2A52C41B00406BCB /* BlinkEffect.swift in Sources */,
 				AC3056232A5876A500BAC46F /* MachineTransmissionInfo.swift in Sources */,
+				AC9980232A7EB43E009C92CA /* LowerArm.swift in Sources */,
 				AC9980172A7EB0E0009C92CA /* ColorStraight.swift in Sources */,
 				AC6D14D92A52728600AADB04 /* RightBottomBlackCornerView.swift in Sources */,
 				AC30562C2A59613600BAC46F /* FileSendViewModel.swift in Sources */,

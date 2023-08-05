@@ -10,6 +10,7 @@ struct MotionCommandOptionList: View {
                                                EdgeSwitching(),
                                                SleepSelf(),
                                                RaiseArm(),
+                                               LowerArm(),
                                                TurningToCompensateForAngle(targetAngle: 0, targetSpeed: 0)
     ]
     
