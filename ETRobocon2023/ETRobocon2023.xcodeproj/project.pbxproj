@@ -47,6 +47,7 @@
 		AC9980132A7EAFB2009C92CA /* ColorLineTrace.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9980122A7EAFB2009C92CA /* ColorLineTrace.swift */; };
 		AC9980152A7EB06D009C92CA /* DistanceStraight.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9980142A7EB06D009C92CA /* DistanceStraight.swift */; };
 		AC9980172A7EB0E0009C92CA /* ColorStraight.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9980162A7EB0E0009C92CA /* ColorStraight.swift */; };
+		AC9980192A7EB1A1009C92CA /* SpecifiedAngleTurning.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9980182A7EB1A1009C92CA /* SpecifiedAngleTurning.swift */; };
 		ACC550CF2A530A7000DDAC49 /* SegmentNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC550CE2A530A7000DDAC49 /* SegmentNames.swift */; };
 		ACC550D12A530D6400DDAC49 /* PulsatingCourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC550D02A530D6400DDAC49 /* PulsatingCourseView.swift */; };
 		ACC550D32A53191800DDAC49 /* StaticCourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC550D22A53191800DDAC49 /* StaticCourseView.swift */; };
@@ -101,6 +102,7 @@
 		AC9980122A7EAFB2009C92CA /* ColorLineTrace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorLineTrace.swift; sourceTree = "<group>"; };
 		AC9980142A7EB06D009C92CA /* DistanceStraight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceStraight.swift; sourceTree = "<group>"; };
 		AC9980162A7EB0E0009C92CA /* ColorStraight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorStraight.swift; sourceTree = "<group>"; };
+		AC9980182A7EB1A1009C92CA /* SpecifiedAngleTurning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecifiedAngleTurning.swift; sourceTree = "<group>"; };
 		ACC550CE2A530A7000DDAC49 /* SegmentNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentNames.swift; sourceTree = "<group>"; };
 		ACC550D02A530D6400DDAC49 /* PulsatingCourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsatingCourseView.swift; sourceTree = "<group>"; };
 		ACC550D22A53191800DDAC49 /* StaticCourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticCourseView.swift; sourceTree = "<group>"; };
@@ -271,6 +273,7 @@
 				AC9980122A7EAFB2009C92CA /* ColorLineTrace.swift */,
 				AC9980142A7EB06D009C92CA /* DistanceStraight.swift */,
 				AC9980162A7EB0E0009C92CA /* ColorStraight.swift */,
+				AC9980182A7EB1A1009C92CA /* SpecifiedAngleTurning.swift */,
 				ACE8CD802A7E4ACF003CF974 /* TurningToCompensateForAngle.swift */,
 			);
 			path = MotionCommand;
@@ -356,6 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC9980192A7EB1A1009C92CA /* SpecifiedAngleTurning.swift in Sources */,
 				AC6D14BF2A50528C00AADB04 /* ContentView.swift in Sources */,
 				AC9980132A7EAFB2009C92CA /* ColorLineTrace.swift in Sources */,
 				ACC550D32A53191800DDAC49 /* StaticCourseView.swift in Sources */,
