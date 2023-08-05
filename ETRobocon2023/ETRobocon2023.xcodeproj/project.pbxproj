@@ -51,6 +51,7 @@
 		AC99801B2A7EB2C4009C92CA /* DistanceSpecifiedTurning.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC99801A2A7EB2C4009C92CA /* DistanceSpecifiedTurning.swift */; };
 		AC99801D2A7EB323009C92CA /* EdgeSwitching.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC99801C2A7EB323009C92CA /* EdgeSwitching.swift */; };
 		AC99801F2A7EB381009C92CA /* SleepSelf.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC99801E2A7EB381009C92CA /* SleepSelf.swift */; };
+		AC9980212A7EB3E7009C92CA /* RaiseArm.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9980202A7EB3E7009C92CA /* RaiseArm.swift */; };
 		ACC550CF2A530A7000DDAC49 /* SegmentNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC550CE2A530A7000DDAC49 /* SegmentNames.swift */; };
 		ACC550D12A530D6400DDAC49 /* PulsatingCourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC550D02A530D6400DDAC49 /* PulsatingCourseView.swift */; };
 		ACC550D32A53191800DDAC49 /* StaticCourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC550D22A53191800DDAC49 /* StaticCourseView.swift */; };
@@ -109,6 +110,7 @@
 		AC99801A2A7EB2C4009C92CA /* DistanceSpecifiedTurning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceSpecifiedTurning.swift; sourceTree = "<group>"; };
 		AC99801C2A7EB323009C92CA /* EdgeSwitching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeSwitching.swift; sourceTree = "<group>"; };
 		AC99801E2A7EB381009C92CA /* SleepSelf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepSelf.swift; sourceTree = "<group>"; };
+		AC9980202A7EB3E7009C92CA /* RaiseArm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaiseArm.swift; sourceTree = "<group>"; };
 		ACC550CE2A530A7000DDAC49 /* SegmentNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentNames.swift; sourceTree = "<group>"; };
 		ACC550D02A530D6400DDAC49 /* PulsatingCourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsatingCourseView.swift; sourceTree = "<group>"; };
 		ACC550D22A53191800DDAC49 /* StaticCourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticCourseView.swift; sourceTree = "<group>"; };
@@ -283,6 +285,7 @@
 				AC99801A2A7EB2C4009C92CA /* DistanceSpecifiedTurning.swift */,
 				AC99801C2A7EB323009C92CA /* EdgeSwitching.swift */,
 				AC99801E2A7EB381009C92CA /* SleepSelf.swift */,
+				AC9980202A7EB3E7009C92CA /* RaiseArm.swift */,
 				ACE8CD802A7E4ACF003CF974 /* TurningToCompensateForAngle.swift */,
 			);
 			path = MotionCommand;
@@ -369,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC9980192A7EB1A1009C92CA /* SpecifiedAngleTurning.swift in Sources */,
+				AC9980212A7EB3E7009C92CA /* RaiseArm.swift in Sources */,
 				AC6D14BF2A50528C00AADB04 /* ContentView.swift in Sources */,
 				AC9980132A7EAFB2009C92CA /* ColorLineTrace.swift in Sources */,
 				ACC550D32A53191800DDAC49 /* StaticCourseView.swift in Sources */,
