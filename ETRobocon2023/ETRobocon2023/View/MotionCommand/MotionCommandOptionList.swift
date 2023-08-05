@@ -8,6 +8,7 @@ struct MotionCommandOptionList: View {
                                                SpecifiedAngleTurning(),
                                                DistanceSpecifiedTurning(),
                                                EdgeSwitching(),
+                                               SleepSelf(),
                                                TurningToCompensateForAngle(targetAngle: 0, targetSpeed: 0)
     ]
     
