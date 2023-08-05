@@ -7,6 +7,7 @@ struct MotionCommandOptionList: View {
                                                ColorStraight(),
                                                SpecifiedAngleTurning(),
                                                DistanceSpecifiedTurning(),
+                                               EdgeSwitching(),
                                                TurningToCompensateForAngle(targetAngle: 0, targetSpeed: 0)
     ]
     
