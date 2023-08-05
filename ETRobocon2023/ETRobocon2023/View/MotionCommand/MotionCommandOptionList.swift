@@ -2,6 +2,7 @@ import SwiftUI
 
 struct MotionCommandOptionList: View {
     let motionCommands: [any MotionCommand] = [DistanceLineTrace(),
+                                               ColorLineTrace(),
                                                TurningToCompensateForAngle(targetAngle: 0, targetSpeed: 0)
     ]
     
@@ -11,10 +12,6 @@ struct MotionCommandOptionList: View {
                 .listRowSeparator(.hidden)
         }
         .frame(width: 300)
-//        VStack {
-//            MotionCommandOptionCell(motionCommand: motionCommands[0])
-//            MotionCommandOptionCell(motionCommand: motionCommands[1])
-//        }
     }
 }
 
