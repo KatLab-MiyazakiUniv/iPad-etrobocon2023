@@ -53,6 +53,7 @@
 		AC99801F2A7EB381009C92CA /* SleepSelf.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC99801E2A7EB381009C92CA /* SleepSelf.swift */; };
 		AC9980212A7EB3E7009C92CA /* RaiseArm.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9980202A7EB3E7009C92CA /* RaiseArm.swift */; };
 		AC9980232A7EB43E009C92CA /* LowerArm.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9980222A7EB43E009C92CA /* LowerArm.swift */; };
+		AC9980252A7EBEF0009C92CA /* CourseMapAndCommandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9980242A7EBEF0009C92CA /* CourseMapAndCommandView.swift */; };
 		ACC550CF2A530A7000DDAC49 /* SegmentNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC550CE2A530A7000DDAC49 /* SegmentNames.swift */; };
 		ACC550D12A530D6400DDAC49 /* PulsatingCourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC550D02A530D6400DDAC49 /* PulsatingCourseView.swift */; };
 		ACC550D32A53191800DDAC49 /* StaticCourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC550D22A53191800DDAC49 /* StaticCourseView.swift */; };
@@ -113,6 +114,7 @@
 		AC99801E2A7EB381009C92CA /* SleepSelf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepSelf.swift; sourceTree = "<group>"; };
 		AC9980202A7EB3E7009C92CA /* RaiseArm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaiseArm.swift; sourceTree = "<group>"; };
 		AC9980222A7EB43E009C92CA /* LowerArm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowerArm.swift; sourceTree = "<group>"; };
+		AC9980242A7EBEF0009C92CA /* CourseMapAndCommandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseMapAndCommandView.swift; sourceTree = "<group>"; };
 		ACC550CE2A530A7000DDAC49 /* SegmentNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentNames.swift; sourceTree = "<group>"; };
 		ACC550D02A530D6400DDAC49 /* PulsatingCourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsatingCourseView.swift; sourceTree = "<group>"; };
 		ACC550D22A53191800DDAC49 /* StaticCourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticCourseView.swift; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 		AC6D14CA2A51D21100AADB04 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AC9980242A7EBEF0009C92CA /* CourseMapAndCommandView.swift */,
 				AC6D14CB2A51D2A800AADB04 /* Course */,
 				AC30562F2A59688300BAC46F /* Transmission */,
 				AC720C0D2A52C3FF00406BCB /* Effect */,
@@ -404,6 +407,7 @@
 				AC392C852A529E17003A5C88 /* DoubleLoopEntranceBlueCurveLineView.swift in Sources */,
 				AC3056292A5957D100BAC46F /* TransmissionManager.swift in Sources */,
 				AC9980152A7EB06D009C92CA /* DistanceStraight.swift in Sources */,
+				AC9980252A7EBEF0009C92CA /* CourseMapAndCommandView.swift in Sources */,
 				AC392C7B2A528CB5003A5C88 /* DoubleLoopEntranceBlackLineView.swift in Sources */,
 				AC6D14BD2A50528C00AADB04 /* ETRobocon2023App.swift in Sources */,
 				ACE8CD842A7E4C1F003CF974 /* MotionCommandOptionCell.swift in Sources */,

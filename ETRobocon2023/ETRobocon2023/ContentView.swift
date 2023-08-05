@@ -7,7 +7,8 @@ struct ContentView: View {
     var body: some View {
 //        CourseMapAndListView()
 //        ButtonAndTerminalView()
-        MotionCommandOptionList()
+//        MotionCommandOptionList()
+        CourseMapAndCommandView()
     }
 }
 
