@@ -4,6 +4,7 @@ struct MotionCommandOptionList: View {
     let motionCommands: [any MotionCommand] = [DistanceLineTrace(),
                                                ColorLineTrace(),
                                                DistanceStraight(),
+                                               ColorStraight(),
                                                TurningToCompensateForAngle(targetAngle: 0, targetSpeed: 0)
     ]
     
