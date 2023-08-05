@@ -3,6 +3,7 @@ import SwiftUI
 struct MotionCommandOptionList: View {
     let motionCommands: [any MotionCommand] = [DistanceLineTrace(),
                                                ColorLineTrace(),
+                                               DistanceStraight(),
                                                TurningToCompensateForAngle(targetAngle: 0, targetSpeed: 0)
     ]
     
