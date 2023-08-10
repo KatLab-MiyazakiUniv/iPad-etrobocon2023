@@ -8,13 +8,15 @@ struct ContentView: View {
 //        CourseMapAndListView()
 //        ButtonAndTerminalView()
 //        MotionCommandOptionList()
-        CourseMapAndCommandView()
+//        CourseMapAndCommandView()
+//        SelectedCommandList()
+        ListToSelectOneSection()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .previewLayout(.fixed(width: 2732, height: 2048))
+            .previewLayout(.fixed(width: 1366, height: 1024))
     }
 }

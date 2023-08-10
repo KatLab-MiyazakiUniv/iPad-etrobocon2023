@@ -54,6 +54,8 @@
 		AC9980212A7EB3E7009C92CA /* RaiseArm.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9980202A7EB3E7009C92CA /* RaiseArm.swift */; };
 		AC9980232A7EB43E009C92CA /* LowerArm.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9980222A7EB43E009C92CA /* LowerArm.swift */; };
 		AC9980252A7EBEF0009C92CA /* CourseMapAndCommandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9980242A7EBEF0009C92CA /* CourseMapAndCommandView.swift */; };
+		ACA02FAA2A84C4D500329EF3 /* ListToSelectOneSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA02FA92A84C4D500329EF3 /* ListToSelectOneSection.swift */; };
+		ACBA6FE92A84946400680A3B /* DistanceLineTraceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBA6FE82A84946400680A3B /* DistanceLineTraceCell.swift */; };
 		ACC550CF2A530A7000DDAC49 /* SegmentNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC550CE2A530A7000DDAC49 /* SegmentNames.swift */; };
 		ACC550D12A530D6400DDAC49 /* PulsatingCourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC550D02A530D6400DDAC49 /* PulsatingCourseView.swift */; };
 		ACC550D32A53191800DDAC49 /* StaticCourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC550D22A53191800DDAC49 /* StaticCourseView.swift */; };
@@ -115,6 +117,8 @@
 		AC9980202A7EB3E7009C92CA /* RaiseArm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaiseArm.swift; sourceTree = "<group>"; };
 		AC9980222A7EB43E009C92CA /* LowerArm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowerArm.swift; sourceTree = "<group>"; };
 		AC9980242A7EBEF0009C92CA /* CourseMapAndCommandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseMapAndCommandView.swift; sourceTree = "<group>"; };
+		ACA02FA92A84C4D500329EF3 /* ListToSelectOneSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListToSelectOneSection.swift; sourceTree = "<group>"; };
+		ACBA6FE82A84946400680A3B /* DistanceLineTraceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceLineTraceCell.swift; sourceTree = "<group>"; };
 		ACC550CE2A530A7000DDAC49 /* SegmentNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentNames.swift; sourceTree = "<group>"; };
 		ACC550D02A530D6400DDAC49 /* PulsatingCourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsatingCourseView.swift; sourceTree = "<group>"; };
 		ACC550D22A53191800DDAC49 /* StaticCourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticCourseView.swift; sourceTree = "<group>"; };
@@ -302,6 +306,8 @@
 			children = (
 				ACE8CD832A7E4C1F003CF974 /* MotionCommandOptionCell.swift */,
 				AC0494552A7E7D9E0032FFF6 /* MotionCommandOptionList.swift */,
+				ACA02FA92A84C4D500329EF3 /* ListToSelectOneSection.swift */,
+				ACBA6FE82A84946400680A3B /* DistanceLineTraceCell.swift */,
 			);
 			path = MotionCommand;
 			sourceTree = "<group>";
@@ -411,6 +417,7 @@
 				AC392C7B2A528CB5003A5C88 /* DoubleLoopEntranceBlackLineView.swift in Sources */,
 				AC6D14BD2A50528C00AADB04 /* ETRobocon2023App.swift in Sources */,
 				ACE8CD842A7E4C1F003CF974 /* MotionCommandOptionCell.swift in Sources */,
+				ACA02FAA2A84C4D500329EF3 /* ListToSelectOneSection.swift in Sources */,
 				AC3056252A59526100BAC46F /* WhichMachine.swift in Sources */,
 				AC6D14D72A52712B00AADB04 /* RightBlackStraightLineView.swift in Sources */,
 				AC6D14D02A51D58000AADB04 /* LCourseViewSize.swift in Sources */,
@@ -423,6 +430,7 @@
 				AC6D14D92A52728600AADB04 /* RightBottomBlackCornerView.swift in Sources */,
 				AC30562C2A59613600BAC46F /* FileSendViewModel.swift in Sources */,
 				ACE8CD812A7E4ACF003CF974 /* TurningToCompensateForAngle.swift in Sources */,
+				ACBA6FE92A84946400680A3B /* DistanceLineTraceCell.swift in Sources */,
 				AC6D14D52A526F4F00AADB04 /* StartBlueLineView.swift in Sources */,
 				AC392C832A529CE6003A5C88 /* DoubleLoopEntranceBlueStraightLineView.swift in Sources */,
 				AC3056272A59541600BAC46F /* CsvFileManager.swift in Sources */,
