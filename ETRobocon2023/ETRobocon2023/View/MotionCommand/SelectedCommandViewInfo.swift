@@ -28,6 +28,7 @@ struct SelectedCommandViewInfo {
     let commandSubTitleFont: Font = .system(size: 17, weight: .light)
     let parameterTitleFont: Font = .system(size: 17, weight: .bold)
 
+    let selectedCommandListBackground = Color(red: 0.95, green: 0.95, blue: 0.97)
     let selectedCommandCellBackground = Color(red: 0.92, green: 0.92, blue: 0.92)
     let parameterCellBackground: Color = .white
 }

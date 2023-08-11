@@ -20,7 +20,7 @@ struct SelectedCommandListView: View {
                 .padding(.bottom, SelectedCommandViewInfo().padding*3)
         }
         .frame(width: SelectedCommandViewInfo().selectedCommandListWidth)
-        .background(SelectedCommandViewInfo().selectedCommandCellBackground)
+        .background(SelectedCommandViewInfo().selectedCommandListBackground)
     }
 }
 
