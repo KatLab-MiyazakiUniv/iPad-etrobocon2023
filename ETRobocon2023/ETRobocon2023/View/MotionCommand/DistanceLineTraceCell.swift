@@ -25,99 +25,29 @@ struct DistanceLineTraceCell: View {
             }
             .padding()
             .frame(width: selectedCommandCellWidth, alignment: .leading)
-//            .background(Color(red: 0.92, green: 0.92, blue: 0.92))
 
             HStack(spacing: 0) {
-                VStack(spacing: 0) {
-                    Text("目標距離")
-                        .font(.system(size: 17, weight: .bold))
-                        .padding(.bottom, 5)
-                    TextField("目標距離", text: $targetDistance)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                        .frame(width: selectedCommandCellWidth/3 - 50)
-                }
-                .padding()
-                .frame(width: selectedCommandCellWidth/3 - 20)
-                .background(.white)
-                .cornerRadius(15)
-
-
-                VStack(spacing: 0) {
-                    Text("目標速度")
-                        .font(.system(size: 17, weight: .bold))
-                        .padding(.bottom, 5)
-                    TextField("目標速度", text: $targetSpeed)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                        .frame(width: selectedCommandCellWidth/3 - 50)
-                }
-                .padding()
-                .frame(width: selectedCommandCellWidth/3 - 20)
-                .background(.white)
-                .cornerRadius(15)
-
-                VStack(spacing: 0) {
-                    Text("調整")
-                        .font(.system(size: 17, weight: .bold))
-                        .padding(.bottom, 5)
-                    TextField("調整", text: $adjustment)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                        .frame(width: selectedCommandCellWidth/3 - 50)
-                }
-                .padding()
-                .frame(width: selectedCommandCellWidth/3 - 20)
-                .background(.white)
-                .cornerRadius(15)
+                ParameterCellWithTextFieldView(inputText: $targetDistance, parameterTitle: "目標距離(mm)")
+                ParameterCellWithTextFieldView(inputText: $targetSpeed, parameterTitle: "目標速度(mm/s)")
+                    .padding(.leading, SelectedCommandCellInfo().padding)
+                    .padding(.trailing, SelectedCommandCellInfo().padding)
+                ParameterCellWithTextFieldView(inputText: $adjustment, parameterTitle: "輝度調整")
             } // HStack
-            .frame(width: selectedCommandCellWidth - 20)
-
-//            .background(.green)
+            .padding(.bottom, SelectedCommandCellInfo().padding)
+//            .frame(width: selectedCommandCellWidth - 20)
 
             HStack(spacing: 0) {
-                VStack(spacing: 0) {
-                    Text("P値")
-                        .font(.system(size: 17, weight: .bold))
-                        .padding(.bottom, 5)
-                    TextField("P値", text: $pValue)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                        .frame(width: selectedCommandCellWidth/3 - 50)
-                }
-                .padding()
-                .frame(width: selectedCommandCellWidth/3 - 20)
-                .background(.white)
-                .cornerRadius(15)
-
-                VStack(spacing: 0) {
-                    Text("I値")
-                        .font(.system(size: 17, weight: .bold))
-                        .padding(.bottom, 5)
-                    TextField("I値", text: $iValue)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                        .frame(width: selectedCommandCellWidth/3 - 50)
-                }
-                .padding()
-                .frame(width: selectedCommandCellWidth/3 - 20)
-                .background(.white)
-                .cornerRadius(15)
-
-                VStack(spacing: 0) {
-                    Text("D値")
-                        .font(.system(size: 17, weight: .bold))
-                        .padding(.bottom, 5)
-                    TextField("D値", text: $dValue)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                        .frame(width: selectedCommandCellWidth/3 - 50)
-                }
-                .padding()
-                .frame(width: selectedCommandCellWidth/3 - 20)
-                .background(.white)
-                .cornerRadius(15)
+                ParameterCellWithTextFieldView(inputText: $targetDistance, parameterTitle: "P値")
+                ParameterCellWithTextFieldView(inputText: $targetSpeed, parameterTitle: "I値")
+                    .padding(.leading, SelectedCommandCellInfo().padding)
+                    .padding(.trailing, SelectedCommandCellInfo().padding)
+                ParameterCellWithTextFieldView(inputText: $adjustment, parameterTitle: "D値")
             } // HStack
-            .frame(width: selectedCommandCellWidth - 20)
-//            .background(.white)
+            .padding(.bottom, SelectedCommandCellInfo().padding)
+//            .frame(width: selectedCommandCellWidth - 20)
         } // VStack
         .frame(width: SelectedCommandCellInfo().selectedCommandCellWidth)
         .background(SelectedCommandCellInfo().selectedCommandCellBackground)
-//        .background(.gray)
     }
 }
 
