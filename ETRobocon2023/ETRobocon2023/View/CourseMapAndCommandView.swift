@@ -16,19 +16,13 @@ struct CourseMapAndCommandView: View {
     var body: some View {
         HStack {
             MotionCommandOptionList()
-            ZStack {
-                Rectangle()
-                    .frame(width: 560)
-                .foregroundStyle(.pink)
-
-                DistanceLineTraceCell()
-            }
+            ListToSelectOneSection()
             CourseView(isAnimating: $isAnimating, segment: $selection)
                 .scaleEffect(0.2)
                 .frame(width: 500,height: 980)
                 .background(.white)
         } // HStack
-        .background(.black)
+//        .background(.black)
     }
 }
 
