@@ -16,7 +16,10 @@ struct CourseMapAndCommandView: View {
     var body: some View {
         HStack {
             MotionCommandOptionList()
-            ListToSelectOneSection()
+//            ListToSelectOneSection()
+            Rectangle()
+                .frame(width: 550)
+                .foregroundStyle(.pink)
             CourseView(isAnimating: $isAnimating, segment: $selection)
                 .scaleEffect(0.2)
                 .frame(width: 500,height: 980)

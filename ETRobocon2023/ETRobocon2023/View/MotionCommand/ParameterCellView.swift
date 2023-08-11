@@ -7,17 +7,17 @@ struct ParameterCellWithTextFieldView: View {
     var body: some View {
         VStack(spacing: 0) {
             Text(parameterTitle)
-                .font(SelectedCommandCellInfo().parameterTitleFont)
-                .padding(.bottom, SelectedCommandCellInfo().halfPadding)
-                .padding(.top, SelectedCommandCellInfo().padding)
+                .font(SelectedCommandViewInfo().parameterTitleFont)
+                .padding(.bottom, SelectedCommandViewInfo().halfPadding)
+                .padding(.top, SelectedCommandViewInfo().padding)
             TextField(parameterTitle, text: $inputText)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
-                .frame(width: SelectedCommandCellInfo().textFieldWidth)
-                .padding(.bottom, SelectedCommandCellInfo().padding)
+                .frame(width: SelectedCommandViewInfo().textFieldWidth)
+                .padding(.bottom, SelectedCommandViewInfo().padding)
         }
-        .frame(width: SelectedCommandCellInfo().parameterCellWidth)
-        .background(SelectedCommandCellInfo().parameterCellBackground)
-        .cornerRadius(SelectedCommandCellInfo().cornerRadius)
+        .frame(width: SelectedCommandViewInfo().parameterCellWidth)
+        .background(SelectedCommandViewInfo().parameterCellBackground)
+        .cornerRadius(SelectedCommandViewInfo().cornerRadius)
     }
 }
 

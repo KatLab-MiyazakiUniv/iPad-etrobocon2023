@@ -1,8 +1,11 @@
 import Foundation
 import SwiftUI
 
-struct SelectedCommandCellInfo {
-    let selectedCommandCellWidth: CGFloat = 530
+struct SelectedCommandViewInfo {
+    let selectedCommandSectionWidth: CGFloat = 530
+    var selectedCommandCellWidth: CGFloat {
+        selectedCommandSectionWidth - padding*2
+    }
     let padding: CGFloat = 10
     let cornerRadius: CGFloat = 15
 

@@ -15,24 +15,24 @@ struct DistanceLineTraceCell: View {
             HStack(spacing: 0) {
                 ParameterCellWithTextFieldView(inputText: $targetDistance, parameterTitle: "目標距離(mm)")
                 ParameterCellWithTextFieldView(inputText: $targetSpeed, parameterTitle: "目標速度(mm/s)")
-                    .padding(.leading, SelectedCommandCellInfo().padding)
-                    .padding(.trailing, SelectedCommandCellInfo().padding)
+                    .padding(.leading, SelectedCommandViewInfo().padding)
+                    .padding(.trailing, SelectedCommandViewInfo().padding)
                 ParameterCellWithTextFieldView(inputText: $adjustment, parameterTitle: "輝度調整")
             } // HStack
-            .padding(.bottom, SelectedCommandCellInfo().padding)
+            .padding(.bottom, SelectedCommandViewInfo().padding)
 
             HStack(spacing: 0) {
                 ParameterCellWithTextFieldView(inputText: $targetDistance, parameterTitle: "P値")
                 ParameterCellWithTextFieldView(inputText: $targetSpeed, parameterTitle: "I値")
-                    .padding(.leading, SelectedCommandCellInfo().padding)
-                    .padding(.trailing, SelectedCommandCellInfo().padding)
+                    .padding(.leading, SelectedCommandViewInfo().padding)
+                    .padding(.trailing, SelectedCommandViewInfo().padding)
                 ParameterCellWithTextFieldView(inputText: $adjustment, parameterTitle: "D値")
             } // HStack
-            .padding(.bottom, SelectedCommandCellInfo().padding)
+            .padding(.bottom, SelectedCommandViewInfo().padding)
         } // VStack
-        .frame(width: SelectedCommandCellInfo().selectedCommandCellWidth)
-        .background(SelectedCommandCellInfo().selectedCommandCellBackground)
-        .cornerRadius(SelectedCommandCellInfo().cornerRadius)
+        .frame(width: SelectedCommandViewInfo().selectedCommandCellWidth)
+        .background(SelectedCommandViewInfo().selectedCommandCellBackground)
+        .cornerRadius(SelectedCommandViewInfo().cornerRadius)
     } // var body
 }
 

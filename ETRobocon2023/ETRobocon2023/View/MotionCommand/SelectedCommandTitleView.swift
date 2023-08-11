@@ -7,15 +7,15 @@ struct SelectedCommandTitleView: View {
     var body: some View {
         HStack(spacing: 0) {
             Text(commandTitle)
-                .font(SelectedCommandCellInfo().commandTitleFont)
-                .padding(.leading, SelectedCommandCellInfo().padding)
+                .font(SelectedCommandViewInfo().commandTitleFont)
+                .padding(.leading, SelectedCommandViewInfo().padding)
             Text(commandSubtitle)
-                .font(SelectedCommandCellInfo().commandSubTitleFont)
-                .padding(.leading, SelectedCommandCellInfo().padding)
+                .font(SelectedCommandViewInfo().commandSubTitleFont)
+                .padding(.leading, SelectedCommandViewInfo().padding)
         }
-        .padding(.top, SelectedCommandCellInfo().padding)
-        .padding(.bottom, SelectedCommandCellInfo().padding)
-        .frame(width: SelectedCommandCellInfo().selectedCommandCellWidth, alignment: .leading)
+        .padding(.top, SelectedCommandViewInfo().padding)
+        .padding(.bottom, SelectedCommandViewInfo().padding)
+        .frame(width: SelectedCommandViewInfo().selectedCommandCellWidth, alignment: .leading)
     }
 }
 
