@@ -10,17 +10,7 @@ struct DistanceLineTraceCell: View {
 
     var body: some View {
         VStack(spacing: 0) {
-            HStack(spacing: 0) {
-                Text("DL")
-                    .font(SelectedCommandCellInfo().commandTitleFont)
-                    .padding(.leading, SelectedCommandCellInfo().padding)
-                Text("指定距離ライントレース")
-                    .font(SelectedCommandCellInfo().commandSubTitleFont)
-                    .padding(.leading, SelectedCommandCellInfo().padding)
-            }
-            .padding(.top, SelectedCommandCellInfo().padding)
-            .padding(.bottom, SelectedCommandCellInfo().padding)
-            .frame(width: selectedCommandCellWidth, alignment: .leading)
+            SelectedCommandTitleView(commandTitle: "DL", commandSubtitle: "指定距離ライントレース")
 
             HStack(spacing: 0) {
                 ParameterCellWithTextFieldView(inputText: $targetDistance, parameterTitle: "目標距離(mm)")
