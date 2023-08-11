@@ -115,8 +115,8 @@ struct DistanceLineTraceCell: View {
             .frame(width: selectedCommandCellWidth - 20)
 //            .background(.white)
         } // VStack
-        .frame(width: selectedCommandCellWidth)
-        .background(Color(red: 0.92, green: 0.92, blue: 0.92))
+        .frame(width: SelectedCommandCellInfo().selectedCommandCellWidth)
+        .background(SelectedCommandCellInfo().selectedCommandCellBackground)
 //        .background(.gray)
     }
 }

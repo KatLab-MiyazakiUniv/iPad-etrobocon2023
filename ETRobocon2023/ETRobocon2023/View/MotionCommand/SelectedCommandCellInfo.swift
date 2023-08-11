@@ -1,6 +1,7 @@
 import Foundation
+import SwiftUI
 
-struct SelectedCommandCellSize {
+struct SelectedCommandCellInfo {
     let selectedCommandCellWidth: CGFloat = 530
     let padding: CGFloat = 10
     let cornerRadius: CGFloat = 15
@@ -19,4 +20,7 @@ struct SelectedCommandCellSize {
 
     let commandFontSize: CGFloat = 23
     let parameterFontSize: CGFloat = 17
+
+    let selectedCommandCellBackground = Color(red: 0.92, green: 0.92, blue: 0.92)
+    let parameterCellBackground: Color = .white
 }
