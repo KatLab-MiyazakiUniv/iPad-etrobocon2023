@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct MotionCommandOptionCell: View {
+    @EnvironmentObject var viewModel: SelectedCommandViewModel
     let motionCommand: any MotionCommand
 
     private let cellWidth: CGFloat = 250
@@ -10,7 +11,8 @@ struct MotionCommandOptionCell: View {
     var body: some View {
         HStack {
             Button {
-                print(motionCommand.command.rawValue)
+//                print(motionCommand.command.rawValue)
+                viewModel.addSelectedCommand(motionCommand)
             } label: {
                 Image(systemName: "plus.circle")
                     .resizable()

@@ -2,7 +2,8 @@ import SwiftUI
 import Combine
 
 struct SelectedCommandSectionView: View {
-    @State var motionCommands: [any MotionCommand] = Array(repeating: DistanceLineTrace(), count: 10)
+//    @State var motionCommands: [any MotionCommand] = Array(repeating: DistanceLineTrace(), count: 10)
+    @Binding var motionCommands: [any MotionCommand]
     let sectionTitle: String
     let isSelected: Bool
     let onUpdate: (CGFloat) -> Void
@@ -20,6 +21,8 @@ struct SelectedCommandSectionView: View {
             .frame(width: SelectedCommandViewInfo().selectedCommandSectionWidth)
         }
         .padding(.bottom, SelectedCommandViewInfo().padding)
+        .frame(width: SelectedCommandViewInfo().selectedCommandSectionWidth)
+//        .frame(minHeight: 400)
         .background(SelectedCommandViewInfo().parameterCellBackground)
         .cornerRadius(SelectedCommandViewInfo().cornerRadius)
         .opacity(isSelected ? 1.0 : 0.3)
@@ -34,8 +37,9 @@ struct SelectedCommandSectionView: View {
 }
 
 struct SelectedCommandSectionView_Previews: PreviewProvider {
+    @State static var motionCommands: [any MotionCommand] = Array(repeating: DistanceLineTrace(), count: 10)
     static var previews: some View {
-        SelectedCommandSectionView(sectionTitle: "スタートからダブルループ直前まで", isSelected: false, onUpdate: { offset in
+        SelectedCommandSectionView(motionCommands: $motionCommands, sectionTitle: "スタートからダブルループ直前まで", isSelected: true, onUpdate: { offset in
 
         })
             .previewLayout(.fixed(width: 700, height: 4000))

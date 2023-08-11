@@ -19,10 +19,14 @@ struct CourseMapAndCommandView: View {
             MotionCommandOptionList()
 //            ListToSelectOneSection()
             SelectedCommandListView()
-            CourseView(isAnimating: $isAnimating, segment: $selection)
-                .scaleEffect(0.2)
-                .frame(width: 500,height: 980)
+            VStack {
+                CourseView(isAnimating: $isAnimating, segment: $selection)
+                    .scaleEffect(0.2)
+                    .frame(width: 500,height: 730)
                 .background(.white)
+
+                SelectSectionListView()
+            }
         } // HStack
 //        .background(.black)
     }

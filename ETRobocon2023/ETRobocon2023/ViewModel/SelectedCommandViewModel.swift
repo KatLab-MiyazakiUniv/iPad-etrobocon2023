@@ -1,14 +1,15 @@
 import Foundation
 
 class SelectedCommandViewModel: ObservableObject {
-    @Published var isSelectedSection = SelectedCommandSectionEnum.FromStartToDoubleLoop
+    @Published var isSelectedSection: SelectedCommandSectionEnum? = .FromStartToDoubleLoop
     @Published var fromStartToDoubleLoopCommands: [any MotionCommand] = []
     @Published var fromAreaAToAreaBCommands: [any MotionCommand] = []
     @Published var areaBCommands: [any MotionCommand] = []
     @Published var areaABottomCommands: [any MotionCommand] = []
 
-    func addSelectedCommand(_ command: any MotionCommand, to: SelectedCommandSectionEnum) {
-        switch to {
+    func addSelectedCommand(_ command: any MotionCommand) {
+        guard let section = isSelectedSection else { return }
+        switch section {
         case .FromStartToDoubleLoop:
             fromStartToDoubleLoopCommands.append(command)
         case .FromAreaAToAreaB:
@@ -21,7 +22,7 @@ class SelectedCommandViewModel: ObservableObject {
     }
 }
 
-enum SelectedCommandSectionEnum {
+enum SelectedCommandSectionEnum: CaseIterable {
     case FromStartToDoubleLoop
     case FromAreaAToAreaB
     case AreaB
@@ -32,13 +33,13 @@ extension SelectedCommandSectionEnum: CustomStringConvertible {
     var description: String {
         switch self {
         case .FromStartToDoubleLoop:
-            "スタートからダブルループ直前まで"
+            return "スタートからダブルループ直前まで"
         case .FromAreaAToAreaB:
-            "エリアA開始からエリアB直前まで"
+            return "エリアA開始からエリアB直前まで"
         case .AreaB:
-            "エリアB開始からエリアB終了まで"
+            return "エリアB開始からエリアB終了まで"
         case .AreaABottom:
-            "エリアA下部"
+            return "エリアA下部"
         }
     }
 }

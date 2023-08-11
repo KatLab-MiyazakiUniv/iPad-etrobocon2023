@@ -64,6 +64,7 @@
 		ACA09F182A862236000D0871 /* SelectedCommandSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA09F172A862236000D0871 /* SelectedCommandSectionView.swift */; };
 		ACA09F1A2A862F82000D0871 /* SelectedCommandListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA09F192A862F82000D0871 /* SelectedCommandListView.swift */; };
 		ACA09F1C2A863945000D0871 /* SelectedCommandViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA09F1B2A863945000D0871 /* SelectedCommandViewModel.swift */; };
+		ACA09F1E2A865433000D0871 /* SelectSectionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA09F1D2A865433000D0871 /* SelectSectionListView.swift */; };
 		ACBA6FE92A84946400680A3B /* DistanceLineTraceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBA6FE82A84946400680A3B /* DistanceLineTraceCell.swift */; };
 		ACC550CF2A530A7000DDAC49 /* SegmentNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC550CE2A530A7000DDAC49 /* SegmentNames.swift */; };
 		ACC550D12A530D6400DDAC49 /* PulsatingCourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC550D02A530D6400DDAC49 /* PulsatingCourseView.swift */; };
@@ -136,6 +137,7 @@
 		ACA09F172A862236000D0871 /* SelectedCommandSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCommandSectionView.swift; sourceTree = "<group>"; };
 		ACA09F192A862F82000D0871 /* SelectedCommandListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCommandListView.swift; sourceTree = "<group>"; };
 		ACA09F1B2A863945000D0871 /* SelectedCommandViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCommandViewModel.swift; sourceTree = "<group>"; };
+		ACA09F1D2A865433000D0871 /* SelectSectionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSectionListView.swift; sourceTree = "<group>"; };
 		ACBA6FE82A84946400680A3B /* DistanceLineTraceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceLineTraceCell.swift; sourceTree = "<group>"; };
 		ACC550CE2A530A7000DDAC49 /* SegmentNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentNames.swift; sourceTree = "<group>"; };
 		ACC550D02A530D6400DDAC49 /* PulsatingCourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsatingCourseView.swift; sourceTree = "<group>"; };
@@ -326,6 +328,7 @@
 				ACE8CD832A7E4C1F003CF974 /* MotionCommandOptionCell.swift */,
 				AC0494552A7E7D9E0032FFF6 /* MotionCommandOptionList.swift */,
 				ACA02FA92A84C4D500329EF3 /* ListToSelectOneSection.swift */,
+				ACA09F1D2A865433000D0871 /* SelectSectionListView.swift */,
 				ACA09F132A8607EA000D0871 /* SelectedCommandViewInfo.swift */,
 				ACA09F192A862F82000D0871 /* SelectedCommandListView.swift */,
 				ACA09F172A862236000D0871 /* SelectedCommandSectionView.swift */,
@@ -460,6 +463,7 @@
 				AC720C0F2A52C41B00406BCB /* BlinkEffect.swift in Sources */,
 				AC3056232A5876A500BAC46F /* MachineTransmissionInfo.swift in Sources */,
 				AC9980232A7EB43E009C92CA /* LowerArm.swift in Sources */,
+				ACA09F1E2A865433000D0871 /* SelectSectionListView.swift in Sources */,
 				AC9980172A7EB0E0009C92CA /* ColorStraight.swift in Sources */,
 				AC6D14D92A52728600AADB04 /* RightBottomBlackCornerView.swift in Sources */,
 				AC49863F2A8618E0002F0E45 /* SortableVStack.swift in Sources */,
