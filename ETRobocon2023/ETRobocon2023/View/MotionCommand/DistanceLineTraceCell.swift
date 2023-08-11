@@ -20,7 +20,6 @@ struct DistanceLineTraceCell: View {
                 ParameterCellWithTextFieldView(inputText: $adjustment, parameterTitle: "輝度調整")
             } // HStack
             .padding(.bottom, SelectedCommandCellInfo().padding)
-//            .frame(width: selectedCommandCellWidth - 20)
 
             HStack(spacing: 0) {
                 ParameterCellWithTextFieldView(inputText: $targetDistance, parameterTitle: "P値")
@@ -30,12 +29,11 @@ struct DistanceLineTraceCell: View {
                 ParameterCellWithTextFieldView(inputText: $adjustment, parameterTitle: "D値")
             } // HStack
             .padding(.bottom, SelectedCommandCellInfo().padding)
-//            .frame(width: selectedCommandCellWidth - 20)
         } // VStack
         .frame(width: SelectedCommandCellInfo().selectedCommandCellWidth)
         .background(SelectedCommandCellInfo().selectedCommandCellBackground)
         .cornerRadius(SelectedCommandCellInfo().cornerRadius)
-    }
+    } // var body
 }
 
 extension DistanceLineTraceCell: SelectedCommandCell {}
