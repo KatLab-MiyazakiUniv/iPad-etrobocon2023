@@ -1,10 +1,3 @@
-//
-//  DistanceLineTraceCell.swift
-//  ETRobocon2023
-//
-//  Created by オナガ・ハルキ on 2023/08/10.
-//
-
 import SwiftUI
 
 struct DistanceLineTraceCell: View {
