@@ -8,10 +8,10 @@ struct ContentView: View {
 //        CourseMapAndListView()
 //        ButtonAndTerminalView()
 //        MotionCommandOptionList()
-//        CourseMapAndCommandView()
+        CourseMapAndCommandView()
 //        SelectedCommandList()
 //        ListToSelectOneSection()
-        DraggableVStack()
+//        DraggableVStack()
     }
 }
 
