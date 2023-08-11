@@ -10,7 +10,7 @@ struct DistanceLineTraceCell: View {
 
     var body: some View {
         VStack(spacing: 0) {
-            SelectedCommandTitleView(commandTitle: "DL", commandSubtitle: "指定距離ライントレース")
+            SelectedCommandTitleView(commandTitle: MotionCommandEnum.DL.rawValue, commandSubtitle: MotionCommandEnum.DL.description)
 
             HStack(spacing: 0) {
                 ParameterCellWithTextFieldView(inputText: $targetDistance, parameterTitle: "目標距離(mm)")
