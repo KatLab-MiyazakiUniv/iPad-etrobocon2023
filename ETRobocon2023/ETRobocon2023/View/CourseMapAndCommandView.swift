@@ -16,17 +16,25 @@ struct CourseMapAndCommandView: View {
     var body: some View {
         HStack {
             MotionCommandOptionList()
-            Spacer()
+            ZStack {
+                Rectangle()
+                    .frame(width: 560)
+                .foregroundStyle(.pink)
+
+                DistanceLineTraceCell()
+            }
             CourseView(isAnimating: $isAnimating, segment: $selection)
-                .scaleEffect(0.26)
-                .frame(width: 646,height: 980)
+                .scaleEffect(0.2)
+                .frame(width: 500,height: 980)
+                .background(.white)
         } // HStack
+        .background(.black)
     }
 }
 
 struct CourseMapAndCommandView_Previews: PreviewProvider {
     static var previews: some View {
         CourseMapAndCommandView()
-            .previewLayout(.fixed(width: 2732, height: 2048))
+            .previewLayout(.fixed(width: 1366, height: 1024))
     }
 }
