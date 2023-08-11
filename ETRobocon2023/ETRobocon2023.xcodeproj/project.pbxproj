@@ -63,6 +63,7 @@
 		ACA09F162A8611AC000D0871 /* SelectedCommandTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA09F152A8611AC000D0871 /* SelectedCommandTitleView.swift */; };
 		ACA09F182A862236000D0871 /* SelectedCommandSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA09F172A862236000D0871 /* SelectedCommandSectionView.swift */; };
 		ACA09F1A2A862F82000D0871 /* SelectedCommandListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA09F192A862F82000D0871 /* SelectedCommandListView.swift */; };
+		ACA09F1C2A863945000D0871 /* SelectedCommandViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA09F1B2A863945000D0871 /* SelectedCommandViewModel.swift */; };
 		ACBA6FE92A84946400680A3B /* DistanceLineTraceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBA6FE82A84946400680A3B /* DistanceLineTraceCell.swift */; };
 		ACC550CF2A530A7000DDAC49 /* SegmentNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC550CE2A530A7000DDAC49 /* SegmentNames.swift */; };
 		ACC550D12A530D6400DDAC49 /* PulsatingCourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC550D02A530D6400DDAC49 /* PulsatingCourseView.swift */; };
@@ -134,6 +135,7 @@
 		ACA09F152A8611AC000D0871 /* SelectedCommandTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCommandTitleView.swift; sourceTree = "<group>"; };
 		ACA09F172A862236000D0871 /* SelectedCommandSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCommandSectionView.swift; sourceTree = "<group>"; };
 		ACA09F192A862F82000D0871 /* SelectedCommandListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCommandListView.swift; sourceTree = "<group>"; };
+		ACA09F1B2A863945000D0871 /* SelectedCommandViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCommandViewModel.swift; sourceTree = "<group>"; };
 		ACBA6FE82A84946400680A3B /* DistanceLineTraceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceLineTraceCell.swift; sourceTree = "<group>"; };
 		ACC550CE2A530A7000DDAC49 /* SegmentNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentNames.swift; sourceTree = "<group>"; };
 		ACC550D02A530D6400DDAC49 /* PulsatingCourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsatingCourseView.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 			children = (
 				AC30562B2A59613600BAC46F /* FileSendViewModel.swift */,
 				AC30562D2A59670100BAC46F /* TerminalViewModel.swift */,
+				ACA09F1B2A863945000D0871 /* SelectedCommandViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -431,6 +434,7 @@
 				ACC550D12A530D6400DDAC49 /* PulsatingCourseView.swift in Sources */,
 				ACE8CD7C2A7E4848003CF974 /* MotionCommand.swift in Sources */,
 				ACA09F1A2A862F82000D0871 /* SelectedCommandListView.swift in Sources */,
+				ACA09F1C2A863945000D0871 /* SelectedCommandViewModel.swift in Sources */,
 				AC3056332A596B9000BAC46F /* ButtonAndTerminalView.swift in Sources */,
 				AC720C0C2A52AD5B00406BCB /* BlockDeTreasureView.swift in Sources */,
 				AC720C022A529F7C00406BCB /* BlockDeTreasureCircleView.swift in Sources */,

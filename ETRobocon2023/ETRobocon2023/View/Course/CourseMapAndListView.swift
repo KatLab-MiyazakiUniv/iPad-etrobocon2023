@@ -5,7 +5,7 @@ struct CourseMapAndListView: View {
     @State private var isAnimating = true
 
     // 点滅する区間
-    @State private var selection = SegmentNames.NONE
+    @State private var selection = SelectedCommandSectionEnum.FromStartToDoubleLoop
 
     var body: some View {
         HStack {
@@ -22,7 +22,7 @@ struct CourseMapAndListView: View {
                     )
             } // GeometryReader
 
-            SegmentNamesListView(selection: $selection)
+//            SegmentNamesListView(selection: $selection)
         } // HStack
     } // var body
 } // struct CourseMapAndListView

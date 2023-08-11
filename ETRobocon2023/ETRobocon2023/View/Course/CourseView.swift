@@ -5,8 +5,8 @@ struct CourseView: View {
     @Binding var isAnimating: Bool
 
     // 点滅する区間
-    @Binding var segment: SegmentNames
-    
+    @Binding var segment: SelectedCommandSectionEnum
+
     var body: some View {
         ZStack {
             StaticCourseView()
@@ -18,7 +18,7 @@ struct CourseView: View {
 
 struct CourseView_Previews: PreviewProvider {
     @State static var isAnimating = true
-    @State static var segment = SegmentNames.DoubleLoopExitBlackLineView
+    @State static var segment = SelectedCommandSectionEnum.FromStartToDoubleLoop
     static var previews: some View {
         CourseView(isAnimating: $isAnimating, segment: $segment)
             .scaleEffect(LCourseViewSize.previewScale)
