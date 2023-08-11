@@ -14,7 +14,7 @@ struct ParameterCellWithTextFieldView: View {
     var body: some View {
         VStack(spacing: 0) {
             Text(parameterTitle)
-                .font(.system(size: SelectedCommandCellInfo().parameterFontSize, weight: .bold))
+                .font(SelectedCommandCellInfo().parameterTitleFont)
                 .padding(.bottom, SelectedCommandCellInfo().halfPadding)
                 .padding(.top, SelectedCommandCellInfo().padding)
             TextField(parameterTitle, text: $inputText)

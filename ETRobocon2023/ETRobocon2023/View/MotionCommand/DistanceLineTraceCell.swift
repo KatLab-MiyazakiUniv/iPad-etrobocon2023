@@ -18,12 +18,15 @@ struct DistanceLineTraceCell: View {
     var body: some View {
         VStack(spacing: 0) {
             HStack(spacing: 0) {
-                Text("   DL")
-                    .font(.system(size: 23, weight: .bold))
-                Text("     指定距離ライントレース")
-                    .font(.system(size: 17, weight: .light))
+                Text("DL")
+                    .font(SelectedCommandCellInfo().commandTitleFont)
+                    .padding(.leading, SelectedCommandCellInfo().padding)
+                Text("指定距離ライントレース")
+                    .font(SelectedCommandCellInfo().commandSubTitleFont)
+                    .padding(.leading, SelectedCommandCellInfo().padding)
             }
-            .padding()
+            .padding(.top, SelectedCommandCellInfo().padding)
+            .padding(.bottom, SelectedCommandCellInfo().padding)
             .frame(width: selectedCommandCellWidth, alignment: .leading)
 
             HStack(spacing: 0) {
@@ -48,6 +51,7 @@ struct DistanceLineTraceCell: View {
         } // VStack
         .frame(width: SelectedCommandCellInfo().selectedCommandCellWidth)
         .background(SelectedCommandCellInfo().selectedCommandCellBackground)
+        .cornerRadius(SelectedCommandCellInfo().cornerRadius)
     }
 }
 

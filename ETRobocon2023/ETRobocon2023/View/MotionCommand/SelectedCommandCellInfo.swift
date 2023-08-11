@@ -18,8 +18,9 @@ struct SelectedCommandCellInfo {
         parameterCellWidth - padding*2
     }
 
-    let commandFontSize: CGFloat = 23
-    let parameterFontSize: CGFloat = 17
+    let commandTitleFont: Font = .system(size: 23, weight: .bold)
+    let commandSubTitleFont: Font = .system(size: 17, weight: .light)
+    let parameterTitleFont: Font = .system(size: 17, weight: .bold)
 
     let selectedCommandCellBackground = Color(red: 0.92, green: 0.92, blue: 0.92)
     let parameterCellBackground: Color = .white
