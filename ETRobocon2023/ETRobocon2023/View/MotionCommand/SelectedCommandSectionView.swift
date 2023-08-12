@@ -5,7 +5,6 @@ struct SelectedCommandSectionView: View {
     @Binding var motionCommands: [MotionCommand]
     let sectionTitle: String
     let isSelected: Bool
-//    let onUpdate: (CGFloat) -> Void
 
     var body: some View {
         VStack(spacing: SelectedCommandViewInfo().halfPadding) {
@@ -24,13 +23,6 @@ struct SelectedCommandSectionView: View {
         .background(SelectedCommandViewInfo().parameterCellBackground)
         .cornerRadius(SelectedCommandViewInfo().cornerRadius)
         .opacity(isSelected ? 1.0 : 0.3)
-//        .background(GeometryReader { geometry in
-//            Color.clear.onReceive(Just(geometry.frame(in: .global).minY)) { minY in
-//                DispatchQueue.main.async {
-//                    onUpdate(minY)
-//                }
-//            }
-//        })
     }
 }
 

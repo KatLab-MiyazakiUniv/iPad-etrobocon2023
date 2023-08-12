@@ -46,7 +46,6 @@
 		AC720C0F2A52C41B00406BCB /* BlinkEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC720C0E2A52C41B00406BCB /* BlinkEffect.swift */; };
 		AC720C112A52EA9E00406BCB /* PulsatingLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC720C102A52EA9E00406BCB /* PulsatingLineView.swift */; };
 		AC9980252A7EBEF0009C92CA /* CourseMapAndCommandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9980242A7EBEF0009C92CA /* CourseMapAndCommandView.swift */; };
-		ACA02FAA2A84C4D500329EF3 /* ListToSelectOneSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA02FA92A84C4D500329EF3 /* ListToSelectOneSection.swift */; };
 		ACA09F0E2A84F3C2000D0871 /* SelectedCommandCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA09F0D2A84F3C2000D0871 /* SelectedCommandCell.swift */; };
 		ACA09F102A8606A8000D0871 /* ParameterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA09F0F2A8606A8000D0871 /* ParameterCell.swift */; };
 		ACA09F122A8606C1000D0871 /* ParameterCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA09F112A8606C1000D0871 /* ParameterCellView.swift */; };
@@ -108,7 +107,6 @@
 		AC720C0E2A52C41B00406BCB /* BlinkEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlinkEffect.swift; sourceTree = "<group>"; };
 		AC720C102A52EA9E00406BCB /* PulsatingLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsatingLineView.swift; sourceTree = "<group>"; };
 		AC9980242A7EBEF0009C92CA /* CourseMapAndCommandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseMapAndCommandView.swift; sourceTree = "<group>"; };
-		ACA02FA92A84C4D500329EF3 /* ListToSelectOneSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListToSelectOneSection.swift; sourceTree = "<group>"; };
 		ACA09F0D2A84F3C2000D0871 /* SelectedCommandCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCommandCell.swift; sourceTree = "<group>"; };
 		ACA09F0F2A8606A8000D0871 /* ParameterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterCell.swift; sourceTree = "<group>"; };
 		ACA09F112A8606C1000D0871 /* ParameterCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterCellView.swift; sourceTree = "<group>"; };
@@ -306,7 +304,6 @@
 			children = (
 				ACE8CD832A7E4C1F003CF974 /* MotionCommandOptionCell.swift */,
 				AC0494552A7E7D9E0032FFF6 /* MotionCommandOptionList.swift */,
-				ACA02FA92A84C4D500329EF3 /* ListToSelectOneSection.swift */,
 				ACA09F1D2A865433000D0871 /* SelectSectionListView.swift */,
 				ACA09F132A8607EA000D0871 /* SelectedCommandViewInfo.swift */,
 				ACA09F192A862F82000D0871 /* SelectedCommandListView.swift */,
@@ -424,7 +421,6 @@
 				ACA09F122A8606C1000D0871 /* ParameterCellView.swift in Sources */,
 				AC6D14BD2A50528C00AADB04 /* ETRobocon2023App.swift in Sources */,
 				ACE8CD842A7E4C1F003CF974 /* MotionCommandOptionCell.swift in Sources */,
-				ACA02FAA2A84C4D500329EF3 /* ListToSelectOneSection.swift in Sources */,
 				AC3056252A59526100BAC46F /* WhichMachine.swift in Sources */,
 				AC6D14D72A52712B00AADB04 /* RightBlackStraightLineView.swift in Sources */,
 				AC6D14D02A51D58000AADB04 /* LCourseViewSize.swift in Sources */,

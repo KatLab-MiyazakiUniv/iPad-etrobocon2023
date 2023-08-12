@@ -1,10 +1,3 @@
-//
-//  SelectedCommandListView.swift
-//  ETRobocon2023
-//
-//  Created by オナガ・ハルキ on 2023/08/11.
-//
-
 import SwiftUI
 
 struct SelectedCommandListView: View {
