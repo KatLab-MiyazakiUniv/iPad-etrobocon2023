@@ -20,6 +20,9 @@ struct SelectedCommandSectionView: View {
                 case .CL:
                     ColorLineTraceCell(motionCommand: $motionCommand)
                         .padding(.top, SelectedCommandViewInfo().halfPadding)
+                case .AR:
+                    SpecifiedAngleTurningCell(motionCommand: $motionCommand)
+                        .padding(.top, SelectedCommandViewInfo().halfPadding)
                 default:
                     DistanceLineTraceCell(motionCommand: $motionCommand)
                         .padding(.top, SelectedCommandViewInfo().halfPadding)

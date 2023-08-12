@@ -26,6 +26,8 @@
 		AC49863F2A8618E0002F0E45 /* SortableVStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC49863E2A8618E0002F0E45 /* SortableVStack.swift */; };
 		AC4986412A8773C7002F0E45 /* ColorLineTraceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4986402A8773C7002F0E45 /* ColorLineTraceCell.swift */; };
 		AC4986432A877B29002F0E45 /* ColorParameterCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4986422A877B29002F0E45 /* ColorParameterCellView.swift */; };
+		AC4986452A87851C002F0E45 /* LOrRParameterCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4986442A87851C002F0E45 /* LOrRParameterCellView.swift */; };
+		AC4986472A8786A0002F0E45 /* SpecifiedAngleTurningCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4986462A8786A0002F0E45 /* SpecifiedAngleTurningCell.swift */; };
 		AC6D14BD2A50528C00AADB04 /* ETRobocon2023App.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D14BC2A50528C00AADB04 /* ETRobocon2023App.swift */; };
 		AC6D14BF2A50528C00AADB04 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D14BE2A50528C00AADB04 /* ContentView.swift */; };
 		AC6D14C12A50528E00AADB04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC6D14C02A50528E00AADB04 /* Assets.xcassets */; };
@@ -60,6 +62,7 @@
 		ACA09F212A876CFE000D0871 /* IntParameterCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA09F202A876CFE000D0871 /* IntParameterCellView.swift */; };
 		ACA09F232A8771C7000D0871 /* FloatParameterCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA09F222A8771C7000D0871 /* FloatParameterCellView.swift */; };
 		ACA09F252A8778E8000D0871 /* TargetColorEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA09F242A8778E8000D0871 /* TargetColorEnum.swift */; };
+		ACA09F272A87849B000D0871 /* LeftOrRightEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA09F262A87849B000D0871 /* LeftOrRightEnum.swift */; };
 		ACBA6FE92A84946400680A3B /* DistanceLineTraceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBA6FE82A84946400680A3B /* DistanceLineTraceCell.swift */; };
 		ACC550CF2A530A7000DDAC49 /* SegmentNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC550CE2A530A7000DDAC49 /* SegmentNames.swift */; };
 		ACC550D12A530D6400DDAC49 /* PulsatingCourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC550D02A530D6400DDAC49 /* PulsatingCourseView.swift */; };
@@ -91,6 +94,8 @@
 		AC49863E2A8618E0002F0E45 /* SortableVStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortableVStack.swift; sourceTree = "<group>"; };
 		AC4986402A8773C7002F0E45 /* ColorLineTraceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorLineTraceCell.swift; sourceTree = "<group>"; };
 		AC4986422A877B29002F0E45 /* ColorParameterCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorParameterCellView.swift; sourceTree = "<group>"; };
+		AC4986442A87851C002F0E45 /* LOrRParameterCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LOrRParameterCellView.swift; sourceTree = "<group>"; };
+		AC4986462A8786A0002F0E45 /* SpecifiedAngleTurningCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecifiedAngleTurningCell.swift; sourceTree = "<group>"; };
 		AC6D14B92A50528C00AADB04 /* ETRobocon2023.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ETRobocon2023.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC6D14BC2A50528C00AADB04 /* ETRobocon2023App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETRobocon2023App.swift; sourceTree = "<group>"; };
 		AC6D14BE2A50528C00AADB04 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -126,6 +131,7 @@
 		ACA09F202A876CFE000D0871 /* IntParameterCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntParameterCellView.swift; sourceTree = "<group>"; };
 		ACA09F222A8771C7000D0871 /* FloatParameterCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatParameterCellView.swift; sourceTree = "<group>"; };
 		ACA09F242A8778E8000D0871 /* TargetColorEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetColorEnum.swift; sourceTree = "<group>"; };
+		ACA09F262A87849B000D0871 /* LeftOrRightEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftOrRightEnum.swift; sourceTree = "<group>"; };
 		ACBA6FE82A84946400680A3B /* DistanceLineTraceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceLineTraceCell.swift; sourceTree = "<group>"; };
 		ACC550CE2A530A7000DDAC49 /* SegmentNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentNames.swift; sourceTree = "<group>"; };
 		ACC550D02A530D6400DDAC49 /* PulsatingCourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsatingCourseView.swift; sourceTree = "<group>"; };
@@ -298,8 +304,10 @@
 				ACA09F202A876CFE000D0871 /* IntParameterCellView.swift */,
 				ACA09F222A8771C7000D0871 /* FloatParameterCellView.swift */,
 				AC4986422A877B29002F0E45 /* ColorParameterCellView.swift */,
+				AC4986442A87851C002F0E45 /* LOrRParameterCellView.swift */,
 				ACBA6FE82A84946400680A3B /* DistanceLineTraceCell.swift */,
 				AC4986402A8773C7002F0E45 /* ColorLineTraceCell.swift */,
+				AC4986462A8786A0002F0E45 /* SpecifiedAngleTurningCell.swift */,
 			);
 			path = SelectedCommandCell;
 			sourceTree = "<group>";
@@ -310,6 +318,7 @@
 				ACE8CD7B2A7E4848003CF974 /* MotionCommand.swift */,
 				ACE8CD7D2A7E48C6003CF974 /* MotionCommandEnum.swift */,
 				ACA09F242A8778E8000D0871 /* TargetColorEnum.swift */,
+				ACA09F262A87849B000D0871 /* LeftOrRightEnum.swift */,
 			);
 			path = MotionCommand;
 			sourceTree = "<group>";
@@ -423,6 +432,8 @@
 				AC392C7D2A528E50003A5C88 /* AreaAView.swift in Sources */,
 				ACC550D12A530D6400DDAC49 /* PulsatingCourseView.swift in Sources */,
 				ACE8CD7C2A7E4848003CF974 /* MotionCommand.swift in Sources */,
+				AC4986452A87851C002F0E45 /* LOrRParameterCellView.swift in Sources */,
+				AC4986472A8786A0002F0E45 /* SpecifiedAngleTurningCell.swift in Sources */,
 				ACA09F1A2A862F82000D0871 /* SelectedCommandListView.swift in Sources */,
 				ACA09F1C2A863945000D0871 /* SelectedCommandViewModel.swift in Sources */,
 				AC3056332A596B9000BAC46F /* ButtonAndTerminalView.swift in Sources */,
@@ -443,6 +454,7 @@
 				AC3056252A59526100BAC46F /* WhichMachine.swift in Sources */,
 				AC6D14D72A52712B00AADB04 /* RightBlackStraightLineView.swift in Sources */,
 				AC6D14D02A51D58000AADB04 /* LCourseViewSize.swift in Sources */,
+				ACA09F272A87849B000D0871 /* LeftOrRightEnum.swift in Sources */,
 				AC720C0F2A52C41B00406BCB /* BlinkEffect.swift in Sources */,
 				AC3056232A5876A500BAC46F /* MachineTransmissionInfo.swift in Sources */,
 				AC4986432A877B29002F0E45 /* ColorParameterCellView.swift in Sources */,

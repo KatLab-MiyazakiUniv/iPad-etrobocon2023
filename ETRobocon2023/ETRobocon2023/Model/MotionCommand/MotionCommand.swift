@@ -6,9 +6,11 @@ struct MotionCommand: Identifiable {
     
     var targetDistance: Float = 0
     var targetColor = TargetColorEnum.Black
+    var targetAngle = 0
     var targetSpeed: Float = 0
     var adjustment = 0
     var pValue: Float = 0
     var iValue: Float = 0
     var dValue: Float = 0
+    var directionOfRotation = LeftOrRightEnum.Left
 }
