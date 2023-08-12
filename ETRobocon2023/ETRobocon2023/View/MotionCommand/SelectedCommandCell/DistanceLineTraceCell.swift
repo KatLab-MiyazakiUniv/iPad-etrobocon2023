@@ -12,16 +12,16 @@ struct DistanceLineTraceCell: View {
                 ParameterCellWithTextFieldView(inputText: $motionCommand.targetSpeed, parameterTitle: "目標速度(mm/s)")
                     .padding(.leading, SelectedCommandViewInfo().padding)
                     .padding(.trailing, SelectedCommandViewInfo().padding)
-                ParameterCellWithTextFieldView(inputText: $motionCommand.adjustment, parameterTitle: "輝度調整")
+                IntParameterCellView(inputNumber: $motionCommand.adjustment, parameterTitle: "輝度調整")
             } // HStack
             .padding(.bottom, SelectedCommandViewInfo().padding)
 
             HStack(spacing: 0) {
-                ParameterCellWithTextFieldView(inputText: $motionCommand.targetDistance, parameterTitle: "P値")
-                ParameterCellWithTextFieldView(inputText: $motionCommand.targetSpeed, parameterTitle: "I値")
+                ParameterCellWithTextFieldView(inputText: $motionCommand.pValue, parameterTitle: "P値")
+                ParameterCellWithTextFieldView(inputText: $motionCommand.iValue, parameterTitle: "I値")
                     .padding(.leading, SelectedCommandViewInfo().padding)
                     .padding(.trailing, SelectedCommandViewInfo().padding)
-                ParameterCellWithTextFieldView(inputText: $motionCommand.adjustment, parameterTitle: "D値")
+                ParameterCellWithTextFieldView(inputText: $motionCommand.dValue, parameterTitle: "D値")
             } // HStack
             .padding(.bottom, SelectedCommandViewInfo().padding)
         } // VStack

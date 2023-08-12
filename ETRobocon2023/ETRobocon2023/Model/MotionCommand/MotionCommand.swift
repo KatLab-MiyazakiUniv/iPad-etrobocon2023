@@ -6,7 +6,7 @@ struct MotionCommand: Identifiable {
     
     var targetDistance = ""
     var targetSpeed = ""
-    var adjustment = ""
+    var adjustment = 0
     var pValue = ""
     var iValue = ""
     var dValue = ""
