@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct DistanceLineTraceCell: View {
+struct ColorLineTraceCell: View {
     @Binding var motionCommand: MotionCommand
 
     var body: some View {
@@ -9,7 +9,9 @@ struct DistanceLineTraceCell: View {
                                      commandSubtitle: motionCommand.command.description)
 
             HStack(spacing: 0) {
-                FloatParameterCellView(inputNumber: $motionCommand.targetDistance, parameterTitle: "目標距離(mm)")
+//                FloatParameterCellView(inputNumber: $motionCommand.targetDistance, parameterTitle: "目標色")
+                ColorParameterCellView(selectedColor: $motionCommand.targetColor, parameterTitle: "目標色")
+                    
                 FloatParameterCellView(inputNumber: $motionCommand.targetSpeed, parameterTitle: "目標速度(mm/s)")
                     .padding(.leading, SelectedCommandViewInfo().padding)
                     .padding(.trailing, SelectedCommandViewInfo().padding)
@@ -32,12 +34,12 @@ struct DistanceLineTraceCell: View {
     } // var body
 }
 
-extension DistanceLineTraceCell: SelectedCommandCell {}
+extension ColorLineTraceCell: SelectedCommandCell {}
 
-struct DistanceLineTraceCell_Previews: PreviewProvider {
-    @State static var motionCommand = MotionCommand(command: .DL)
+struct ColorLineTraceCell_Previews: PreviewProvider {
+    @State static var motionCommand = MotionCommand(command: .CL)
     static var previews: some View {
-        DistanceLineTraceCell(motionCommand: $motionCommand)
+        ColorLineTraceCell(motionCommand: $motionCommand)
             .previewLayout(.fixed(width: 550, height: 400))
     }
 }

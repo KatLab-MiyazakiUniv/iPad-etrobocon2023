@@ -13,8 +13,17 @@ struct SelectedCommandSectionView: View {
                 .padding(.top, SelectedCommandViewInfo().padding)
 
             ForEach($motionCommands) { $motionCommand in
-                DistanceLineTraceCell(motionCommand: $motionCommand)
-                    .padding(.top, SelectedCommandViewInfo().halfPadding)
+                switch motionCommand.command {
+                case .DL:
+                    DistanceLineTraceCell(motionCommand: $motionCommand)
+                        .padding(.top, SelectedCommandViewInfo().halfPadding)
+                case .CL:
+                    ColorLineTraceCell(motionCommand: $motionCommand)
+                        .padding(.top, SelectedCommandViewInfo().halfPadding)
+                default:
+                    DistanceLineTraceCell(motionCommand: $motionCommand)
+                        .padding(.top, SelectedCommandViewInfo().halfPadding)
+                }
             }
             .frame(width: SelectedCommandViewInfo().selectedCommandSectionWidth)
         }

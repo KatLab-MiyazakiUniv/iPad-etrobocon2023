@@ -24,6 +24,8 @@
 		AC392C832A529CE6003A5C88 /* DoubleLoopEntranceBlueStraightLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC392C822A529CE6003A5C88 /* DoubleLoopEntranceBlueStraightLineView.swift */; };
 		AC392C852A529E17003A5C88 /* DoubleLoopEntranceBlueCurveLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC392C842A529E17003A5C88 /* DoubleLoopEntranceBlueCurveLineView.swift */; };
 		AC49863F2A8618E0002F0E45 /* SortableVStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC49863E2A8618E0002F0E45 /* SortableVStack.swift */; };
+		AC4986412A8773C7002F0E45 /* ColorLineTraceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4986402A8773C7002F0E45 /* ColorLineTraceCell.swift */; };
+		AC4986432A877B29002F0E45 /* ColorParameterCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4986422A877B29002F0E45 /* ColorParameterCellView.swift */; };
 		AC6D14BD2A50528C00AADB04 /* ETRobocon2023App.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D14BC2A50528C00AADB04 /* ETRobocon2023App.swift */; };
 		AC6D14BF2A50528C00AADB04 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D14BE2A50528C00AADB04 /* ContentView.swift */; };
 		AC6D14C12A50528E00AADB04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC6D14C02A50528E00AADB04 /* Assets.xcassets */; };
@@ -57,6 +59,7 @@
 		ACA09F1E2A865433000D0871 /* SelectSectionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA09F1D2A865433000D0871 /* SelectSectionListView.swift */; };
 		ACA09F212A876CFE000D0871 /* IntParameterCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA09F202A876CFE000D0871 /* IntParameterCellView.swift */; };
 		ACA09F232A8771C7000D0871 /* FloatParameterCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA09F222A8771C7000D0871 /* FloatParameterCellView.swift */; };
+		ACA09F252A8778E8000D0871 /* TargetColorEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA09F242A8778E8000D0871 /* TargetColorEnum.swift */; };
 		ACBA6FE92A84946400680A3B /* DistanceLineTraceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBA6FE82A84946400680A3B /* DistanceLineTraceCell.swift */; };
 		ACC550CF2A530A7000DDAC49 /* SegmentNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC550CE2A530A7000DDAC49 /* SegmentNames.swift */; };
 		ACC550D12A530D6400DDAC49 /* PulsatingCourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC550D02A530D6400DDAC49 /* PulsatingCourseView.swift */; };
@@ -86,6 +89,8 @@
 		AC392C822A529CE6003A5C88 /* DoubleLoopEntranceBlueStraightLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleLoopEntranceBlueStraightLineView.swift; sourceTree = "<group>"; };
 		AC392C842A529E17003A5C88 /* DoubleLoopEntranceBlueCurveLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleLoopEntranceBlueCurveLineView.swift; sourceTree = "<group>"; };
 		AC49863E2A8618E0002F0E45 /* SortableVStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortableVStack.swift; sourceTree = "<group>"; };
+		AC4986402A8773C7002F0E45 /* ColorLineTraceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorLineTraceCell.swift; sourceTree = "<group>"; };
+		AC4986422A877B29002F0E45 /* ColorParameterCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorParameterCellView.swift; sourceTree = "<group>"; };
 		AC6D14B92A50528C00AADB04 /* ETRobocon2023.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ETRobocon2023.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC6D14BC2A50528C00AADB04 /* ETRobocon2023App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETRobocon2023App.swift; sourceTree = "<group>"; };
 		AC6D14BE2A50528C00AADB04 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -120,6 +125,7 @@
 		ACA09F1D2A865433000D0871 /* SelectSectionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSectionListView.swift; sourceTree = "<group>"; };
 		ACA09F202A876CFE000D0871 /* IntParameterCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntParameterCellView.swift; sourceTree = "<group>"; };
 		ACA09F222A8771C7000D0871 /* FloatParameterCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatParameterCellView.swift; sourceTree = "<group>"; };
+		ACA09F242A8778E8000D0871 /* TargetColorEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetColorEnum.swift; sourceTree = "<group>"; };
 		ACBA6FE82A84946400680A3B /* DistanceLineTraceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceLineTraceCell.swift; sourceTree = "<group>"; };
 		ACC550CE2A530A7000DDAC49 /* SegmentNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentNames.swift; sourceTree = "<group>"; };
 		ACC550D02A530D6400DDAC49 /* PulsatingCourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsatingCourseView.swift; sourceTree = "<group>"; };
@@ -291,7 +297,9 @@
 				ACA09F112A8606C1000D0871 /* ParameterCellWithTextFieldView.swift */,
 				ACA09F202A876CFE000D0871 /* IntParameterCellView.swift */,
 				ACA09F222A8771C7000D0871 /* FloatParameterCellView.swift */,
+				AC4986422A877B29002F0E45 /* ColorParameterCellView.swift */,
 				ACBA6FE82A84946400680A3B /* DistanceLineTraceCell.swift */,
+				AC4986402A8773C7002F0E45 /* ColorLineTraceCell.swift */,
 			);
 			path = SelectedCommandCell;
 			sourceTree = "<group>";
@@ -301,6 +309,7 @@
 			children = (
 				ACE8CD7B2A7E4848003CF974 /* MotionCommand.swift */,
 				ACE8CD7D2A7E48C6003CF974 /* MotionCommandEnum.swift */,
+				ACA09F242A8778E8000D0871 /* TargetColorEnum.swift */,
 			);
 			path = MotionCommand;
 			sourceTree = "<group>";
@@ -397,6 +406,7 @@
 				ACA09F182A862236000D0871 /* SelectedCommandSectionView.swift in Sources */,
 				AC6D14CE2A51D32100AADB04 /* LCourseSize.swift in Sources */,
 				ACA09F102A8606A8000D0871 /* ParameterCell.swift in Sources */,
+				AC4986412A8773C7002F0E45 /* ColorLineTraceCell.swift in Sources */,
 				ACA09F212A876CFE000D0871 /* IntParameterCellView.swift in Sources */,
 				ACE8CD7E2A7E48C6003CF974 /* MotionCommandEnum.swift in Sources */,
 				AC720C112A52EA9E00406BCB /* PulsatingLineView.swift in Sources */,
@@ -407,6 +417,7 @@
 				AC6D14D32A51D9B500AADB04 /* CourseView.swift in Sources */,
 				AC720C0A2A52A95500406BCB /* BlockDeTreasureVerticalLinesView.swift in Sources */,
 				AC30562E2A59670100BAC46F /* TerminalViewModel.swift in Sources */,
+				ACA09F252A8778E8000D0871 /* TargetColorEnum.swift in Sources */,
 				AC392C7F2A5299A4003A5C88 /* AreaBView.swift in Sources */,
 				ACA09F232A8771C7000D0871 /* FloatParameterCellView.swift in Sources */,
 				AC392C7D2A528E50003A5C88 /* AreaAView.swift in Sources */,
@@ -434,6 +445,7 @@
 				AC6D14D02A51D58000AADB04 /* LCourseViewSize.swift in Sources */,
 				AC720C0F2A52C41B00406BCB /* BlinkEffect.swift in Sources */,
 				AC3056232A5876A500BAC46F /* MachineTransmissionInfo.swift in Sources */,
+				AC4986432A877B29002F0E45 /* ColorParameterCellView.swift in Sources */,
 				ACA09F1E2A865433000D0871 /* SelectSectionListView.swift in Sources */,
 				AC6D14D92A52728600AADB04 /* RightBottomBlackCornerView.swift in Sources */,
 				AC49863F2A8618E0002F0E45 /* SortableVStack.swift in Sources */,

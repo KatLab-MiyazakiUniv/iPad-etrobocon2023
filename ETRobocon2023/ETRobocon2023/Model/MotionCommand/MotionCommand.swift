@@ -5,6 +5,7 @@ struct MotionCommand: Identifiable {
     let command: MotionCommandEnum
     
     var targetDistance: Float = 0
+    var targetColor = TargetColorEnum.Black
     var targetSpeed: Float = 0
     var adjustment = 0
     var pValue: Float = 0
