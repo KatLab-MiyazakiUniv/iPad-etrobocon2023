@@ -15,26 +15,41 @@ struct SelectedCommandListView: View {
 
     var body: some View {
         ScrollView(.vertical, showsIndicators: true) {
-            SelectedCommandSectionView(motionCommands: $viewModel.fromStartToDoubleLoopCommands, sectionTitle: SelectedCommandSectionEnum.FromStartToDoubleLoop.description, isSelected: viewModel.isSelectedSection == .FromStartToDoubleLoop, onUpdate: { offset in
+            SelectedCommandSectionView(motionCommands: $viewModel.fromStartToDoubleLoopCommands,
+                                       sectionTitle: SelectedCommandSectionEnum.FromStartToDoubleLoop.description,
+                                       isSelected: viewModel.isSelectedSection == .FromStartToDoubleLoop,
+                                       onUpdate: { offset in
                 sectionTopPositions[.FromStartToDoubleLoop] = offset
                 updateSelectedSection()
             })
-                .padding(.bottom, SelectedCommandViewInfo().padding*3)
-            SelectedCommandSectionView(motionCommands: $viewModel.fromAreaAToAreaBCommands, sectionTitle: SelectedCommandSectionEnum.FromAreaAToAreaB.description, isSelected: viewModel.isSelectedSection == .FromAreaAToAreaB, onUpdate: { offset in
+            .padding(.bottom, SelectedCommandViewInfo().padding*3)
+
+            SelectedCommandSectionView(motionCommands: $viewModel.fromAreaAToAreaBCommands,
+                                       sectionTitle: SelectedCommandSectionEnum.FromAreaAToAreaB.description,
+                                       isSelected: viewModel.isSelectedSection == .FromAreaAToAreaB,
+                                       onUpdate: { offset in
                 sectionTopPositions[.FromAreaAToAreaB] = offset
                 updateSelectedSection()
             })
-                .padding(.bottom, SelectedCommandViewInfo().padding*3)
-            SelectedCommandSectionView(motionCommands: $viewModel.areaBCommands, sectionTitle: SelectedCommandSectionEnum.AreaB.description, isSelected: viewModel.isSelectedSection == .AreaB, onUpdate: { offset in
+            .padding(.bottom, SelectedCommandViewInfo().padding*3)
+
+            SelectedCommandSectionView(motionCommands: $viewModel.areaBCommands,
+                                       sectionTitle: SelectedCommandSectionEnum.AreaB.description,
+                                       isSelected: viewModel.isSelectedSection == .AreaB,
+                                       onUpdate: { offset in
                 sectionTopPositions[.AreaB] = offset
                 updateSelectedSection()
             })
-                .padding(.bottom, SelectedCommandViewInfo().padding*3)
-            SelectedCommandSectionView(motionCommands: $viewModel.areaABottomCommands, sectionTitle: SelectedCommandSectionEnum.AreaABottom.description, isSelected: viewModel.isSelectedSection == .AreaABottom, onUpdate: { offset in
+            .padding(.bottom, SelectedCommandViewInfo().padding*3)
+            
+            SelectedCommandSectionView(motionCommands: $viewModel.areaABottomCommands,
+                                       sectionTitle: SelectedCommandSectionEnum.AreaABottom.description,
+                                       isSelected: viewModel.isSelectedSection == .AreaABottom,
+                                       onUpdate: { offset in
                 sectionTopPositions[.AreaABottom] = offset
                 updateSelectedSection()
             })
-                .padding(.bottom, SelectedCommandViewInfo().padding*3)
+            .padding(.bottom, SelectedCommandViewInfo().padding*3)
 //            Color.clear.frame(height: dummyViewHeight)
         }
         .frame(width: SelectedCommandViewInfo().selectedCommandListWidth)
