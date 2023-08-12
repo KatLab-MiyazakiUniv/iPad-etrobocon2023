@@ -5,7 +5,7 @@ struct SelectedCommandSectionView: View {
     @Binding var motionCommands: [MotionCommand]
     let sectionTitle: String
     let isSelected: Bool
-    let onUpdate: (CGFloat) -> Void
+//    let onUpdate: (CGFloat) -> Void
 
     var body: some View {
         VStack(spacing: SelectedCommandViewInfo().halfPadding) {
@@ -24,13 +24,13 @@ struct SelectedCommandSectionView: View {
         .background(SelectedCommandViewInfo().parameterCellBackground)
         .cornerRadius(SelectedCommandViewInfo().cornerRadius)
         .opacity(isSelected ? 1.0 : 0.3)
-        .background(GeometryReader { geometry in
-            Color.clear.onReceive(Just(geometry.frame(in: .global).minY)) { minY in
-                DispatchQueue.main.async {
-                    onUpdate(minY)
-                }
-            }
-        })
+//        .background(GeometryReader { geometry in
+//            Color.clear.onReceive(Just(geometry.frame(in: .global).minY)) { minY in
+//                DispatchQueue.main.async {
+//                    onUpdate(minY)
+//                }
+//            }
+//        })
     }
 }
 
@@ -48,9 +48,7 @@ struct SelectedCommandSectionView_Previews: PreviewProvider {
                                                          MotionCommand(command: .XR),
     ]
     static var previews: some View {
-        SelectedCommandSectionView(motionCommands: $motionCommands, sectionTitle: "スタートからダブルループ直前まで", isSelected: true, onUpdate: { offset in
-
-        })
+        SelectedCommandSectionView(motionCommands: $motionCommands, sectionTitle: "スタートからダブルループ直前まで", isSelected: true)
             .previewLayout(.fixed(width: 700, height: 4000))
     }
 }
