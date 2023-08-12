@@ -2,12 +2,12 @@ import Foundation
 
 class SelectedCommandViewModel: ObservableObject {
     @Published var isSelectedSection: SelectedCommandSectionEnum? = .FromStartToDoubleLoop
-    @Published var fromStartToDoubleLoopCommands: [any MotionCommand] = []
-    @Published var fromAreaAToAreaBCommands: [any MotionCommand] = []
-    @Published var areaBCommands: [any MotionCommand] = []
-    @Published var areaABottomCommands: [any MotionCommand] = []
+    @Published var fromStartToDoubleLoopCommands: [MotionCommand] = []
+    @Published var fromAreaAToAreaBCommands: [MotionCommand] = []
+    @Published var areaBCommands: [MotionCommand] = []
+    @Published var areaABottomCommands: [MotionCommand] = []
 
-    func addSelectedCommand(_ command: any MotionCommand) {
+    func addSelectedCommand(_ command: MotionCommand) {
         guard let section = isSelectedSection else { return }
         switch section {
         case .FromStartToDoubleLoop:

@@ -1,12 +1,13 @@
 import Foundation
 
-protocol MotionCommand: Identifiable {
-    var command: MotionCommandEnum { get }
-    var processingDetail: String { get }
-}
-
-extension MotionCommand {
-    var id: UUID {
-        UUID()
-    }
+struct MotionCommand: Identifiable {
+    var id = UUID()
+    let command: MotionCommandEnum
+    
+    var targetDistance = ""
+    var targetSpeed = ""
+    var adjustment = ""
+    var pValue = ""
+    var iValue = ""
+    var dValue = ""
 }

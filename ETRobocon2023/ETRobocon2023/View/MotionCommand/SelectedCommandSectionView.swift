@@ -2,8 +2,7 @@ import SwiftUI
 import Combine
 
 struct SelectedCommandSectionView: View {
-//    @State var motionCommands: [any MotionCommand] = Array(repeating: DistanceLineTrace(), count: 10)
-    @Binding var motionCommands: [any MotionCommand]
+    @Binding var motionCommands: [MotionCommand]
     let sectionTitle: String
     let isSelected: Bool
     let onUpdate: (CGFloat) -> Void
@@ -14,15 +13,14 @@ struct SelectedCommandSectionView: View {
                 .font(SelectedCommandViewInfo().commandTitleFont)
                 .padding(.top, SelectedCommandViewInfo().padding)
 
-            ForEach(motionCommands, id: \.id) { motionCommand in
-                DistanceLineTraceCell()
+            ForEach($motionCommands) { $motionCommand in
+                DistanceLineTraceCell(motionCommand: $motionCommand)
                     .padding(.top, SelectedCommandViewInfo().halfPadding)
             }
             .frame(width: SelectedCommandViewInfo().selectedCommandSectionWidth)
         }
         .padding(.bottom, SelectedCommandViewInfo().padding)
         .frame(width: SelectedCommandViewInfo().selectedCommandSectionWidth)
-//        .frame(minHeight: 400)
         .background(SelectedCommandViewInfo().parameterCellBackground)
         .cornerRadius(SelectedCommandViewInfo().cornerRadius)
         .opacity(isSelected ? 1.0 : 0.3)
@@ -37,7 +35,18 @@ struct SelectedCommandSectionView: View {
 }
 
 struct SelectedCommandSectionView_Previews: PreviewProvider {
-    @State static var motionCommands: [any MotionCommand] = Array(repeating: DistanceLineTrace(), count: 10)
+    @State static var motionCommands: [MotionCommand] = [MotionCommand(command: .DL),
+                                                         MotionCommand(command: .CL),
+                                                         MotionCommand(command: .DS),
+                                                         MotionCommand(command: .CS),
+                                                         MotionCommand(command: .AR),
+                                                         MotionCommand(command: .DT),
+                                                         MotionCommand(command: .EC),
+                                                         MotionCommand(command: .SL),
+                                                         MotionCommand(command: .AU),
+                                                         MotionCommand(command: .AD),
+                                                         MotionCommand(command: .XR),
+    ]
     static var previews: some View {
         SelectedCommandSectionView(motionCommands: $motionCommands, sectionTitle: "スタートからダブルループ直前まで", isSelected: true, onUpdate: { offset in
 

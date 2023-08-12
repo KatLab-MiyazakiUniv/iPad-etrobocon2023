@@ -1,19 +1,19 @@
 import SwiftUI
 
 struct MotionCommandOptionList: View {
-    let motionCommands: [any MotionCommand] = [DistanceLineTrace(),
-                                               ColorLineTrace(),
-                                               DistanceStraight(),
-                                               ColorStraight(),
-                                               SpecifiedAngleTurning(),
-                                               DistanceSpecifiedTurning(),
-                                               EdgeSwitching(),
-                                               SleepSelf(),
-                                               RaiseArm(),
-                                               LowerArm(),
-                                               TurningToCompensateForAngle(targetAngle: 0, targetSpeed: 0)
+    let motionCommands: [MotionCommand] = [MotionCommand(command: .DL),
+                                           MotionCommand(command: .CL),
+                                           MotionCommand(command: .DS),
+                                           MotionCommand(command: .CS),
+                                           MotionCommand(command: .AR),
+                                           MotionCommand(command: .DT),
+                                           MotionCommand(command: .EC),
+                                           MotionCommand(command: .SL),
+                                           MotionCommand(command: .AU),
+                                           MotionCommand(command: .AD),
+                                           MotionCommand(command: .XR),
     ]
-    
+
     var body: some View {
         List(motionCommands, id: \.id) { motionCommand in
             MotionCommandOptionCell(motionCommand: motionCommand)

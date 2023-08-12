@@ -2,7 +2,7 @@ import SwiftUI
 
 struct MotionCommandOptionCell: View {
     @EnvironmentObject var viewModel: SelectedCommandViewModel
-    let motionCommand: any MotionCommand
+    let motionCommand: MotionCommand
 
     private let cellWidth: CGFloat = 250
     private let cellHeight: CGFloat = 70
@@ -11,7 +11,6 @@ struct MotionCommandOptionCell: View {
     var body: some View {
         HStack {
             Button {
-//                print(motionCommand.command.rawValue)
                 viewModel.addSelectedCommand(motionCommand)
             } label: {
                 Image(systemName: "plus.circle")
@@ -25,7 +24,7 @@ struct MotionCommandOptionCell: View {
                 Text(motionCommand.command.rawValue)
                     .frame(width: textWidth, alignment: .leading)
                     .font(.system(size: 23, weight: .bold))
-                Text(motionCommand.processingDetail)
+                Text(motionCommand.command.description)
                     .frame(width: textWidth, alignment: .leading)
                     .font(.system(size: 17, weight: .light))
             } // VStack
@@ -38,14 +37,8 @@ struct MotionCommandOptionCell: View {
 }
 
 struct MotionCommandOptionCell_Previews: PreviewProvider {
-    static let motionCommands: [any MotionCommand] = [DistanceLineTrace(),
-                                                  TurningToCompensateForAngle(targetAngle: 0, targetSpeed: 0)
-    ]
+    static let motionCommands: [MotionCommand] = [MotionCommand(command: .DL)]
     static var previews: some View {
-//        VStack {
-//            MotionCommandOptionCell(motionCommand: DistanceLineTrace())
-//            MotionCommandOptionCell(motionCommand: TurningToCompensateForAngle(targetAngle: 0, targetSpeed: 0))
-//        }
         List(motionCommands, id: \.id) { motionCommand in
             MotionCommandOptionCell(motionCommand: motionCommand)
         }
