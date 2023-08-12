@@ -56,6 +56,7 @@
 		ACA09F1C2A863945000D0871 /* SelectedCommandViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA09F1B2A863945000D0871 /* SelectedCommandViewModel.swift */; };
 		ACA09F1E2A865433000D0871 /* SelectSectionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA09F1D2A865433000D0871 /* SelectSectionListView.swift */; };
 		ACA09F212A876CFE000D0871 /* IntParameterCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA09F202A876CFE000D0871 /* IntParameterCellView.swift */; };
+		ACA09F232A8771C7000D0871 /* FloatParameterCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA09F222A8771C7000D0871 /* FloatParameterCellView.swift */; };
 		ACBA6FE92A84946400680A3B /* DistanceLineTraceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBA6FE82A84946400680A3B /* DistanceLineTraceCell.swift */; };
 		ACC550CF2A530A7000DDAC49 /* SegmentNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC550CE2A530A7000DDAC49 /* SegmentNames.swift */; };
 		ACC550D12A530D6400DDAC49 /* PulsatingCourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC550D02A530D6400DDAC49 /* PulsatingCourseView.swift */; };
@@ -118,6 +119,7 @@
 		ACA09F1B2A863945000D0871 /* SelectedCommandViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCommandViewModel.swift; sourceTree = "<group>"; };
 		ACA09F1D2A865433000D0871 /* SelectSectionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSectionListView.swift; sourceTree = "<group>"; };
 		ACA09F202A876CFE000D0871 /* IntParameterCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntParameterCellView.swift; sourceTree = "<group>"; };
+		ACA09F222A8771C7000D0871 /* FloatParameterCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatParameterCellView.swift; sourceTree = "<group>"; };
 		ACBA6FE82A84946400680A3B /* DistanceLineTraceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceLineTraceCell.swift; sourceTree = "<group>"; };
 		ACC550CE2A530A7000DDAC49 /* SegmentNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentNames.swift; sourceTree = "<group>"; };
 		ACC550D02A530D6400DDAC49 /* PulsatingCourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsatingCourseView.swift; sourceTree = "<group>"; };
@@ -288,6 +290,7 @@
 				ACA09F0F2A8606A8000D0871 /* ParameterCell.swift */,
 				ACA09F112A8606C1000D0871 /* ParameterCellWithTextFieldView.swift */,
 				ACA09F202A876CFE000D0871 /* IntParameterCellView.swift */,
+				ACA09F222A8771C7000D0871 /* FloatParameterCellView.swift */,
 				ACBA6FE82A84946400680A3B /* DistanceLineTraceCell.swift */,
 			);
 			path = SelectedCommandCell;
@@ -405,6 +408,7 @@
 				AC720C0A2A52A95500406BCB /* BlockDeTreasureVerticalLinesView.swift in Sources */,
 				AC30562E2A59670100BAC46F /* TerminalViewModel.swift in Sources */,
 				AC392C7F2A5299A4003A5C88 /* AreaBView.swift in Sources */,
+				ACA09F232A8771C7000D0871 /* FloatParameterCellView.swift in Sources */,
 				AC392C7D2A528E50003A5C88 /* AreaAView.swift in Sources */,
 				ACC550D12A530D6400DDAC49 /* PulsatingCourseView.swift in Sources */,
 				ACE8CD7C2A7E4848003CF974 /* MotionCommand.swift in Sources */,
