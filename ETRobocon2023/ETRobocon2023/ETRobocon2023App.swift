@@ -12,6 +12,7 @@ struct ETRobocon2023App: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(SelectedCommandViewModel())
         }
     }
 }
