@@ -28,6 +28,7 @@
 		AC4986432A877B29002F0E45 /* ColorParameterCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4986422A877B29002F0E45 /* ColorParameterCellView.swift */; };
 		AC4986452A87851C002F0E45 /* LOrRParameterCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4986442A87851C002F0E45 /* LOrRParameterCellView.swift */; };
 		AC4986472A8786A0002F0E45 /* SpecifiedAngleTurningCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4986462A8786A0002F0E45 /* SpecifiedAngleTurningCell.swift */; };
+		AC4986492A88F655002F0E45 /* SelectedCommandCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4986482A88F655002F0E45 /* SelectedCommandCellView.swift */; };
 		AC6D14BD2A50528C00AADB04 /* ETRobocon2023App.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D14BC2A50528C00AADB04 /* ETRobocon2023App.swift */; };
 		AC6D14BF2A50528C00AADB04 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D14BE2A50528C00AADB04 /* ContentView.swift */; };
 		AC6D14C12A50528E00AADB04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC6D14C02A50528E00AADB04 /* Assets.xcassets */; };
@@ -96,6 +97,7 @@
 		AC4986422A877B29002F0E45 /* ColorParameterCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorParameterCellView.swift; sourceTree = "<group>"; };
 		AC4986442A87851C002F0E45 /* LOrRParameterCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LOrRParameterCellView.swift; sourceTree = "<group>"; };
 		AC4986462A8786A0002F0E45 /* SpecifiedAngleTurningCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecifiedAngleTurningCell.swift; sourceTree = "<group>"; };
+		AC4986482A88F655002F0E45 /* SelectedCommandCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCommandCellView.swift; sourceTree = "<group>"; };
 		AC6D14B92A50528C00AADB04 /* ETRobocon2023.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ETRobocon2023.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC6D14BC2A50528C00AADB04 /* ETRobocon2023App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETRobocon2023App.swift; sourceTree = "<group>"; };
 		AC6D14BE2A50528C00AADB04 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -298,6 +300,7 @@
 			isa = PBXGroup;
 			children = (
 				ACA09F0D2A84F3C2000D0871 /* SelectedCommandCell.swift */,
+				AC4986482A88F655002F0E45 /* SelectedCommandCellView.swift */,
 				ACA09F152A8611AC000D0871 /* SelectedCommandTitleView.swift */,
 				ACA09F0F2A8606A8000D0871 /* ParameterCell.swift */,
 				ACA09F112A8606C1000D0871 /* ParameterCellWithTextFieldView.swift */,
@@ -427,6 +430,7 @@
 				AC720C0A2A52A95500406BCB /* BlockDeTreasureVerticalLinesView.swift in Sources */,
 				AC30562E2A59670100BAC46F /* TerminalViewModel.swift in Sources */,
 				ACA09F252A8778E8000D0871 /* TargetColorEnum.swift in Sources */,
+				AC4986492A88F655002F0E45 /* SelectedCommandCellView.swift in Sources */,
 				AC392C7F2A5299A4003A5C88 /* AreaBView.swift in Sources */,
 				ACA09F232A8771C7000D0871 /* FloatParameterCellView.swift in Sources */,
 				AC392C7D2A528E50003A5C88 /* AreaAView.swift in Sources */,

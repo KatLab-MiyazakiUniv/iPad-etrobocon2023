@@ -13,20 +13,7 @@ struct SelectedCommandSectionView: View {
                 .padding(.top, SelectedCommandViewInfo().padding)
 
             ForEach($motionCommands) { $motionCommand in
-                switch motionCommand.command {
-                case .DL:
-                    DistanceLineTraceCell(motionCommand: $motionCommand)
-                        .padding(.top, SelectedCommandViewInfo().halfPadding)
-                case .CL:
-                    ColorLineTraceCell(motionCommand: $motionCommand)
-                        .padding(.top, SelectedCommandViewInfo().halfPadding)
-                case .AR:
-                    SpecifiedAngleTurningCell(motionCommand: $motionCommand)
-                        .padding(.top, SelectedCommandViewInfo().halfPadding)
-                default:
-                    DistanceLineTraceCell(motionCommand: $motionCommand)
-                        .padding(.top, SelectedCommandViewInfo().halfPadding)
-                }
+                SelectedCommandCellView(motionCommand: $motionCommand)
             }
             .frame(width: SelectedCommandViewInfo().selectedCommandSectionWidth)
         }
@@ -53,6 +40,6 @@ struct SelectedCommandSectionView_Previews: PreviewProvider {
     ]
     static var previews: some View {
         SelectedCommandSectionView(motionCommands: $motionCommands, sectionTitle: "スタートからダブルループ直前まで", isSelected: true)
-            .previewLayout(.fixed(width: 700, height: 4000))
+            .previewLayout(.fixed(width: 700, height: 1650))
     }
 }
