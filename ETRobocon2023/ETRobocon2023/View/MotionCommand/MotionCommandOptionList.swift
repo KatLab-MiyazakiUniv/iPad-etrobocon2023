@@ -9,8 +9,8 @@ struct MotionCommandOptionList: View {
                                            MotionCommand(command: .DT),
                                            MotionCommand(command: .EC),
                                            MotionCommand(command: .SL),
-                                           MotionCommand(command: .AU),
-                                           MotionCommand(command: .AD),
+//                                           MotionCommand(command: .AU),
+//                                           MotionCommand(command: .AD),
                                            MotionCommand(command: .XR),
     ]
 
