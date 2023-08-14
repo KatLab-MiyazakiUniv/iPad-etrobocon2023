@@ -12,22 +12,37 @@ struct CourseMapAndCommandView: View {
             MotionCommandOptionList()
 //            ListToSelectOneSection()
             SelectedCommandListView()
-            VStack {
+
+            VStack(spacing: 0) {
+                Spacer()
+                Picker("コース", selection: $viewModel.courseSide) {
+                    ForEach(CourseSideEnum.allCases, id: \.self) { side in
+                        Text(side.sideString)
+                    }
+                }
+                .pickerStyle(SegmentedPickerStyle())
+                .frame(width: 200)
+//                .foregroundStyle(.pink)
+
                 CourseView(isAnimating: $isAnimating, segment: $selection)
                     .scaleEffect(0.2)
-                    .frame(width: 500,height: 730)
-                .background(.white)
+                    .frame(width: 500,height: 700)
+                    .backgroundStyle(.white)
+                    .cornerRadius(SelectedCommandViewInfo().cornerRadius)
+//                    .background(.red)
 
                 SelectSectionListView()
             }
+//            .backgroundStyle(.green)
         } // HStack
-//        .background(.black)
+//        .backgroundStyle(.black)
     }
 }
 
 struct CourseMapAndCommandView_Previews: PreviewProvider {
     static var previews: some View {
         CourseMapAndCommandView()
+            .environmentObject(SelectedCommandViewModel())
             .previewLayout(.fixed(width: 1366, height: 1024))
     }
 }

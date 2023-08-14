@@ -2,6 +2,7 @@ import Foundation
 
 class SelectedCommandViewModel: ObservableObject {
     @Published var isSelectedSection: SelectedCommandSectionEnum? = .FromStartToDoubleLoop
+    @Published var courseSide: CourseSideEnum = .LeftCourse
     @Published var fromStartToDoubleLoopCommands: [MotionCommand] = []
     @Published var fromAreaAToAreaBCommands: [MotionCommand] = []
     @Published var areaBCommands: [MotionCommand] = []
