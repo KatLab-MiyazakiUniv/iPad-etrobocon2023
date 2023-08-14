@@ -38,10 +38,28 @@ struct PulsatingCourseView: View {
                                       path: LeftBlackStraightLineView().getBeforeDoubleLoopPath())
                 }
             case .FromAreaAToAreaB:
-                PulsatingLineView(isAnimating: $isAnimating,
-                                  baseLineWidth: LCourseSize.lineWidth,
-                                  color: .black,
-                                  path: RightBottomBlackCornerView().getPath())
+                ZStack {
+                    PulsatingLineView(isAnimating: $isAnimating,
+                                      baseLineWidth: LCourseSize.lineWidth,
+                                      color: .black,
+                                      path: DoubleLoopEntranceBlackLineView().getPath())
+                    PulsatingLineView(isAnimating: $isAnimating,
+                                      baseLineWidth: LCourseSize.lineWidth,
+                                      color: .blue,
+                                      path: DoubleLoopEntranceBlueStraightLineView().getPath())
+                    PulsatingLineView(isAnimating: $isAnimating,
+                                      baseLineWidth: LCourseSize.lineWidth,
+                                      color: .blue,
+                                      path: DoubleLoopEntranceBlueCurveLineView().getPath())
+                    PulsatingLineView(isAnimating: $isAnimating,
+                                      baseLineWidth: LCourseSize.lineWidth,
+                                      color: .black,
+                                      path: AreaAView().getFromAreaAToAreaBBlackPath())
+                    PulsatingLineView(isAnimating: $isAnimating,
+                                      baseLineWidth: LCourseSize.lineWidth,
+                                      color: .blue,
+                                      path: AreaAView().getFromAreaAToAreaBBluePath())
+                }
             case .AreaB:
                 PulsatingLineView(isAnimating: $isAnimating,
                                   baseLineWidth: LCourseSize.lineWidth,
@@ -62,7 +80,7 @@ struct PulsatingCourseView: View {
 
 struct PulsatingCourseView_Previews: PreviewProvider {
     @State static var isAnimating = true
-    @State static var segment: SelectedCommandSectionEnum? = .FromStartToDoubleLoop
+    @State static var segment: SelectedCommandSectionEnum? = .FromAreaAToAreaB
     static var previews: some View {
         PulsatingCourseView(isAnimating: $isAnimating, segment: $segment)
             .scaleEffect(LCourseViewSize.previewScale)
