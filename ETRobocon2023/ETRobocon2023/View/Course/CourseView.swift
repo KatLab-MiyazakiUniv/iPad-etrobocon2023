@@ -11,7 +11,7 @@ struct CourseView: View {
     var body: some View {
         ZStack {
             StaticCourseView()
-            PulsatingCourseView(isAnimating: $isAnimating, segment: $segment)
+            PulsatingCourseView(isAnimating: $isAnimating, segment: $viewModel.isSelectedSection)
         } // ZStack
         .frame(width: LCourseViewSize.frameWidth, height: LCourseViewSize.frameHeight)
         .rotation3DEffect(viewModel.courseSide == .LeftCourse ? .degrees(0) : .degrees(180),
