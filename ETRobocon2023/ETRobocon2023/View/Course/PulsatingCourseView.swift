@@ -61,10 +61,20 @@ struct PulsatingCourseView: View {
                                       path: AreaAView().getFromAreaAToAreaBBluePath())
                 }
             case .AreaB:
-                PulsatingLineView(isAnimating: $isAnimating,
-                                  baseLineWidth: LCourseSize.lineWidth,
-                                  color: .black,
-                                  path: BottomBlackStraightLineView().getPath())
+                ZStack {
+                    PulsatingLineView(isAnimating: $isAnimating,
+                                      baseLineWidth: LCourseSize.lineWidth,
+                                      color: .black,
+                                      path: AreaAView().getAreaBBlackPath())
+                    PulsatingLineView(isAnimating: $isAnimating,
+                                      baseLineWidth: LCourseSize.lineWidth,
+                                      color: .black,
+                                      path: AreaBView().getAreaBBlackPath())
+                    PulsatingLineView(isAnimating: $isAnimating,
+                                      baseLineWidth: LCourseSize.lineWidth,
+                                      color: .blue,
+                                      path: AreaBView().getAreaBBluePath())
+                }
             case .AreaABottom:
                 PulsatingLineView(isAnimating: $isAnimating,
                                   baseLineWidth: LCourseSize.lineWidth,
