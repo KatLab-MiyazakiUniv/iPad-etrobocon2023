@@ -32,6 +32,19 @@ struct AreaBView: View {
         areaBBluePath
     }
 
+    private let areaABottomPath: (inout Path) -> Void = { path in
+        var centerPoint = CGPoint(x: LCourseSize.centerXOfB, y: LCourseSize.centerYOfB)
+        path.addArc(center: centerPoint,
+                    radius: LCourseSize.blackCircleRadiusOfB,
+                    startAngle: .degrees(170),
+                    endAngle: .degrees(184),
+                    clockwise: false)
+    }
+
+    func getAreaABottomPath() -> ((inout Path) -> Void) {
+        areaABottomPath
+    }
+
     var body: some View {
         ZStack {
             // 黒線

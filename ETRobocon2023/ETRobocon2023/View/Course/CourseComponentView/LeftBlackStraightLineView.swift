@@ -75,6 +75,41 @@ struct LeftBlackStraightLineView: View {
         beforeDoubleLoopPath
     }
 
+    private let areaABottomPath: (inout Path) -> Void = { path in
+        // start point
+        var startX: CGFloat {
+            LCourseViewSize.startX - LCourseSize.blackLineCornerRadius - LCourseSize.bottomBlackStraightLineLength - LCourseSize.blackLineCornerRadius
+        }
+
+        var startY: CGFloat {
+            LCourseViewSize.startY + LCourseSize.startBlueLineLength + LCourseSize.rightBlackStraightLineLength - LCourseSize.endOfCornerToBranchingLength - LCourseSize.doubleLoopEntranceBlueLineLength
+        }
+
+        var startPoint: CGPoint {
+            CGPoint(x: startX, y: startY)
+        }
+
+        // end point
+        var endX: CGFloat {
+            startX
+        }
+
+        var endY: CGFloat {
+            LCourseViewSize.startY + LCourseSize.startBlueLineLength + LCourseSize.rightBlackStraightLineLength - LCourseSize.leftBlackStraightLineLength
+        }
+
+        var endPoint: CGPoint {
+            CGPoint(x: endX, y: endY)
+        }
+
+        path.move(to: startPoint)
+        path.addLine(to: endPoint)
+    }
+
+    func getAreaABottomPath() -> ((inout Path) -> Void) {
+        areaABottomPath
+    }
+
     var body: some View {
         Path { path in
             self.path(&path)

@@ -79,7 +79,19 @@ struct PulsatingCourseView: View {
                 PulsatingLineView(isAnimating: $isAnimating,
                                   baseLineWidth: LCourseSize.lineWidth,
                                   color: .black,
-                                  path: LeftBlackStraightLineView().getPath())
+                                  path: AreaAView().getAreaABottomPath())
+                PulsatingLineView(isAnimating: $isAnimating,
+                                  baseLineWidth: LCourseSize.lineWidth,
+                                  color: .black,
+                                  path: AreaBView().getAreaABottomPath())
+                PulsatingLineView(isAnimating: $isAnimating,
+                                  baseLineWidth: LCourseSize.lineWidth,
+                                  color: .black,
+                                  path: LeftBlackStraightLineView().getAreaABottomPath())
+                PulsatingLineView(isAnimating: $isAnimating,
+                                  baseLineWidth: LCourseSize.lineWidth,
+                                  color: .red,
+                                  path: LineTraceEndCircleView().getPath())
             case .none:
                 EmptyView()
             }
