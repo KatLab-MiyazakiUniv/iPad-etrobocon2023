@@ -10,7 +10,7 @@ struct CourseMapAndListView: View {
     var body: some View {
         HStack {
             GeometryReader { geometry in
-                CourseView(isAnimating: $isAnimating, segment: $selection)
+                CourseView()
                     .scaleEffect(geometry.size.height / LCourseViewSize.frameHeight * 0.9)
                     .frame(
                         width: min(geometry.size.height
@@ -21,8 +21,6 @@ struct CourseMapAndListView: View {
                                     * (LCourseViewSize.frameHeight / LCourseViewSize.frameWidth))
                     )
             } // GeometryReader
-
-//            SegmentNamesListView(selection: $selection)
         } // HStack
     } // var body
 } // struct CourseMapAndListView

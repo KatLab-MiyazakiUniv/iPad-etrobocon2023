@@ -1,4 +1,4 @@
-enum LeftOrRightEnum:String, CaseIterable {
+enum LeftOrRightEnum: String, CaseIterable {
     case Left
     case Right
 }

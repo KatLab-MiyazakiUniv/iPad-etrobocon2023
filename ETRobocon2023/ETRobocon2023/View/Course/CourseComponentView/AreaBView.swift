@@ -6,6 +6,45 @@ struct AreaBView: View {
 
     private var centerPoint = CGPoint(x: LCourseSize.centerXOfB, y: LCourseSize.centerYOfB)
 
+    private let areaBBlackPath: (inout Path) -> Void = { path in
+        var centerPoint = CGPoint(x: LCourseSize.centerXOfB, y: LCourseSize.centerYOfB)
+        path.addArc(center: centerPoint,
+                    radius: LCourseSize.blackCircleRadiusOfB,
+                    startAngle: .degrees(0),
+                    endAngle: .degrees(0.001),
+                    clockwise: true)
+    }
+
+    func getAreaBBlackPath() -> ((inout Path) -> Void) {
+        areaBBlackPath
+    }
+
+    private let areaBBluePath: (inout Path) -> Void = { path in
+        var centerPoint = CGPoint(x: LCourseSize.centerXOfB, y: LCourseSize.centerYOfB)
+        path.addArc(center: centerPoint,
+                    radius: LCourseSize.blackCircleRadiusOfB,
+                    startAngle: .degrees(222),
+                    endAngle: .degrees(184),
+                    clockwise: true)
+    }
+
+    func getAreaBBluePath() -> ((inout Path) -> Void) {
+        areaBBluePath
+    }
+
+    private let areaABottomPath: (inout Path) -> Void = { path in
+        var centerPoint = CGPoint(x: LCourseSize.centerXOfB, y: LCourseSize.centerYOfB)
+        path.addArc(center: centerPoint,
+                    radius: LCourseSize.blackCircleRadiusOfB,
+                    startAngle: .degrees(170),
+                    endAngle: .degrees(184),
+                    clockwise: false)
+    }
+
+    func getAreaABottomPath() -> ((inout Path) -> Void) {
+        areaABottomPath
+    }
+
     var body: some View {
         ZStack {
             // 黒線

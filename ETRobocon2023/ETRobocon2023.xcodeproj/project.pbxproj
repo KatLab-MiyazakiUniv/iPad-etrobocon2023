@@ -64,6 +64,8 @@
 		ACA09F232A8771C7000D0871 /* FloatParameterCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA09F222A8771C7000D0871 /* FloatParameterCellView.swift */; };
 		ACA09F252A8778E8000D0871 /* TargetColorEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA09F242A8778E8000D0871 /* TargetColorEnum.swift */; };
 		ACA09F272A87849B000D0871 /* LeftOrRightEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA09F262A87849B000D0871 /* LeftOrRightEnum.swift */; };
+		ACA09F292A8A86B6000D0871 /* CourseSideEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA09F282A8A86B6000D0871 /* CourseSideEnum.swift */; };
+		ACA09F2B2A8A8F72000D0871 /* SelectedCommandSectionEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA09F2A2A8A8F72000D0871 /* SelectedCommandSectionEnum.swift */; };
 		ACBA6FE92A84946400680A3B /* DistanceLineTraceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBA6FE82A84946400680A3B /* DistanceLineTraceCell.swift */; };
 		ACC550CF2A530A7000DDAC49 /* SegmentNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC550CE2A530A7000DDAC49 /* SegmentNames.swift */; };
 		ACC550D12A530D6400DDAC49 /* PulsatingCourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC550D02A530D6400DDAC49 /* PulsatingCourseView.swift */; };
@@ -134,6 +136,8 @@
 		ACA09F222A8771C7000D0871 /* FloatParameterCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatParameterCellView.swift; sourceTree = "<group>"; };
 		ACA09F242A8778E8000D0871 /* TargetColorEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetColorEnum.swift; sourceTree = "<group>"; };
 		ACA09F262A87849B000D0871 /* LeftOrRightEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftOrRightEnum.swift; sourceTree = "<group>"; };
+		ACA09F282A8A86B6000D0871 /* CourseSideEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseSideEnum.swift; sourceTree = "<group>"; };
+		ACA09F2A2A8A8F72000D0871 /* SelectedCommandSectionEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCommandSectionEnum.swift; sourceTree = "<group>"; };
 		ACBA6FE82A84946400680A3B /* DistanceLineTraceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceLineTraceCell.swift; sourceTree = "<group>"; };
 		ACC550CE2A530A7000DDAC49 /* SegmentNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentNames.swift; sourceTree = "<group>"; };
 		ACC550D02A530D6400DDAC49 /* PulsatingCourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsatingCourseView.swift; sourceTree = "<group>"; };
@@ -163,6 +167,7 @@
 				AC3056242A59526100BAC46F /* WhichMachine.swift */,
 				AC3056262A59541600BAC46F /* CsvFileManager.swift */,
 				AC3056282A5957D100BAC46F /* TransmissionManager.swift */,
+				ACA09F282A8A86B6000D0871 /* CourseSideEnum.swift */,
 				ACE8CD7F2A7E49F3003CF974 /* MotionCommand */,
 			);
 			path = Model;
@@ -320,6 +325,7 @@
 			children = (
 				ACE8CD7B2A7E4848003CF974 /* MotionCommand.swift */,
 				ACE8CD7D2A7E48C6003CF974 /* MotionCommandEnum.swift */,
+				ACA09F2A2A8A8F72000D0871 /* SelectedCommandSectionEnum.swift */,
 				ACA09F242A8778E8000D0871 /* TargetColorEnum.swift */,
 				ACA09F262A87849B000D0871 /* LeftOrRightEnum.swift */,
 			);
@@ -424,6 +430,7 @@
 				AC720C112A52EA9E00406BCB /* PulsatingLineView.swift in Sources */,
 				AC0494562A7E7D9E0032FFF6 /* MotionCommandOptionList.swift in Sources */,
 				AC720C062A52A1C500406BCB /* BlockDeTreasureFourCirclesView.swift in Sources */,
+				ACA09F2B2A8A8F72000D0871 /* SelectedCommandSectionEnum.swift in Sources */,
 				AC720C082A52A4CD00406BCB /* BlockDeTreasureHorizontalLinesView.swift in Sources */,
 				AC6D14DF2A52775500AADB04 /* LeftBlackStraightLineView.swift in Sources */,
 				AC6D14D32A51D9B500AADB04 /* CourseView.swift in Sources */,
@@ -470,6 +477,7 @@
 				AC6D14D52A526F4F00AADB04 /* StartBlueLineView.swift in Sources */,
 				AC392C832A529CE6003A5C88 /* DoubleLoopEntranceBlueStraightLineView.swift in Sources */,
 				AC3056272A59541600BAC46F /* CsvFileManager.swift in Sources */,
+				ACA09F292A8A86B6000D0871 /* CourseSideEnum.swift in Sources */,
 				AC6D14DB2A52743C00AADB04 /* BottomBlackStraightLineView.swift in Sources */,
 				AC720C042A52A07C00406BCB /* LineTraceEndCircleView.swift in Sources */,
 				ACA09F0E2A84F3C2000D0871 /* SelectedCommandCell.swift in Sources */,

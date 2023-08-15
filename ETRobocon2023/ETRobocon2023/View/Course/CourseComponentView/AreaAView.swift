@@ -6,6 +6,58 @@ struct AreaAView: View {
 
     private var centerPoint = CGPoint(x: LCourseSize.centerXOfA, y: LCourseSize.centerYOfA)
 
+    private let fromAreaAToAreaBBlackPath: (inout Path) -> Void = { path in
+        var centerPoint = CGPoint(x: LCourseSize.centerXOfA, y: LCourseSize.centerYOfA)
+        path.addArc(center: centerPoint,
+                    radius: LCourseSize.blackCircleRadiusOfA,
+                    startAngle: .degrees(314),
+                    endAngle: .degrees(269.8),
+                    clockwise: true)
+    }
+
+    func getFromAreaAToAreaBBlackPath() -> ((inout Path) -> Void) {
+        fromAreaAToAreaBBlackPath
+    }
+
+    private let fromAreaAToAreaBBluePath: (inout Path) -> Void = { path in
+        var centerPoint = CGPoint(x: LCourseSize.centerXOfA, y: LCourseSize.centerYOfA)
+        path.addArc(center: centerPoint,
+                    radius: LCourseSize.blackCircleRadiusOfA,
+                    startAngle: .degrees(338),
+                    endAngle: .degrees(314),
+                    clockwise: true)
+    }
+
+    func getFromAreaAToAreaBBluePath() -> ((inout Path) -> Void) {
+        fromAreaAToAreaBBluePath
+    }
+
+    private let areaBBlackPath: (inout Path) -> Void = { path in
+        var centerPoint = CGPoint(x: LCourseSize.centerXOfA, y: LCourseSize.centerYOfA)
+        path.addArc(center: centerPoint,
+                    radius: LCourseSize.blackCircleRadiusOfA,
+                    startAngle: .degrees(338),
+                    endAngle: .degrees(358),
+                    clockwise: false)
+    }
+
+    func getAreaBBlackPath() -> ((inout Path) -> Void) {
+        areaBBlackPath
+    }
+
+    private let areaABottomPath: (inout Path) -> Void = { path in
+        var centerPoint = CGPoint(x: LCourseSize.centerXOfA, y: LCourseSize.centerYOfA)
+        path.addArc(center: centerPoint,
+                    radius: LCourseSize.blackCircleRadiusOfA,
+                    startAngle: .degrees(338),
+                    endAngle: .degrees(245),
+                    clockwise: false)
+    }
+
+    func getAreaABottomPath() -> ((inout Path) -> Void) {
+        areaABottomPath
+    }
+
     var body: some View {
         ZStack {
             // 黒線
