@@ -1,14 +1,13 @@
 import SwiftUI
 
 struct PulsatingLineView: View {
-    @Binding var isAnimating: Bool
+    var isAnimating = true
     @State private var animatedLineWidth: CGFloat
     let path: (inout Path) -> Void
     let baseLineWidth: CGFloat
     let color: Color  // 新しい引数
 
-    init(isAnimating: Binding<Bool>, baseLineWidth: CGFloat, color: Color = .black, path: @escaping (inout Path) -> Void) {
-        self._isAnimating = isAnimating
+    init(baseLineWidth: CGFloat, color: Color = .black, path: @escaping (inout Path) -> Void) {
         self._animatedLineWidth = State(initialValue: baseLineWidth)
         self.baseLineWidth = baseLineWidth
         self.color = color  // 引数をプロパティに保存
@@ -48,6 +47,6 @@ struct PulsatingLineView_Previews: PreviewProvider {
         path.addLine(to: CGPoint(x: 50, y: 250))
     }
     static var previews: some View {
-        PulsatingLineView(isAnimating: $isAnimating, baseLineWidth: 20.0, path: bluePrint)
+        PulsatingLineView(baseLineWidth: 20.0, path: bluePrint)
     }
 }

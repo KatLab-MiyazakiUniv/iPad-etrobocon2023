@@ -2,41 +2,34 @@ import SwiftUI
 
 struct CourseMapAndCommandView: View {
     @EnvironmentObject private var viewModel: SelectedCommandViewModel
-    @State private var isAnimating = true
-
-    // 点滅する区間
-    @State private var selection = SelectedCommandSectionEnum.FromStartToDoubleLoop
 
     var body: some View {
         HStack(spacing: 0) {
             MotionCommandOptionList()
-//            ListToSelectOneSection()
             SelectedCommandListView()
 
             VStack(spacing: 0) {
-                Spacer()
-                Picker("コース", selection: $viewModel.courseSide) {
-                    ForEach(CourseSideEnum.allCases, id: \.self) { side in
-                        Text(side.sideString)
+                VStack(spacing: 0) {
+                    Spacer()
+                    Picker("コース", selection: $viewModel.courseSide) {
+                        ForEach(CourseSideEnum.allCases, id: \.self) { side in
+                            Text(side.sideString)
+                        }
                     }
-                }
-                .pickerStyle(SegmentedPickerStyle())
-                .frame(width: 200)
-//                .foregroundStyle(.pink)
-
-                CourseView(isAnimating: $isAnimating, segment: $selection)
-                    .scaleEffect(0.2)
-                    .frame(width: 500,height: 700)
-                    .backgroundStyle(.white)
-                    .cornerRadius(SelectedCommandViewInfo().cornerRadius)
-//                    .background(.red)
+                    .pickerStyle(SegmentedPickerStyle())
+                    .frame(width: 200)
+                    .backgroundStyle(SelectedCommandViewInfo().selectedCommandListBackground)
+                    CourseView()
+                        .scaleEffect(0.2)
+                        .frame(width: 500,height: 720)
+                        .backgroundStyle(SelectedCommandViewInfo().selectedCommandListBackground)
+                } // VStack
+                .background(SelectedCommandViewInfo().selectedCommandListBackground)
 
                 SelectSectionListView()
-            }
-//            .backgroundStyle(.green)
+            } // VStack
         } // HStack
-//        .backgroundStyle(.black)
-    }
+    } // var body
 }
 
 struct CourseMapAndCommandView_Previews: PreviewProvider {
