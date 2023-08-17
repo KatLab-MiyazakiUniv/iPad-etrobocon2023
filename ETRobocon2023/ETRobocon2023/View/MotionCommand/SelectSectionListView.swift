@@ -8,13 +8,14 @@ struct SelectSectionListView: View {
                 .font(SelectedCommandViewInfo().commandTitleFont)
         }
         .environment(\.editMode, .constant(.active))
-        .frame(width: 500)
+        .frame(width: 440)
     }
 }
 
 struct SelectSectionListView_Previews: PreviewProvider {
     static var previews: some View {
         SelectSectionListView()
+            .environmentObject(SelectedCommandViewModel())
             .previewLayout(.fixed(width: 600, height: 300))
     }
 }

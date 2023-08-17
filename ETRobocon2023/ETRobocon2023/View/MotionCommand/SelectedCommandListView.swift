@@ -6,35 +6,36 @@ struct SelectedCommandListView: View {
     @State private var sectionTopPositions: [SelectedCommandSectionEnum: CGFloat] = [:]
 
     var body: some View {
-//        ScrollView(.vertical, showsIndicators: true) {
-//            SelectedCommandSectionView(motionCommands: $viewModel.fromStartToDoubleLoopCommands,
-//                                       sectionTitle: SelectedCommandSectionEnum.FromStartToDoubleLoop.description,
-//                                       isSelected: viewModel.isSelectedSection == .FromStartToDoubleLoop)
-//            .padding(.bottom, SelectedCommandViewInfo().padding*3)
-//
-//            SelectedCommandSectionView(motionCommands: $viewModel.fromAreaAToAreaBCommands,
-//                                       sectionTitle: SelectedCommandSectionEnum.FromAreaAToAreaB.description,
-//                                       isSelected: viewModel.isSelectedSection == .FromAreaAToAreaB)
-//            .padding(.bottom, SelectedCommandViewInfo().padding*3)
-//
-//            SelectedCommandSectionView(motionCommands: $viewModel.areaBCommands,
-//                                       sectionTitle: SelectedCommandSectionEnum.AreaB.description,
-//                                       isSelected: viewModel.isSelectedSection == .AreaB)
-//            .padding(.bottom, SelectedCommandViewInfo().padding*3)
-//            
-//            SelectedCommandSectionView(motionCommands: $viewModel.areaABottomCommands,
-//                                       sectionTitle: SelectedCommandSectionEnum.AreaABottom.description,
-//                                       isSelected: viewModel.isSelectedSection == .AreaABottom)
-//            .padding(.bottom, SelectedCommandViewInfo().padding*3)
-//        }
-//        .frame(width: SelectedCommandViewInfo().selectedCommandListWidth)
-//        .background(SelectedCommandViewInfo().selectedCommandListBackground)
+        //        ScrollView(.vertical, showsIndicators: true) {
+        //            SelectedCommandSectionView(motionCommands: $viewModel.fromStartToDoubleLoopCommands,
+        //                                       sectionTitle: SelectedCommandSectionEnum.FromStartToDoubleLoop.description,
+        //                                       isSelected: viewModel.isSelectedSection == .FromStartToDoubleLoop)
+        //            .padding(.bottom, SelectedCommandViewInfo().padding*3)
+        //
+        //            SelectedCommandSectionView(motionCommands: $viewModel.fromAreaAToAreaBCommands,
+        //                                       sectionTitle: SelectedCommandSectionEnum.FromAreaAToAreaB.description,
+        //                                       isSelected: viewModel.isSelectedSection == .FromAreaAToAreaB)
+        //            .padding(.bottom, SelectedCommandViewInfo().padding*3)
+        //
+        //            SelectedCommandSectionView(motionCommands: $viewModel.areaBCommands,
+        //                                       sectionTitle: SelectedCommandSectionEnum.AreaB.description,
+        //                                       isSelected: viewModel.isSelectedSection == .AreaB)
+        //            .padding(.bottom, SelectedCommandViewInfo().padding*3)
+        //
+        //            SelectedCommandSectionView(motionCommands: $viewModel.areaABottomCommands,
+        //                                       sectionTitle: SelectedCommandSectionEnum.AreaABottom.description,
+        //                                       isSelected: viewModel.isSelectedSection == .AreaABottom)
+        //            .padding(.bottom, SelectedCommandViewInfo().padding*3)
+        //        }
+        //        .frame(width: SelectedCommandViewInfo().selectedCommandListWidth)
+        //        .background(SelectedCommandViewInfo().selectedCommandListBackground)
 
         List {
             Section {
                 ForEach($viewModel.fromStartToDoubleLoopCommands) { $motionCommand in
                     SelectedCommandCellView(motionCommand: $motionCommand)
                 }
+                .onMove(perform: rowReplace)
                 .listRowSeparator(.hidden)
             } header: {
                 Text(SelectedCommandSectionEnum.FromStartToDoubleLoop.description)
@@ -78,10 +79,15 @@ struct SelectedCommandListView: View {
                     .foregroundStyle(.black)
             }
             .opacity(viewModel.isSelectedSection == .AreaABottom ? 1.0 : 0.3)
-        }
+        } // List
         .listStyle(SidebarListStyle())
-        .frame(width: SelectedCommandViewInfo().selectedCommandListWidth)
+        .frame(width: SelectedCommandViewInfo().selectedCommandListWidth + 52)
         .background(SelectedCommandViewInfo().selectedCommandListBackground)
+        .environment(\.editMode, .constant(.active))
+    } // var body
+
+    func rowReplace(_ from: IndexSet, _ to: Int) {
+        viewModel.fromStartToDoubleLoopCommands.move(fromOffsets: from, toOffset: to)
     }
 }
 

@@ -20,15 +20,21 @@ struct CourseMapAndCommandView: View {
                     .frame(width: 200)
                     .backgroundStyle(SelectedCommandViewInfo().selectedCommandListBackground)
                     CourseView()
-                        .scaleEffect(0.2)
-                        .frame(width: 500,height: 720)
+                        .scaleEffect(0.18)
+                        .frame(width: 440,height: 640)
                         .backgroundStyle(SelectedCommandViewInfo().selectedCommandListBackground)
                 } // VStack
                 .background(SelectedCommandViewInfo().selectedCommandListBackground)
+                .padding(.bottom, 0)
 
                 SelectSectionListView()
+                    .frame(width: 440)
+                    .padding(.top, 0)
             } // VStack
+            .background(SelectedCommandViewInfo().selectedCommandListBackground)
         } // HStack
+        .frame(maxWidth: .infinity)
+        .background(SelectedCommandViewInfo().selectedCommandListBackground)
     } // var body
 }
 
