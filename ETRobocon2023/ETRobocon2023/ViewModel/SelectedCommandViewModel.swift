@@ -8,28 +8,22 @@ class SelectedCommandViewModel: ObservableObject {
     @Published var areaBCommands: [MotionCommand] = []
     @Published var areaABottomCommands: [MotionCommand] = []
 
-//    func addSelectedCommand(_ command: MotionCommand) {
     func addSelectedCommand(_ command: MotionCommandEnum) {
         guard let section = isSelectedSection else { return }
         let motionCommand = MotionCommand(command: command, section: section)
         switch section {
         case .FromStartToDoubleLoop:
-//            command.section = .FromStartToDoubleLoop
             fromStartToDoubleLoopCommands.append(motionCommand)
         case .FromAreaAToAreaB:
-//            command.section = .FromAreaAToAreaB
             fromAreaAToAreaBCommands.append(motionCommand)
         case .AreaB:
-//            command.section = .AreaB
             areaBCommands.append(motionCommand)
         case .AreaABottom:
-//            command.section = .AreaABottom
             areaABottomCommands.append(motionCommand)
         }
     }
 
     func deleteSelectedCommand(_ command: MotionCommand) {
-//        guard let section = isSelectedSection else { return }
         switch command.section {
         case .FromStartToDoubleLoop:
             let index = fromStartToDoubleLoopCommands.indexOfCommand(withId: command.id)

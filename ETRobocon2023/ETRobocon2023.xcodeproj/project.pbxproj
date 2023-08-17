@@ -24,7 +24,6 @@
 		AC392C832A529CE6003A5C88 /* DoubleLoopEntranceBlueStraightLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC392C822A529CE6003A5C88 /* DoubleLoopEntranceBlueStraightLineView.swift */; };
 		AC392C852A529E17003A5C88 /* DoubleLoopEntranceBlueCurveLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC392C842A529E17003A5C88 /* DoubleLoopEntranceBlueCurveLineView.swift */; };
 		AC49863F2A8618E0002F0E45 /* SortableVStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC49863E2A8618E0002F0E45 /* SortableVStack.swift */; };
-		AC4986412A8773C7002F0E45 /* ColorLineTraceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4986402A8773C7002F0E45 /* ColorLineTraceCell.swift */; };
 		AC4986432A877B29002F0E45 /* ColorParameterCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4986422A877B29002F0E45 /* ColorParameterCellView.swift */; };
 		AC4986452A87851C002F0E45 /* LOrRParameterCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4986442A87851C002F0E45 /* LOrRParameterCellView.swift */; };
 		AC4986472A8786A0002F0E45 /* SpecifiedAngleTurningCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4986462A8786A0002F0E45 /* SpecifiedAngleTurningCell.swift */; };
@@ -66,7 +65,6 @@
 		ACA09F272A87849B000D0871 /* LeftOrRightEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA09F262A87849B000D0871 /* LeftOrRightEnum.swift */; };
 		ACA09F292A8A86B6000D0871 /* CourseSideEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA09F282A8A86B6000D0871 /* CourseSideEnum.swift */; };
 		ACA09F2B2A8A8F72000D0871 /* SelectedCommandSectionEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA09F2A2A8A8F72000D0871 /* SelectedCommandSectionEnum.swift */; };
-		ACBA6FE92A84946400680A3B /* DistanceLineTraceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBA6FE82A84946400680A3B /* DistanceLineTraceCell.swift */; };
 		ACC550CF2A530A7000DDAC49 /* SegmentNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC550CE2A530A7000DDAC49 /* SegmentNames.swift */; };
 		ACC550D12A530D6400DDAC49 /* PulsatingCourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC550D02A530D6400DDAC49 /* PulsatingCourseView.swift */; };
 		ACC550D32A53191800DDAC49 /* StaticCourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC550D22A53191800DDAC49 /* StaticCourseView.swift */; };
@@ -95,7 +93,6 @@
 		AC392C822A529CE6003A5C88 /* DoubleLoopEntranceBlueStraightLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleLoopEntranceBlueStraightLineView.swift; sourceTree = "<group>"; };
 		AC392C842A529E17003A5C88 /* DoubleLoopEntranceBlueCurveLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleLoopEntranceBlueCurveLineView.swift; sourceTree = "<group>"; };
 		AC49863E2A8618E0002F0E45 /* SortableVStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortableVStack.swift; sourceTree = "<group>"; };
-		AC4986402A8773C7002F0E45 /* ColorLineTraceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorLineTraceCell.swift; sourceTree = "<group>"; };
 		AC4986422A877B29002F0E45 /* ColorParameterCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorParameterCellView.swift; sourceTree = "<group>"; };
 		AC4986442A87851C002F0E45 /* LOrRParameterCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LOrRParameterCellView.swift; sourceTree = "<group>"; };
 		AC4986462A8786A0002F0E45 /* SpecifiedAngleTurningCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecifiedAngleTurningCell.swift; sourceTree = "<group>"; };
@@ -138,7 +135,6 @@
 		ACA09F262A87849B000D0871 /* LeftOrRightEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftOrRightEnum.swift; sourceTree = "<group>"; };
 		ACA09F282A8A86B6000D0871 /* CourseSideEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseSideEnum.swift; sourceTree = "<group>"; };
 		ACA09F2A2A8A8F72000D0871 /* SelectedCommandSectionEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCommandSectionEnum.swift; sourceTree = "<group>"; };
-		ACBA6FE82A84946400680A3B /* DistanceLineTraceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceLineTraceCell.swift; sourceTree = "<group>"; };
 		ACC550CE2A530A7000DDAC49 /* SegmentNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentNames.swift; sourceTree = "<group>"; };
 		ACC550D02A530D6400DDAC49 /* PulsatingCourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsatingCourseView.swift; sourceTree = "<group>"; };
 		ACC550D22A53191800DDAC49 /* StaticCourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticCourseView.swift; sourceTree = "<group>"; };
@@ -313,8 +309,6 @@
 				ACA09F222A8771C7000D0871 /* FloatParameterCellView.swift */,
 				AC4986422A877B29002F0E45 /* ColorParameterCellView.swift */,
 				AC4986442A87851C002F0E45 /* LOrRParameterCellView.swift */,
-				ACBA6FE82A84946400680A3B /* DistanceLineTraceCell.swift */,
-				AC4986402A8773C7002F0E45 /* ColorLineTraceCell.swift */,
 				AC4986462A8786A0002F0E45 /* SpecifiedAngleTurningCell.swift */,
 			);
 			path = SelectedCommandCell;
@@ -424,7 +418,6 @@
 				ACA09F182A862236000D0871 /* SelectedCommandSectionView.swift in Sources */,
 				AC6D14CE2A51D32100AADB04 /* LCourseSize.swift in Sources */,
 				ACA09F102A8606A8000D0871 /* ParameterCell.swift in Sources */,
-				AC4986412A8773C7002F0E45 /* ColorLineTraceCell.swift in Sources */,
 				ACA09F212A876CFE000D0871 /* IntParameterCellView.swift in Sources */,
 				ACE8CD7E2A7E48C6003CF974 /* MotionCommandEnum.swift in Sources */,
 				AC720C112A52EA9E00406BCB /* PulsatingLineView.swift in Sources */,
@@ -473,7 +466,6 @@
 				AC6D14D92A52728600AADB04 /* RightBottomBlackCornerView.swift in Sources */,
 				AC49863F2A8618E0002F0E45 /* SortableVStack.swift in Sources */,
 				AC30562C2A59613600BAC46F /* FileSendViewModel.swift in Sources */,
-				ACBA6FE92A84946400680A3B /* DistanceLineTraceCell.swift in Sources */,
 				AC6D14D52A526F4F00AADB04 /* StartBlueLineView.swift in Sources */,
 				AC392C832A529CE6003A5C88 /* DoubleLoopEntranceBlueStraightLineView.swift in Sources */,
 				AC3056272A59541600BAC46F /* CsvFileManager.swift in Sources */,

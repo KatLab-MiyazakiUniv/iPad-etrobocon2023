@@ -2,7 +2,6 @@ import SwiftUI
 
 struct MotionCommandOptionCell: View {
     @EnvironmentObject var viewModel: SelectedCommandViewModel
-//    let motionCommand: MotionCommand
     let motionCommandType: MotionCommandEnum
 
     private let cellWidth: CGFloat = 250
@@ -12,7 +11,6 @@ struct MotionCommandOptionCell: View {
     var body: some View {
         HStack {
             Button {
-//                viewModel.addSelectedCommand(motionCommand)
                 viewModel.addSelectedCommand(motionCommandType)
             } label: {
                 Image(systemName: "plus.circle")
@@ -23,11 +21,9 @@ struct MotionCommandOptionCell: View {
             .buttonStyle(BorderlessButtonStyle())
 
             VStack {
-//                Text(motionCommand.command.rawValue)
                 Text(motionCommandType.rawValue)
                     .frame(width: textWidth, alignment: .leading)
                     .font(.system(size: 23, weight: .bold))
-//                Text(motionCommand.command.description)
                 Text(motionCommandType.rawValue)
                     .frame(width: textWidth, alignment: .leading)
                     .font(.system(size: 17, weight: .light))
@@ -44,7 +40,6 @@ struct MotionCommandOptionCell_Previews: PreviewProvider {
     static let motionCommands: [MotionCommand] = [MotionCommand(command: .DL, section: .FromStartToDoubleLoop)]
     static var previews: some View {
         List(motionCommands, id: \.id) { motionCommand in
-//            MotionCommandOptionCell(motionCommand: motionCommand)
             MotionCommandOptionCell(motionCommandType: .DL)
         }
         .environmentObject(SelectedCommandViewModel())
