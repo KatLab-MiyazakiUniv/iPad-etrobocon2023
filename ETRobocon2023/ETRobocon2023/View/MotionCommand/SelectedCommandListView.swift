@@ -11,7 +11,7 @@ struct SelectedCommandListView: View {
                 ForEach($viewModel.fromStartToDoubleLoopCommands) { $motionCommand in
                     SelectedCommandCellView(motionCommand: $motionCommand)
                 }
-                .onMove(perform: rowReplace)
+                .onMove(perform: fromStartToDoubleLoopCommandsRowReplace)
                 .listRowSeparator(.hidden)
             } header: {
                 Text(SelectedCommandSectionEnum.FromStartToDoubleLoop.description)
@@ -24,6 +24,7 @@ struct SelectedCommandListView: View {
                 ForEach($viewModel.fromAreaAToAreaBCommands) { $motionCommand in
                     SelectedCommandCellView(motionCommand: $motionCommand)
                 }
+                .onMove(perform: fromAreaAToAreaBCommandsRowReplace)
                 .listRowSeparator(.hidden)
             } header: {
                 Text(SelectedCommandSectionEnum.FromAreaAToAreaB.description)
@@ -36,6 +37,7 @@ struct SelectedCommandListView: View {
                 ForEach($viewModel.areaBCommands) { $motionCommand in
                     SelectedCommandCellView(motionCommand: $motionCommand)
                 }
+                .onMove(perform: areaBCommandsRowReplace)
                 .listRowSeparator(.hidden)
             } header: {
                 Text(SelectedCommandSectionEnum.AreaB.description)
@@ -48,6 +50,7 @@ struct SelectedCommandListView: View {
                 ForEach($viewModel.areaABottomCommands) { $motionCommand in
                     SelectedCommandCellView(motionCommand: $motionCommand)
                 }
+                .onMove(perform: areaABottomCommandsRowReplace)
                 .listRowSeparator(.hidden)
             } header: {
                 Text(SelectedCommandSectionEnum.AreaABottom.description)
@@ -62,8 +65,20 @@ struct SelectedCommandListView: View {
         .environment(\.editMode, .constant(.active))
     } // var body
 
-    func rowReplace(_ from: IndexSet, _ to: Int) {
+    func fromStartToDoubleLoopCommandsRowReplace(_ from: IndexSet, _ to: Int) {
         viewModel.fromStartToDoubleLoopCommands.move(fromOffsets: from, toOffset: to)
+    }
+
+    func fromAreaAToAreaBCommandsRowReplace(_ from: IndexSet, _ to: Int) {
+        viewModel.fromAreaAToAreaBCommands.move(fromOffsets: from, toOffset: to)
+    }
+
+    func areaBCommandsRowReplace(_ from: IndexSet, _ to: Int) {
+        viewModel.areaBCommands.move(fromOffsets: from, toOffset: to)
+    }
+
+    func areaABottomCommandsRowReplace(_ from: IndexSet, _ to: Int) {
+        viewModel.areaABottomCommands.move(fromOffsets: from, toOffset: to)
     }
 }
 
