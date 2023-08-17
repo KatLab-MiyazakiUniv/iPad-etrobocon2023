@@ -55,8 +55,8 @@ struct SelectedCommandListView: View {
                     .font(SelectedCommandViewInfo().commandTitleFont)
                     .foregroundStyle(.black)
             }
-            .opacity(viewModel.isSelectedSection == .AreaB ? 1.0 : 0.3)
             .listRowSeparator(.hidden)
+            .opacity(viewModel.isSelectedSection == .AreaB ? 1.0 : 0.3)
 
             Section {
                 Rectangle()
