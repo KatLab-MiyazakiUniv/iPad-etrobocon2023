@@ -29,8 +29,10 @@ struct ColorParameterCellView: View {
                 Picker("目標色", selection: $selectedColor) {
                     ForEach(TargetColorEnum.allCases, id: \.self) { color in
                         Text(color.colorName)
+                            .foregroundStyle(.black)
                     }
                 }
+                .labelsHidden()
                 .padding(.trailing, SelectedCommandViewInfo().padding)
             }
         }

@@ -11,33 +11,31 @@ struct SelectedCommandCellView: View {
             // 1段目
             HStack(spacing: 0) {
                 // 左
-                switch motionCommand.command {
-                case .DL:
-                    FloatParameterCellView(inputNumber: $motionCommand.targetDistance, parameterTitle: "目標距離(mm)")
-                case .CL:
-                    ColorParameterCellView(selectedColor: $motionCommand.targetColor, parameterTitle: "目標色")
-                case .DS:
-                    FloatParameterCellView(inputNumber: $motionCommand.targetDistance, parameterTitle: "目標距離(mm)")
-                        .padding(.leading, SelectedCommandViewInfo().padding)
-                case .CS:
-                    ColorParameterCellView(selectedColor: $motionCommand.targetColor, parameterTitle: "目標色")
-                        .padding(.leading, SelectedCommandViewInfo().padding)
-                case .AR:
-                    IntParameterCellView(inputNumber: $motionCommand.targetAngle, parameterTitle: "目標角度(°)")
-                case .DT:
-                    FloatParameterCellView(inputNumber: $motionCommand.targetDistance, parameterTitle: "目標距離(mm)")
-                case .EC:
-                    LOrRParameterCellView(leftOrRight: $motionCommand.targetEdge, parameterTitle: "切り替え後")
-                        .padding(.leading, SelectedCommandViewInfo().padding)
-                case .SL:
-                    IntParameterCellView(inputNumber: $motionCommand.sleepInterval, parameterTitle: "(mms)")
-                        .padding(.leading, SelectedCommandViewInfo().padding)
-                case .AU: EmptyView()
-                case .AD: EmptyView()
-                case .XR:
-                    IntParameterCellView(inputNumber: $motionCommand.targetAngle, parameterTitle: "目標角度(°)")
-                        .padding(.leading, SelectedCommandViewInfo().padding)
+                Group {
+                    switch motionCommand.command {
+                    case .DL:
+                        FloatParameterCellView(inputNumber: $motionCommand.targetDistance, parameterTitle: "目標距離(mm)")
+                    case .CL:
+                        ColorParameterCellView(selectedColor: $motionCommand.targetColor, parameterTitle: "目標色")
+                    case .DS:
+                        FloatParameterCellView(inputNumber: $motionCommand.targetDistance, parameterTitle: "目標距離(mm)")
+                    case .CS:
+                        ColorParameterCellView(selectedColor: $motionCommand.targetColor, parameterTitle: "目標色")
+                    case .AR:
+                        IntParameterCellView(inputNumber: $motionCommand.targetAngle, parameterTitle: "目標角度(°)")
+                    case .DT:
+                        FloatParameterCellView(inputNumber: $motionCommand.targetDistance, parameterTitle: "目標距離(mm)")
+                    case .EC:
+                        LOrRParameterCellView(leftOrRight: $motionCommand.targetEdge, parameterTitle: "切り替え後")
+                    case .SL:
+                        IntParameterCellView(inputNumber: $motionCommand.sleepInterval, parameterTitle: "(mms)")
+                    case .AU: EmptyView()
+                    case .AD: EmptyView()
+                    case .XR:
+                        IntParameterCellView(inputNumber: $motionCommand.targetAngle, parameterTitle: "目標角度(°)")
+                    }
                 }
+                .padding(.leading, SelectedCommandViewInfo().padding)
 
                 // 中央
                 Group {
@@ -83,6 +81,8 @@ struct SelectedCommandCellView: View {
                 case .AD: EmptyView()
                 case .XR: Spacer()
                 }
+
+                Spacer()
             } // HStack
 
             // 1段目と2段目の間の余白
@@ -188,12 +188,15 @@ struct SelectedCommandCellView_Previews: PreviewProvider {
                                                          MotionCommand(command: .XR),
     ]
     static var previews: some View {
-        VStack {
+        List {
             ForEach($motionCommands, id: \.id) { $motionCommand in
                 SelectedCommandCellView(motionCommand: $motionCommand)
             }
+            .onMove(perform: { indices, newOffset in
 
+            })
         }
-        .previewLayout(.fixed(width: 550, height: 1650))
+        .environment(\.editMode, .constant(.active))
+        .previewLayout(.fixed(width: SelectedCommandViewInfo().selectedCommandListWidth + 52, height: 1650))
     }
 }
