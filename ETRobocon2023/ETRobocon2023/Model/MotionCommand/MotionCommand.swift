@@ -3,7 +3,8 @@ import Foundation
 struct MotionCommand: Identifiable {
     var id = UUID()
     let command: MotionCommandEnum
-    
+    let section: SelectedCommandSectionEnum
+
     var targetDistance: Float = 0
     var targetColor = TargetColorEnum.Black
     var targetAngle = 0
@@ -17,4 +18,13 @@ struct MotionCommand: Identifiable {
     var leftPWM = 0
     var rightPWM = 0
     var sleepInterval = 0
+}
+
+extension [MotionCommand] {
+    func indexOfCommand(withId id: MotionCommand.ID) -> Self.Index {
+        guard let index = firstIndex(where: { $0.id == id }) else {
+            fatalError()
+        }
+        return index
+    }
 }

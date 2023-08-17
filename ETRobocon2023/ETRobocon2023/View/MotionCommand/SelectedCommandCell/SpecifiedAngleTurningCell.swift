@@ -25,7 +25,7 @@ struct SpecifiedAngleTurningCell: View {
 }
 
 struct SpecifiedAngleTurningCell_Previews: PreviewProvider {
-    @State static var motionCommand = MotionCommand(command: .AR)
+    @State static var motionCommand = MotionCommand(command: .AR, section: .FromStartToDoubleLoop)
     static var previews: some View {
         SpecifiedAngleTurningCell(motionCommand: $motionCommand)
             .previewLayout(.fixed(width: 550, height: 400))

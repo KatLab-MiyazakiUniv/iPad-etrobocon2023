@@ -1,12 +1,32 @@
 import SwiftUI
 
 struct SelectedCommandCellView: View {
+    @EnvironmentObject var viewModel: SelectedCommandViewModel
     @Binding var motionCommand: MotionCommand
 
     var body: some View {
         VStack(spacing: 0) {
-            SelectedCommandTitleView(commandTitle: motionCommand.command.rawValue,
-                                     commandSubtitle: motionCommand.command.description)
+            HStack(spacing: 0) {
+                SelectedCommandTitleView(commandTitle: motionCommand.command.rawValue,
+                                         commandSubtitle: motionCommand.command.description)
+                .padding(.leading, SelectedCommandViewInfo().padding)
+
+                Spacer()
+
+                Image(systemName: "trash.circle.fill")
+                    .resizable()
+                    .frame(width: 32, height: 32)
+                    .foregroundStyle(.red)
+                    .onTapGesture {
+                        withAnimation {
+                            viewModel.deleteSelectedCommand(motionCommand)
+                        }
+                    }
+                
+                Rectangle()
+                    .foregroundStyle(.clear)
+                    .frame(width: SelectedCommandViewInfo().padding*2)
+            }
 
             // 1段目
             HStack(spacing: 0) {
@@ -175,17 +195,17 @@ struct SelectedCommandCellView: View {
 } // struct SelectedCommandCellView
 
 struct SelectedCommandCellView_Previews: PreviewProvider {
-    @State static var motionCommands: [MotionCommand] = [MotionCommand(command: .DL),
-                                                         MotionCommand(command: .CL),
-                                                         MotionCommand(command: .DS),
-                                                         MotionCommand(command: .CS),
-                                                         MotionCommand(command: .AR),
-                                                         MotionCommand(command: .DT),
-                                                         MotionCommand(command: .EC),
-                                                         MotionCommand(command: .SL),
-                                                         MotionCommand(command: .AU),
-                                                         MotionCommand(command: .AD),
-                                                         MotionCommand(command: .XR),
+    @State static var motionCommands: [MotionCommand] = [MotionCommand(command: .DL, section: .FromStartToDoubleLoop),
+                                                         MotionCommand(command: .CL, section: .FromStartToDoubleLoop),
+                                                         MotionCommand(command: .DS, section: .FromStartToDoubleLoop),
+                                                         MotionCommand(command: .CS, section: .FromStartToDoubleLoop),
+                                                         MotionCommand(command: .AR, section: .FromStartToDoubleLoop),
+                                                         MotionCommand(command: .DT, section: .FromStartToDoubleLoop),
+                                                         MotionCommand(command: .EC, section: .FromStartToDoubleLoop),
+                                                         MotionCommand(command: .SL, section: .FromStartToDoubleLoop),
+                                                         MotionCommand(command: .AU, section: .FromStartToDoubleLoop),
+                                                         MotionCommand(command: .AD, section: .FromStartToDoubleLoop),
+                                                         MotionCommand(command: .XR, section: .FromStartToDoubleLoop),
     ]
     static var previews: some View {
         List {
@@ -197,6 +217,7 @@ struct SelectedCommandCellView_Previews: PreviewProvider {
             })
         }
         .environment(\.editMode, .constant(.active))
+        .environmentObject(SelectedCommandViewModel())
         .previewLayout(.fixed(width: SelectedCommandViewInfo().selectedCommandListWidth + 52, height: 1650))
     }
 }

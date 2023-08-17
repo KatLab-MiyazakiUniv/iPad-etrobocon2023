@@ -33,6 +33,8 @@ struct ColorParameterCellView: View {
                     }
                 }
                 .labelsHidden()
+                .pickerStyle(MenuPickerStyle())
+                .clipped()
                 .padding(.trailing, SelectedCommandViewInfo().padding)
             }
         }
@@ -44,8 +46,10 @@ struct ColorParameterCellView: View {
 }
 
 struct ColorParameterCellView_Previews: PreviewProvider {
-    @State static var selectedColor = TargetColorEnum.Black
+    @State static var selectedColor = TargetColorEnum.Yellow
     static var previews: some View {
         ColorParameterCellView(selectedColor: $selectedColor, parameterTitle: "目標色")
+            .previewLayout(.fixed(width: 550, height: 400))
+            .background(.black)
     }
 }
