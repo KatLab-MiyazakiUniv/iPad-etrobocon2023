@@ -11,6 +11,7 @@ struct SelectedCommandListView: View {
                 Section {
                     Rectangle()
                         .frame(height: 0)
+                        .id(SelectedCommandSectionEnum.FromStartToDoubleLoop)
                     ForEach($viewModel.fromStartToDoubleLoopCommands) { $motionCommand in
                         SelectedCommandCellView(motionCommand: $motionCommand)
                             .id(motionCommand.id)
@@ -18,6 +19,7 @@ struct SelectedCommandListView: View {
                     .onMove(perform: fromStartToDoubleLoopCommandsRowReplace)
                     Rectangle()
                         .frame(height: 0)
+                        .id(SelectedCommandSectionEnum.FromAreaAToAreaB)
                 } header: {
                     Text(SelectedCommandSectionEnum.FromStartToDoubleLoop.description)
                         .font(SelectedCommandViewInfo().commandTitleFont)
@@ -36,6 +38,7 @@ struct SelectedCommandListView: View {
                     .onMove(perform: fromAreaAToAreaBCommandsRowReplace)
                     Rectangle()
                         .frame(height: 0)
+                        .id(SelectedCommandSectionEnum.AreaB)
                 } header: {
                     Text(SelectedCommandSectionEnum.FromAreaAToAreaB.description)
                         .font(SelectedCommandViewInfo().commandTitleFont)
@@ -54,6 +57,7 @@ struct SelectedCommandListView: View {
                     .onMove(perform: areaBCommandsRowReplace)
                     Rectangle()
                         .frame(height: 0)
+                        .id(SelectedCommandSectionEnum.AreaABottom)
                 } header: {
                     Text(SelectedCommandSectionEnum.AreaB.description)
                         .font(SelectedCommandViewInfo().commandTitleFont)
@@ -86,7 +90,23 @@ struct SelectedCommandListView: View {
             .environment(\.editMode, .constant(.active))
             .onChange(of: viewModel.newCommandId) { id in
                 withAnimation {
-                    scrollProxy.scrollTo(id, anchor: .center)
+                    scrollProxy.scrollTo(id)
+                }
+            }
+            .onChange(of: viewModel.isSelectedSection) { section in
+                withAnimation {
+                    switch section {
+                    case .FromStartToDoubleLoop:
+                        scrollProxy.scrollTo(section, anchor: .bottom)
+                    case .FromAreaAToAreaB:
+                        scrollProxy.scrollTo(section, anchor: .top)
+                    case .AreaB:
+                        scrollProxy.scrollTo(section, anchor: .top)
+                    case .AreaABottom:
+                        scrollProxy.scrollTo(section, anchor: .top)
+                    case .none:
+                        break
+                    }
                 }
             }
         } // ScrollViewReader
