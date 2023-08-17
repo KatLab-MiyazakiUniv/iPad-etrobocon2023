@@ -9,7 +9,6 @@ struct ColorLineTraceCell: View {
                                      commandSubtitle: motionCommand.command.description)
 
             HStack(spacing: 0) {
-//                FloatParameterCellView(inputNumber: $motionCommand.targetDistance, parameterTitle: "目標色")
                 ColorParameterCellView(selectedColor: $motionCommand.targetColor, parameterTitle: "目標色")
                     
                 FloatParameterCellView(inputNumber: $motionCommand.targetSpeed, parameterTitle: "目標速度(mm/s)")
