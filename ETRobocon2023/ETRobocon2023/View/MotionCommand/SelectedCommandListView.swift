@@ -8,55 +8,71 @@ struct SelectedCommandListView: View {
     var body: some View {
         List {
             Section {
+                Rectangle()
+                    .frame(height: 0)
                 ForEach($viewModel.fromStartToDoubleLoopCommands) { $motionCommand in
                     SelectedCommandCellView(motionCommand: $motionCommand)
                 }
                 .onMove(perform: fromStartToDoubleLoopCommandsRowReplace)
-                .listRowSeparator(.hidden)
+                Rectangle()
+                    .frame(height: 0)
             } header: {
                 Text(SelectedCommandSectionEnum.FromStartToDoubleLoop.description)
                     .font(SelectedCommandViewInfo().commandTitleFont)
                     .foregroundStyle(.black)
             }
+            .listRowSeparator(.hidden)
             .opacity(viewModel.isSelectedSection == .FromStartToDoubleLoop ? 1.0 : 0.3)
 
             Section {
+                Rectangle()
+                    .frame(height: 0)
                 ForEach($viewModel.fromAreaAToAreaBCommands) { $motionCommand in
                     SelectedCommandCellView(motionCommand: $motionCommand)
                 }
                 .onMove(perform: fromAreaAToAreaBCommandsRowReplace)
-                .listRowSeparator(.hidden)
+                Rectangle()
+                    .frame(height: 0)
             } header: {
                 Text(SelectedCommandSectionEnum.FromAreaAToAreaB.description)
                     .font(SelectedCommandViewInfo().commandTitleFont)
                     .foregroundStyle(.black)
             }
+            .listRowSeparator(.hidden)
             .opacity(viewModel.isSelectedSection == .FromAreaAToAreaB ? 1.0 : 0.3)
 
             Section {
+                Rectangle()
+                    .frame(height: 0)
                 ForEach($viewModel.areaBCommands) { $motionCommand in
                     SelectedCommandCellView(motionCommand: $motionCommand)
                 }
                 .onMove(perform: areaBCommandsRowReplace)
-                .listRowSeparator(.hidden)
+                Rectangle()
+                    .frame(height: 0)
             } header: {
                 Text(SelectedCommandSectionEnum.AreaB.description)
                     .font(SelectedCommandViewInfo().commandTitleFont)
                     .foregroundStyle(.black)
             }
             .opacity(viewModel.isSelectedSection == .AreaB ? 1.0 : 0.3)
+            .listRowSeparator(.hidden)
 
             Section {
+                Rectangle()
+                    .frame(height: 0)
                 ForEach($viewModel.areaABottomCommands) { $motionCommand in
                     SelectedCommandCellView(motionCommand: $motionCommand)
                 }
                 .onMove(perform: areaABottomCommandsRowReplace)
-                .listRowSeparator(.hidden)
+                Rectangle()
+                    .frame(height: 0)
             } header: {
                 Text(SelectedCommandSectionEnum.AreaABottom.description)
                     .font(SelectedCommandViewInfo().commandTitleFont)
                     .foregroundStyle(.black)
             }
+            .listRowSeparator(.hidden)
             .opacity(viewModel.isSelectedSection == .AreaABottom ? 1.0 : 0.3)
         } // List
         .listStyle(SidebarListStyle())

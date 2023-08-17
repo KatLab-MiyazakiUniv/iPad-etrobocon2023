@@ -24,7 +24,7 @@ struct MotionCommandOptionCell: View {
                 Text(motionCommandType.rawValue)
                     .frame(width: textWidth, alignment: .leading)
                     .font(.system(size: 23, weight: .bold))
-                Text(motionCommandType.rawValue)
+                Text(motionCommandType.description)
                     .frame(width: textWidth, alignment: .leading)
                     .font(.system(size: 17, weight: .light))
             } // VStack
