@@ -6,79 +6,90 @@ struct SelectedCommandListView: View {
     @State private var sectionTopPositions: [SelectedCommandSectionEnum: CGFloat] = [:]
 
     var body: some View {
-        List {
-            Section {
-                Rectangle()
-                    .frame(height: 0)
-                ForEach($viewModel.fromStartToDoubleLoopCommands) { $motionCommand in
-                    SelectedCommandCellView(motionCommand: $motionCommand)
+        ScrollViewReader { scrollProxy in
+            List {
+                Section {
+                    Rectangle()
+                        .frame(height: 0)
+                    ForEach($viewModel.fromStartToDoubleLoopCommands) { $motionCommand in
+                        SelectedCommandCellView(motionCommand: $motionCommand)
+                            .id(motionCommand.id)
+                    }
+                    .onMove(perform: fromStartToDoubleLoopCommandsRowReplace)
+                    Rectangle()
+                        .frame(height: 0)
+                } header: {
+                    Text(SelectedCommandSectionEnum.FromStartToDoubleLoop.description)
+                        .font(SelectedCommandViewInfo().commandTitleFont)
+                        .foregroundStyle(.black)
                 }
-                .onMove(perform: fromStartToDoubleLoopCommandsRowReplace)
-                Rectangle()
-                    .frame(height: 0)
-            } header: {
-                Text(SelectedCommandSectionEnum.FromStartToDoubleLoop.description)
-                    .font(SelectedCommandViewInfo().commandTitleFont)
-                    .foregroundStyle(.black)
-            }
-            .listRowSeparator(.hidden)
-            .opacity(viewModel.isSelectedSection == .FromStartToDoubleLoop ? 1.0 : 0.3)
+                .listRowSeparator(.hidden)
+                .opacity(viewModel.isSelectedSection == .FromStartToDoubleLoop ? 1.0 : 0.3)
 
-            Section {
-                Rectangle()
-                    .frame(height: 0)
-                ForEach($viewModel.fromAreaAToAreaBCommands) { $motionCommand in
-                    SelectedCommandCellView(motionCommand: $motionCommand)
+                Section {
+                    Rectangle()
+                        .frame(height: 0)
+                    ForEach($viewModel.fromAreaAToAreaBCommands) { $motionCommand in
+                        SelectedCommandCellView(motionCommand: $motionCommand)
+                            .id(motionCommand.id)
+                    }
+                    .onMove(perform: fromAreaAToAreaBCommandsRowReplace)
+                    Rectangle()
+                        .frame(height: 0)
+                } header: {
+                    Text(SelectedCommandSectionEnum.FromAreaAToAreaB.description)
+                        .font(SelectedCommandViewInfo().commandTitleFont)
+                        .foregroundStyle(.black)
                 }
-                .onMove(perform: fromAreaAToAreaBCommandsRowReplace)
-                Rectangle()
-                    .frame(height: 0)
-            } header: {
-                Text(SelectedCommandSectionEnum.FromAreaAToAreaB.description)
-                    .font(SelectedCommandViewInfo().commandTitleFont)
-                    .foregroundStyle(.black)
-            }
-            .listRowSeparator(.hidden)
-            .opacity(viewModel.isSelectedSection == .FromAreaAToAreaB ? 1.0 : 0.3)
+                .listRowSeparator(.hidden)
+                .opacity(viewModel.isSelectedSection == .FromAreaAToAreaB ? 1.0 : 0.3)
 
-            Section {
-                Rectangle()
-                    .frame(height: 0)
-                ForEach($viewModel.areaBCommands) { $motionCommand in
-                    SelectedCommandCellView(motionCommand: $motionCommand)
+                Section {
+                    Rectangle()
+                        .frame(height: 0)
+                    ForEach($viewModel.areaBCommands) { $motionCommand in
+                        SelectedCommandCellView(motionCommand: $motionCommand)
+                            .id(motionCommand.id)
+                    }
+                    .onMove(perform: areaBCommandsRowReplace)
+                    Rectangle()
+                        .frame(height: 0)
+                } header: {
+                    Text(SelectedCommandSectionEnum.AreaB.description)
+                        .font(SelectedCommandViewInfo().commandTitleFont)
+                        .foregroundStyle(.black)
                 }
-                .onMove(perform: areaBCommandsRowReplace)
-                Rectangle()
-                    .frame(height: 0)
-            } header: {
-                Text(SelectedCommandSectionEnum.AreaB.description)
-                    .font(SelectedCommandViewInfo().commandTitleFont)
-                    .foregroundStyle(.black)
-            }
-            .listRowSeparator(.hidden)
-            .opacity(viewModel.isSelectedSection == .AreaB ? 1.0 : 0.3)
+                .listRowSeparator(.hidden)
+                .opacity(viewModel.isSelectedSection == .AreaB ? 1.0 : 0.3)
 
-            Section {
-                Rectangle()
-                    .frame(height: 0)
-                ForEach($viewModel.areaABottomCommands) { $motionCommand in
-                    SelectedCommandCellView(motionCommand: $motionCommand)
+                Section {
+                    Rectangle()
+                        .frame(height: 0)
+                    ForEach($viewModel.areaABottomCommands) { $motionCommand in
+                        SelectedCommandCellView(motionCommand: $motionCommand)
+                            .id(motionCommand.id)
+                    }
+                    .onMove(perform: areaABottomCommandsRowReplace)
+                    Rectangle()
+                        .frame(height: 0)
+                } header: {
+                    Text(SelectedCommandSectionEnum.AreaABottom.description)
+                        .font(SelectedCommandViewInfo().commandTitleFont)
+                        .foregroundStyle(.black)
                 }
-                .onMove(perform: areaABottomCommandsRowReplace)
-                Rectangle()
-                    .frame(height: 0)
-            } header: {
-                Text(SelectedCommandSectionEnum.AreaABottom.description)
-                    .font(SelectedCommandViewInfo().commandTitleFont)
-                    .foregroundStyle(.black)
+                .listRowSeparator(.hidden)
+                .opacity(viewModel.isSelectedSection == .AreaABottom ? 1.0 : 0.3)
+            } // List
+            .listStyle(SidebarListStyle())
+            .frame(width: SelectedCommandViewInfo().selectedCommandListWidth + 52)
+            .background(SelectedCommandViewInfo().selectedCommandListBackground)
+            .environment(\.editMode, .constant(.active))
+            .onChange(of: viewModel.newCommandId) { id in
+                withAnimation {
+                    scrollProxy.scrollTo(id, anchor: .center)
+                }
             }
-            .listRowSeparator(.hidden)
-            .opacity(viewModel.isSelectedSection == .AreaABottom ? 1.0 : 0.3)
-        } // List
-        .listStyle(SidebarListStyle())
-        .frame(width: SelectedCommandViewInfo().selectedCommandListWidth + 52)
-        .background(SelectedCommandViewInfo().selectedCommandListBackground)
-        .environment(\.editMode, .constant(.active))
+        } // ScrollViewReader
     } // var body
 
     func fromStartToDoubleLoopCommandsRowReplace(_ from: IndexSet, _ to: Int) {

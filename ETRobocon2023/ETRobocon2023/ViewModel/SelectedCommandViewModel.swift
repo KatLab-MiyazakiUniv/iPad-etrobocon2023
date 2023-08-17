@@ -8,6 +8,8 @@ class SelectedCommandViewModel: ObservableObject {
     @Published var areaBCommands: [MotionCommand] = []
     @Published var areaABottomCommands: [MotionCommand] = []
 
+    @Published var newCommandId = UUID()
+
     func addSelectedCommand(_ command: MotionCommandEnum) {
         guard let section = isSelectedSection else { return }
         let motionCommand = MotionCommand(command: command, section: section)
@@ -21,6 +23,7 @@ class SelectedCommandViewModel: ObservableObject {
         case .AreaABottom:
             areaABottomCommands.append(motionCommand)
         }
+        newCommandId = motionCommand.id
     }
 
     func deleteSelectedCommand(_ command: MotionCommand) {
