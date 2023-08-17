@@ -13,15 +13,19 @@ struct SelectedCommandCellView: View {
 
                 Spacer()
 
-                Button {
-                    viewModel.deleteSelectedCommand(motionCommand)
-                } label: {
-                    Image(systemName: "trash.circle.fill")
-                        .resizable()
-                        .frame(width: 30, height: 30)
-                        .foregroundStyle(.red)
-                }
-                .padding(.trailing, SelectedCommandViewInfo().padding*2)
+                Image(systemName: "trash.circle.fill")
+                    .resizable()
+                    .frame(width: 32, height: 32)
+                    .foregroundStyle(.red)
+                    .onTapGesture {
+                        withAnimation {
+                            viewModel.deleteSelectedCommand(motionCommand)
+                        }
+                    }
+                
+                Rectangle()
+                    .foregroundStyle(.clear)
+                    .frame(width: SelectedCommandViewInfo().padding*2)
             }
 
             // 1段目
