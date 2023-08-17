@@ -5,8 +5,23 @@ struct SelectedCommandCellView: View {
 
     var body: some View {
         VStack(spacing: 0) {
-            SelectedCommandTitleView(commandTitle: motionCommand.command.rawValue,
-                                     commandSubtitle: motionCommand.command.description)
+            HStack(spacing: 0) {
+                SelectedCommandTitleView(commandTitle: motionCommand.command.rawValue,
+                                         commandSubtitle: motionCommand.command.description)
+                .padding(.leading, SelectedCommandViewInfo().padding)
+
+                Spacer()
+
+                Button {
+
+                } label: {
+                    Image(systemName: "trash.circle.fill")
+                        .resizable()
+                        .frame(width: 30, height: 30)
+                        .foregroundStyle(.red)
+                }
+                .padding(.trailing, SelectedCommandViewInfo().padding*2)
+            }
 
             // 1段目
             HStack(spacing: 0) {

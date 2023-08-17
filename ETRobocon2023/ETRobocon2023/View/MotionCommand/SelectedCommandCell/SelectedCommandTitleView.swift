@@ -15,7 +15,7 @@ struct SelectedCommandTitleView: View {
         }
         .padding(.top, SelectedCommandViewInfo().padding)
         .padding(.bottom, SelectedCommandViewInfo().padding)
-        .frame(width: SelectedCommandViewInfo().selectedCommandCellWidth, alignment: .leading)
+//        .frame(width: SelectedCommandViewInfo().selectedCommandCellWidth, alignment: .leading)
     }
 }
 
