@@ -1,6 +1,6 @@
 import Foundation
 
-enum MotionCommandEnum: String {
+enum MotionCommandEnum: String, CaseIterable {
     case DL // 指定距離ライントレース
     case CL // 指定色ライントレース
     case DS // 指定距離直進

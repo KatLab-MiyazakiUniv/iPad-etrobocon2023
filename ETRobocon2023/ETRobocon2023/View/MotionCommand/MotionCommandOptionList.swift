@@ -1,23 +1,26 @@
 import SwiftUI
 
 struct MotionCommandOptionList: View {
-    let motionCommands: [MotionCommand] = [MotionCommand(command: .DL),
-                                           MotionCommand(command: .CL),
-                                           MotionCommand(command: .DS),
-                                           MotionCommand(command: .CS),
-                                           MotionCommand(command: .AR),
-                                           MotionCommand(command: .DT),
-                                           MotionCommand(command: .EC),
-                                           MotionCommand(command: .SL),
+    let motionCommands: [MotionCommand] = [MotionCommand(command: .DL, section: .FromStartToDoubleLoop),
+                                           MotionCommand(command: .CL, section: .FromStartToDoubleLoop),
+                                           MotionCommand(command: .DS, section: .FromStartToDoubleLoop),
+                                           MotionCommand(command: .CS, section: .FromStartToDoubleLoop),
+                                           MotionCommand(command: .AR, section: .FromStartToDoubleLoop),
+                                           MotionCommand(command: .DT, section: .FromStartToDoubleLoop),
+                                           MotionCommand(command: .EC, section: .FromStartToDoubleLoop),
+                                           MotionCommand(command: .SL, section: .FromStartToDoubleLoop),
 //                                           MotionCommand(command: .AU),
 //                                           MotionCommand(command: .AD),
-                                           MotionCommand(command: .XR),
+                                           MotionCommand(command: .XR, section: .FromStartToDoubleLoop)
     ]
 
     var body: some View {
-        List(motionCommands, id: \.id) { motionCommand in
-            MotionCommandOptionCell(motionCommand: motionCommand)
-                .listRowSeparator(.hidden)
+//        List(motionCommands, id: \.id) { motionCommand in
+//            MotionCommandOptionCell(motionCommand: motionCommand)
+//                .listRowSeparator(.hidden)
+//        }
+        List(MotionCommandEnum.allCases, id: \.self) { commandCase in
+            MotionCommandOptionCell(motionCommandType: commandCase)
         }
         .frame(width: 300)
     }
