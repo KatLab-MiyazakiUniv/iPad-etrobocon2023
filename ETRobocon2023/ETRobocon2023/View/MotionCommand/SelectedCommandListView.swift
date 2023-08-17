@@ -39,7 +39,9 @@ struct SelectedCommandListView: View {
             } header: {
                 Text(SelectedCommandSectionEnum.FromStartToDoubleLoop.description)
                     .font(SelectedCommandViewInfo().commandTitleFont)
+                    .foregroundStyle(.black)
             }
+            .opacity(viewModel.isSelectedSection == .FromStartToDoubleLoop ? 1.0 : 0.3)
 
             Section {
                 ForEach($viewModel.fromAreaAToAreaBCommands) { $motionCommand in
@@ -49,7 +51,9 @@ struct SelectedCommandListView: View {
             } header: {
                 Text(SelectedCommandSectionEnum.FromAreaAToAreaB.description)
                     .font(SelectedCommandViewInfo().commandTitleFont)
+                    .foregroundStyle(.black)
             }
+            .opacity(viewModel.isSelectedSection == .FromAreaAToAreaB ? 1.0 : 0.3)
 
             Section {
                 ForEach($viewModel.areaBCommands) { $motionCommand in
@@ -59,7 +63,9 @@ struct SelectedCommandListView: View {
             } header: {
                 Text(SelectedCommandSectionEnum.AreaB.description)
                     .font(SelectedCommandViewInfo().commandTitleFont)
+                    .foregroundStyle(.black)
             }
+            .opacity(viewModel.isSelectedSection == .AreaB ? 1.0 : 0.3)
 
             Section {
                 ForEach($viewModel.areaABottomCommands) { $motionCommand in
@@ -69,7 +75,9 @@ struct SelectedCommandListView: View {
             } header: {
                 Text(SelectedCommandSectionEnum.AreaABottom.description)
                     .font(SelectedCommandViewInfo().commandTitleFont)
+                    .foregroundStyle(.black)
             }
+            .opacity(viewModel.isSelectedSection == .AreaABottom ? 1.0 : 0.3)
         }
         .listStyle(SidebarListStyle())
         .frame(width: SelectedCommandViewInfo().selectedCommandListWidth)
