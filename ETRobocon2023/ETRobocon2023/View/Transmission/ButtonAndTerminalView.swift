@@ -2,6 +2,7 @@ import SwiftUI
 
 /// 送信ボタンと結果を表示するターミナルを横並びで表示する
 struct ButtonAndTerminalView: View {
+    @EnvironmentObject private var selectedCommandViewModel: SelectedCommandViewModel
     @ObservedObject var terminalViewModel = TerminalViewModel()
     let fileSendViewModel = FileSendViewModel()
 
@@ -13,10 +14,17 @@ struct ButtonAndTerminalView: View {
                         .frame(width: geometry.size.width/2, height: geometry.size.height)
                     
                     Button {
-                        terminalViewModel.addMessage("Send sample CSV file to First machine.")
-                        terminalViewModel.addMessage(CsvFileManager.generateSampleFile())
+//                        terminalViewModel.addMessage("Send sample CSV file to First machine.")
+//                        terminalViewModel.addMessage(CsvFileManager.generateSampleFile())
+//                        Task {
+//                            let result = await fileSendViewModel.SendSampleFile()
+//                            terminalViewModel.addMessage("\n" + result + "\n")
+//                        }
+                        let commandsString = selectedCommandViewModel.commandsToCsv()
+                        print(commandsString)
+                        terminalViewModel.addMessage(commandsString)
                         Task {
-                            let result = await fileSendViewModel.SendSampleFile()
+                            let result = await fileSendViewModel.sendCsvFile(commandsString)
                             terminalViewModel.addMessage("\n" + result + "\n")
                         }
                     } label: {
@@ -48,6 +56,7 @@ struct ButtonAndTerminalView: View {
 struct ButtonAndTerminalView_Previews: PreviewProvider {
     static var previews: some View {
         ButtonAndTerminalView()
-            .previewLayout(.fixed(width: 2732, height: 2048))
+            .environmentObject(SelectedCommandViewModel())
+            .previewLayout(.fixed(width: 2732/2, height: 2048/2))
     }
 }

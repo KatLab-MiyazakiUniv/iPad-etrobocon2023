@@ -4,20 +4,33 @@ struct ContentView: View {
     @State private var isAnimating: Bool = true
     @State private var segment = SegmentNames.DoubleLoopExitBlackLineView
     
+    init() {
+        UITabBar.appearance().backgroundColor = .white
+    }
+
     var body: some View {
-//        CourseMapAndListView()
-//        ButtonAndTerminalView()
-//        MotionCommandOptionList()
-        CourseMapAndCommandView()
-//        SelectedCommandList()
-//        ListToSelectOneSection()
-//        DraggableVStack()
+        TabView {
+            CourseMapAndCommandView()
+                .tabItem {
+                    VStack {
+                        Image(systemName: "list.dash")
+                    }
+                }
+
+            ButtonAndTerminalView()
+                .tabItem {
+                    VStack {
+                        Image(systemName: "paperplane.fill")
+                    }
+                }
+        } // TabView
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(SelectedCommandViewModel())
             .previewLayout(.fixed(width: 1366, height: 1024))
     }
 }

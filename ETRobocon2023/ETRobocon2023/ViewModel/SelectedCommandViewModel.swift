@@ -42,4 +42,10 @@ class SelectedCommandViewModel: ObservableObject {
             areaABottomCommands.remove(at: index)
         }
     }
+
+    func commandsToCsv() -> String {
+        let converter = CommandsAndCsvConverter()
+        let string = converter.commandsToCsv([fromStartToDoubleLoopCommands, fromAreaAToAreaBCommands, areaBCommands, areaABottomCommands])
+        return string
+    }
 }
