@@ -1,7 +1,7 @@
 import Foundation
 
 class LogChartViewModel: ObservableObject {
-    @Published var pwmAndBrightness: [pwmAndBrightness] = []
+    @Published var pwmAndBrightness: [PwmAndBrightness] = []
 
     func loadPwmAndBrightness() {
         let converter = logTextToPwmAndBrightnessConverter()

@@ -1,11 +1,11 @@
 import Foundation
 
 struct logTextToPwmAndBrightnessConverter {
-    func logTextToPwmAndBrightness(with logText: String) -> [pwmAndBrightness] {
+    func logTextToPwmAndBrightness(with logText: String) -> [PwmAndBrightness] {
         // 行ごとに分解
         let lines = logText.split(separator: "\n").map({ String($0) })
         
-        var pwmAndBrightnessArray = [pwmAndBrightness]()
+        var pwmAndBrightnessArray = [PwmAndBrightness]()
         // 列ごとに分解
         for (index, line) in lines.enumerated() {
             let columns = line.split(separator: " ").map({ String($0) })
@@ -26,14 +26,19 @@ struct logTextToPwmAndBrightnessConverter {
                 break
             }
             let numberOfSeconds = Float(index) * 0.1
-            let pwmAndBrightness = pwmAndBrightness(numberOfSeconds: numberOfSeconds,
-                                                    leftPwm: leftPwm,
-                                                    rightPwm: rightPwm,
-                                                    brightness: brightness)
+//            let pwmAndBrightness = pwmAndBrightness(numberOfSeconds: numberOfSeconds,
+//                                                    leftPwm: leftPwm,
+//                                                    rightPwm: rightPwm,
+//                                                    brightness: brightness)
+            var pwmAndBrightness = PwmAndBrightness(numberOfSeconds: numberOfSeconds, category: .LeftPwm, value: leftPwm)
+            pwmAndBrightnessArray.append(pwmAndBrightness)
+            pwmAndBrightness = PwmAndBrightness(numberOfSeconds: numberOfSeconds, category: .RightPwm, value: rightPwm)
+            pwmAndBrightnessArray.append(pwmAndBrightness)
+            pwmAndBrightness = PwmAndBrightness(numberOfSeconds: numberOfSeconds, category: .Brightness, value: brightness)
             pwmAndBrightnessArray.append(pwmAndBrightness)
         } // for (index, line)
 
-        print(pwmAndBrightnessArray)
+//        print(pwmAndBrightnessArray)
         return pwmAndBrightnessArray
     } // func logTextToPwmAndBrightness
 }
