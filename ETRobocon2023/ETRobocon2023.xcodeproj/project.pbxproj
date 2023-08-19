@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AC0494562A7E7D9E0032FFF6 /* MotionCommandOptionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0494552A7E7D9E0032FFF6 /* MotionCommandOptionList.swift */; };
 		AC10B7E72A90829D009D61A3 /* logTextToPwmAndBrightnessConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC10B7E62A90829D009D61A3 /* logTextToPwmAndBrightnessConverter.swift */; };
+		AC10B7E92A908975009D61A3 /* pwmAndBrightness.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC10B7E82A908975009D61A3 /* pwmAndBrightness.swift */; };
 		AC3056212A58753900BAC46F /* Secret.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC3056202A58753900BAC46F /* Secret.plist */; };
 		AC3056232A5876A500BAC46F /* MachineTransmissionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3056222A5876A500BAC46F /* MachineTransmissionInfo.swift */; };
 		AC3056252A59526100BAC46F /* WhichMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3056242A59526100BAC46F /* WhichMachine.swift */; };
@@ -80,6 +81,7 @@
 /* Begin PBXFileReference section */
 		AC0494552A7E7D9E0032FFF6 /* MotionCommandOptionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionCommandOptionList.swift; sourceTree = "<group>"; };
 		AC10B7E62A90829D009D61A3 /* logTextToPwmAndBrightnessConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logTextToPwmAndBrightnessConverter.swift; sourceTree = "<group>"; };
+		AC10B7E82A908975009D61A3 /* pwmAndBrightness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pwmAndBrightness.swift; sourceTree = "<group>"; };
 		AC3056202A58753900BAC46F /* Secret.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Secret.plist; sourceTree = "<group>"; };
 		AC3056222A5876A500BAC46F /* MachineTransmissionInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineTransmissionInfo.swift; sourceTree = "<group>"; };
 		AC3056242A59526100BAC46F /* WhichMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhichMachine.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				ACA09F282A8A86B6000D0871 /* CourseSideEnum.swift */,
 				ACAA84392A8E68850070A261 /* CommandsAndCsvConverter.swift */,
 				AC10B7E62A90829D009D61A3 /* logTextToPwmAndBrightnessConverter.swift */,
+				AC10B7E82A908975009D61A3 /* pwmAndBrightness.swift */,
 				ACE8CD7F2A7E49F3003CF974 /* MotionCommand */,
 			);
 			path = Model;
@@ -455,6 +458,7 @@
 				ACAA843A2A8E68850070A261 /* CommandsAndCsvConverter.swift in Sources */,
 				AC6D14DD2A5275F900AADB04 /* LeftBottomBlackCornerView.swift in Sources */,
 				AC392C852A529E17003A5C88 /* DoubleLoopEntranceBlueCurveLineView.swift in Sources */,
+				AC10B7E92A908975009D61A3 /* pwmAndBrightness.swift in Sources */,
 				AC3056292A5957D100BAC46F /* TransmissionManager.swift in Sources */,
 				ACA09F142A8607EA000D0871 /* SelectedCommandViewInfo.swift in Sources */,
 				ACA09F162A8611AC000D0871 /* SelectedCommandTitleView.swift in Sources */,
