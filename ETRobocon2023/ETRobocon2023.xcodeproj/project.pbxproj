@@ -11,6 +11,7 @@
 		AC10B7E72A90829D009D61A3 /* logTextToPwmAndBrightnessConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC10B7E62A90829D009D61A3 /* logTextToPwmAndBrightnessConverter.swift */; };
 		AC10B7E92A908975009D61A3 /* pwmAndBrightness.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC10B7E82A908975009D61A3 /* pwmAndBrightness.swift */; };
 		AC10B7EB2A9089EF009D61A3 /* LogChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC10B7EA2A9089EF009D61A3 /* LogChartViewModel.swift */; };
+		AC10B7EE2A908ADD009D61A3 /* LogChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC10B7ED2A908ADD009D61A3 /* LogChartView.swift */; };
 		AC3056212A58753900BAC46F /* Secret.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC3056202A58753900BAC46F /* Secret.plist */; };
 		AC3056232A5876A500BAC46F /* MachineTransmissionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3056222A5876A500BAC46F /* MachineTransmissionInfo.swift */; };
 		AC3056252A59526100BAC46F /* WhichMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3056242A59526100BAC46F /* WhichMachine.swift */; };
@@ -84,6 +85,7 @@
 		AC10B7E62A90829D009D61A3 /* logTextToPwmAndBrightnessConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logTextToPwmAndBrightnessConverter.swift; sourceTree = "<group>"; };
 		AC10B7E82A908975009D61A3 /* pwmAndBrightness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pwmAndBrightness.swift; sourceTree = "<group>"; };
 		AC10B7EA2A9089EF009D61A3 /* LogChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogChartViewModel.swift; sourceTree = "<group>"; };
+		AC10B7ED2A908ADD009D61A3 /* LogChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogChartView.swift; sourceTree = "<group>"; };
 		AC3056202A58753900BAC46F /* Secret.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Secret.plist; sourceTree = "<group>"; };
 		AC3056222A5876A500BAC46F /* MachineTransmissionInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineTransmissionInfo.swift; sourceTree = "<group>"; };
 		AC3056242A59526100BAC46F /* WhichMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhichMachine.swift; sourceTree = "<group>"; };
@@ -164,6 +166,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC10B7EC2A908AC0009D61A3 /* LogChart */ = {
+			isa = PBXGroup;
+			children = (
+				AC10B7ED2A908ADD009D61A3 /* LogChartView.swift */,
+			);
+			path = LogChart;
+			sourceTree = "<group>";
+		};
 		AC30561F2A5873B700BAC46F /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +257,7 @@
 				AC30562F2A59688300BAC46F /* Transmission */,
 				AC720C0D2A52C3FF00406BCB /* Effect */,
 				ACE8CD822A7E4BFB003CF974 /* MotionCommand */,
+				AC10B7EC2A908AC0009D61A3 /* LogChart */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -480,6 +491,7 @@
 				AC4986432A877B29002F0E45 /* ColorParameterCellView.swift in Sources */,
 				ACA09F1E2A865433000D0871 /* SelectSectionListView.swift in Sources */,
 				AC6D14D92A52728600AADB04 /* RightBottomBlackCornerView.swift in Sources */,
+				AC10B7EE2A908ADD009D61A3 /* LogChartView.swift in Sources */,
 				AC49863F2A8618E0002F0E45 /* SortableVStack.swift in Sources */,
 				AC30562C2A59613600BAC46F /* FileSendViewModel.swift in Sources */,
 				AC6D14D52A526F4F00AADB04 /* StartBlueLineView.swift in Sources */,

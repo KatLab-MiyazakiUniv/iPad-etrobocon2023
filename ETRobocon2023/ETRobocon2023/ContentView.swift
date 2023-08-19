@@ -23,6 +23,13 @@ struct ContentView: View {
                         Image(systemName: "paperplane.fill")
                     }
                 }
+
+            LogChartView()
+                .tabItem {
+                    VStack {
+                        Image(systemName: "waveform.path.ecg")
+                    }
+                }
         } // TabView
     }
 }
