@@ -10,6 +10,7 @@
 		AC0494562A7E7D9E0032FFF6 /* MotionCommandOptionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0494552A7E7D9E0032FFF6 /* MotionCommandOptionList.swift */; };
 		AC10B7E72A90829D009D61A3 /* logTextToPwmAndBrightnessConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC10B7E62A90829D009D61A3 /* logTextToPwmAndBrightnessConverter.swift */; };
 		AC10B7E92A908975009D61A3 /* pwmAndBrightness.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC10B7E82A908975009D61A3 /* pwmAndBrightness.swift */; };
+		AC10B7EB2A9089EF009D61A3 /* LogChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC10B7EA2A9089EF009D61A3 /* LogChartViewModel.swift */; };
 		AC3056212A58753900BAC46F /* Secret.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC3056202A58753900BAC46F /* Secret.plist */; };
 		AC3056232A5876A500BAC46F /* MachineTransmissionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3056222A5876A500BAC46F /* MachineTransmissionInfo.swift */; };
 		AC3056252A59526100BAC46F /* WhichMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3056242A59526100BAC46F /* WhichMachine.swift */; };
@@ -82,6 +83,7 @@
 		AC0494552A7E7D9E0032FFF6 /* MotionCommandOptionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionCommandOptionList.swift; sourceTree = "<group>"; };
 		AC10B7E62A90829D009D61A3 /* logTextToPwmAndBrightnessConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logTextToPwmAndBrightnessConverter.swift; sourceTree = "<group>"; };
 		AC10B7E82A908975009D61A3 /* pwmAndBrightness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pwmAndBrightness.swift; sourceTree = "<group>"; };
+		AC10B7EA2A9089EF009D61A3 /* LogChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogChartViewModel.swift; sourceTree = "<group>"; };
 		AC3056202A58753900BAC46F /* Secret.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Secret.plist; sourceTree = "<group>"; };
 		AC3056222A5876A500BAC46F /* MachineTransmissionInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineTransmissionInfo.swift; sourceTree = "<group>"; };
 		AC3056242A59526100BAC46F /* WhichMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhichMachine.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				AC30562B2A59613600BAC46F /* FileSendViewModel.swift */,
 				AC30562D2A59670100BAC46F /* TerminalViewModel.swift */,
 				ACA09F1B2A863945000D0871 /* SelectedCommandViewModel.swift */,
+				AC10B7EA2A9089EF009D61A3 /* LogChartViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -443,6 +446,7 @@
 				AC4986492A88F655002F0E45 /* SelectedCommandCellView.swift in Sources */,
 				AC392C7F2A5299A4003A5C88 /* AreaBView.swift in Sources */,
 				ACA09F232A8771C7000D0871 /* FloatParameterCellView.swift in Sources */,
+				AC10B7EB2A9089EF009D61A3 /* LogChartViewModel.swift in Sources */,
 				AC392C7D2A528E50003A5C88 /* AreaAView.swift in Sources */,
 				ACC550D12A530D6400DDAC49 /* PulsatingCourseView.swift in Sources */,
 				ACE8CD7C2A7E4848003CF974 /* MotionCommand.swift in Sources */,
