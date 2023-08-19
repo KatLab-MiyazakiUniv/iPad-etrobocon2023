@@ -6,7 +6,7 @@ struct LogChartView: View {
     @State private var showLeftPwm = true
     @State private var showRightPwm = true
     @State private var showBrightness = true
-    @State private var yMax = 150
+    @State private var yMax = 100
     @State private var yMin = 0
 
     private let yMaxRange = [400, 350, 300, 250, 200, 150, 100, 50]
@@ -42,7 +42,6 @@ struct LogChartView: View {
                 }
                 .chartYAxis {
                     AxisMarks(position: .leading)
-//                    AxisMarks(position: .trailing)
                 }
                 .chartXAxisLabel("秒数", position: .bottomTrailing)
                 .chartYAxisLabel("値", position: .leading)
@@ -50,7 +49,7 @@ struct LogChartView: View {
                 .chartXScale(domain: 0...(viewModel.pwmAndBrightness.last?.numberOfSeconds ?? 200) )
                 .chartForegroundStyleScale([PwmAndBrightness.Category.LeftPwm.description: .blue,
                                             PwmAndBrightness.Category.RightPwm.description: .red,
-                                            PwmAndBrightness.Category.Brightness.description: .black,
+                                            PwmAndBrightness.Category.Brightness.description: .gray,
                                            ])
                 .padding()
 
@@ -68,9 +67,9 @@ struct LogChartView: View {
                         }
                     }
                     .pickerStyle(WheelPickerStyle())
-                }
+                } // VStack
                 .frame(width: 100)
-            }
+            } // HStack
 
             HStack {
                 Spacer()
@@ -94,7 +93,7 @@ struct LogChartView: View {
                 Spacer()
                 HStack {
                     Text("輝度")
-                        .foregroundStyle(.black)
+                        .foregroundStyle(.gray)
                     Spacer()
                     Toggle("輝度", isOn: $showBrightness)
                         .labelsHidden()
@@ -102,13 +101,9 @@ struct LogChartView: View {
                 .frame(width: 120)
                 Spacer()
             } // HStack
-
-//            Button {
-//                viewModel.loadPwmAndBrightness()
-//            } label: {
-//                Text("Show Chart")
-//            }
+            .padding(.top, -40)
         } // VStack
+        .padding(.bottom, 10)
     } // var body
 }
 
