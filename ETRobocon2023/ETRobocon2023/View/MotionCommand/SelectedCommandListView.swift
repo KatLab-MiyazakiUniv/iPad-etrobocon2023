@@ -21,10 +21,31 @@ struct SelectedCommandListView: View {
                         .frame(height: 0)
                         .id(SelectedCommandSectionEnum.FromAreaAToAreaB)
                 } header: {
-                    Text(SelectedCommandSectionEnum.FromStartToDoubleLoop.description)
-                        .font(SelectedCommandViewInfo().commandTitleFont)
-                        .foregroundStyle(.black)
-                }
+                    HStack(spacing: 0) {
+                        Text(SelectedCommandSectionEnum.FromStartToDoubleLoop.description)
+                            .font(SelectedCommandViewInfo().commandTitleFont)
+                            .foregroundStyle(.black)
+                        Spacer()
+                        Button {
+                            print("Tapped Download Button")
+                        } label: {
+                            Image(systemName: "arrow.down.to.line.circle")
+                                .resizable()
+                                .frame(width: 26, height: 26)
+                                .foregroundStyle(.blue)
+                                .padding(.trailing, SelectedCommandViewInfo().padding*4)
+                        }
+                        Button {
+                            print("Tapped Upload Button")
+                        } label: {
+                            Image(systemName: "arrow.up.to.line.circle")
+                                .resizable()
+                                .frame(width: 26, height: 26)
+                                .foregroundStyle(.red)
+                                .padding(.trailing, SelectedCommandViewInfo().padding*4)
+                        }
+                    } // HStack
+                } // Section
                 .listRowSeparator(.hidden)
                 .opacity(viewModel.isSelectedSection == .FromStartToDoubleLoop ? 1.0 : 0.3)
 
@@ -40,10 +61,31 @@ struct SelectedCommandListView: View {
                         .frame(height: 0)
                         .id(SelectedCommandSectionEnum.AreaB)
                 } header: {
-                    Text(SelectedCommandSectionEnum.FromAreaAToAreaB.description)
-                        .font(SelectedCommandViewInfo().commandTitleFont)
-                        .foregroundStyle(.black)
-                }
+                    HStack(spacing: 0) {
+                        Text(SelectedCommandSectionEnum.FromAreaAToAreaB.description)
+                            .font(SelectedCommandViewInfo().commandTitleFont)
+                            .foregroundStyle(.black)
+                        Spacer()
+                        Button {
+                            print("Tapped Download Button")
+                        } label: {
+                            Image(systemName: "arrow.down.to.line.circle")
+                                .resizable()
+                                .frame(width: 26, height: 26)
+                                .foregroundStyle(.blue)
+                                .padding(.trailing, SelectedCommandViewInfo().padding*4)
+                        }
+                        Button {
+                            print("Tapped Upload Button")
+                        } label: {
+                            Image(systemName: "arrow.up.to.line.circle")
+                                .resizable()
+                                .frame(width: 26, height: 26)
+                                .foregroundStyle(.red)
+                                .padding(.trailing, SelectedCommandViewInfo().padding*4)
+                        }
+                    } // HStack
+                } // Section
                 .listRowSeparator(.hidden)
                 .opacity(viewModel.isSelectedSection == .FromAreaAToAreaB ? 1.0 : 0.3)
 
@@ -59,10 +101,31 @@ struct SelectedCommandListView: View {
                         .frame(height: 0)
                         .id(SelectedCommandSectionEnum.AreaABottom)
                 } header: {
-                    Text(SelectedCommandSectionEnum.AreaB.description)
-                        .font(SelectedCommandViewInfo().commandTitleFont)
-                        .foregroundStyle(.black)
-                }
+                    HStack(spacing: 0) {
+                        Text(SelectedCommandSectionEnum.AreaB.description)
+                            .font(SelectedCommandViewInfo().commandTitleFont)
+                            .foregroundStyle(.black)
+                        Spacer()
+                        Button {
+                            print("Tapped Download Button")
+                        } label: {
+                            Image(systemName: "arrow.down.to.line.circle")
+                                .resizable()
+                                .frame(width: 26, height: 26)
+                                .foregroundStyle(.blue)
+                                .padding(.trailing, SelectedCommandViewInfo().padding*4)
+                        }
+                        Button {
+                            print("Tapped Upload Button")
+                        } label: {
+                            Image(systemName: "arrow.up.to.line.circle")
+                                .resizable()
+                                .frame(width: 26, height: 26)
+                                .foregroundStyle(.red)
+                                .padding(.trailing, SelectedCommandViewInfo().padding*4)
+                        }
+                    } // HStack
+                } // Section
                 .listRowSeparator(.hidden)
                 .opacity(viewModel.isSelectedSection == .AreaB ? 1.0 : 0.3)
 
@@ -77,10 +140,31 @@ struct SelectedCommandListView: View {
                     Rectangle()
                         .frame(height: 0)
                 } header: {
-                    Text(SelectedCommandSectionEnum.AreaABottom.description)
-                        .font(SelectedCommandViewInfo().commandTitleFont)
-                        .foregroundStyle(.black)
-                }
+                    HStack(spacing: 0) {
+                        Text(SelectedCommandSectionEnum.AreaABottom.description)
+                            .font(SelectedCommandViewInfo().commandTitleFont)
+                            .foregroundStyle(.black)
+                        Spacer()
+                        Button {
+                            print("Tapped Download Button")
+                        } label: {
+                            Image(systemName: "arrow.down.to.line.circle")
+                                .resizable()
+                                .frame(width: 26, height: 26)
+                                .foregroundStyle(.blue)
+                                .padding(.trailing, SelectedCommandViewInfo().padding*4)
+                        }
+                        Button {
+                            print("Tapped Upload Button")
+                        } label: {
+                            Image(systemName: "arrow.up.to.line.circle")
+                                .resizable()
+                                .frame(width: 26, height: 26)
+                                .foregroundStyle(.red)
+                                .padding(.trailing, SelectedCommandViewInfo().padding*4)
+                        }
+                    } // HStack
+                } // Section
                 .listRowSeparator(.hidden)
                 .opacity(viewModel.isSelectedSection == .AreaABottom ? 1.0 : 0.3)
             } // List
