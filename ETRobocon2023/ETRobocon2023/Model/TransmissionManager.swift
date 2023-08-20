@@ -28,13 +28,12 @@ struct TransmissionManager {
         request.setValue("multipart/form-data; boundary=\(boundary)", forHTTPHeaderField: "Content-Type")
 
         var data = Data()
-//        data.append("\r\n--\(boundary)\r\n".data(using: .utf8)!)
-//        data.append("Content-Disposition: form-data; name=\"file\"; filename=\"\(fileName)\"\r\n".data(using: .utf8)!)
-//        data.append("Content-Type: text/csv\r\n\r\n".data(using: .utf8)!)
         data.append(content.data(using: .utf8)!)
-//        data.append("\r\n--\(boundary)--\r\n".data(using: .utf8)!)
 
         request.httpBody = data
+
+        print(fileName)
+        print(content)
 
 //        request.httpMethod = "GET"
 

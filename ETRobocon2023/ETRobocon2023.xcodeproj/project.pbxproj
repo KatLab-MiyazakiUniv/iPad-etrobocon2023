@@ -12,6 +12,7 @@
 		AC10B7E92A908975009D61A3 /* PwmAndBrightness.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC10B7E82A908975009D61A3 /* PwmAndBrightness.swift */; };
 		AC10B7EB2A9089EF009D61A3 /* LogChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC10B7EA2A9089EF009D61A3 /* LogChartViewModel.swift */; };
 		AC10B7EE2A908ADD009D61A3 /* LogChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC10B7ED2A908ADD009D61A3 /* LogChartView.swift */; };
+		AC10B7F22A91F7DA009D61A3 /* FileNameEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC10B7F12A91F7DA009D61A3 /* FileNameEnum.swift */; };
 		AC3056212A58753900BAC46F /* Secret.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC3056202A58753900BAC46F /* Secret.plist */; };
 		AC3056232A5876A500BAC46F /* MachineTransmissionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3056222A5876A500BAC46F /* MachineTransmissionInfo.swift */; };
 		AC3056252A59526100BAC46F /* WhichMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3056242A59526100BAC46F /* WhichMachine.swift */; };
@@ -87,6 +88,7 @@
 		AC10B7E82A908975009D61A3 /* PwmAndBrightness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PwmAndBrightness.swift; sourceTree = "<group>"; };
 		AC10B7EA2A9089EF009D61A3 /* LogChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogChartViewModel.swift; sourceTree = "<group>"; };
 		AC10B7ED2A908ADD009D61A3 /* LogChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogChartView.swift; sourceTree = "<group>"; };
+		AC10B7F12A91F7DA009D61A3 /* FileNameEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileNameEnum.swift; sourceTree = "<group>"; };
 		AC3056202A58753900BAC46F /* Secret.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Secret.plist; sourceTree = "<group>"; };
 		AC3056222A5876A500BAC46F /* MachineTransmissionInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineTransmissionInfo.swift; sourceTree = "<group>"; };
 		AC3056242A59526100BAC46F /* WhichMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhichMachine.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 				ACAA84392A8E68850070A261 /* CommandsAndCsvConverter.swift */,
 				AC10B7E62A90829D009D61A3 /* logTextToPwmAndBrightnessConverter.swift */,
 				AC10B7E82A908975009D61A3 /* PwmAndBrightness.swift */,
+				AC10B7F12A91F7DA009D61A3 /* FileNameEnum.swift */,
 				ACE8CD7F2A7E49F3003CF974 /* MotionCommand */,
 			);
 			path = Model;
@@ -445,6 +448,7 @@
 				AC6D14CE2A51D32100AADB04 /* LCourseSize.swift in Sources */,
 				ACA09F102A8606A8000D0871 /* ParameterCell.swift in Sources */,
 				ACA09F212A876CFE000D0871 /* IntParameterCellView.swift in Sources */,
+				AC10B7F22A91F7DA009D61A3 /* FileNameEnum.swift in Sources */,
 				ACE8CD7E2A7E48C6003CF974 /* MotionCommandEnum.swift in Sources */,
 				AC720C112A52EA9E00406BCB /* PulsatingLineView.swift in Sources */,
 				AC0494562A7E7D9E0032FFF6 /* MotionCommandOptionList.swift in Sources */,
