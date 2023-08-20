@@ -13,7 +13,7 @@ struct CourseMapAndCommandView: View {
                     Spacer()
                     Picker("コース", selection: $viewModel.courseSide) {
                         ForEach(CourseSideEnum.allCases, id: \.self) { side in
-                            Text(side.sideString)
+                            Text(side.string)
                         }
                     }
                     .pickerStyle(SegmentedPickerStyle())

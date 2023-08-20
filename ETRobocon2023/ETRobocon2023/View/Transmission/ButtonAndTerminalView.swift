@@ -14,17 +14,13 @@ struct ButtonAndTerminalView: View {
                         .frame(width: geometry.size.width/2, height: geometry.size.height)
                     
                     Button {
-//                        terminalViewModel.addMessage("Send sample CSV file to First machine.")
-//                        terminalViewModel.addMessage(CsvFileManager.generateSampleFile())
-//                        Task {
-//                            let result = await fileSendViewModel.SendSampleFile()
-//                            terminalViewModel.addMessage("\n" + result + "\n")
-//                        }
                         let commandsString = selectedCommandViewModel.commandsToCsv()
                         print(commandsString)
                         terminalViewModel.addMessage(commandsString)
                         Task {
-                            let result = await fileSendViewModel.sendCsvFile(commandsString)
+                            let result = await fileSendViewModel.sendCsvFile(with: commandsString,
+                                                                             courseSide: selectedCommandViewModel.courseSide,
+                                                                             section: selectedCommandViewModel.isSelectedSection!)
                             terminalViewModel.addMessage("\n" + result + "\n")
                         }
                     } label: {
@@ -36,21 +32,10 @@ struct ButtonAndTerminalView: View {
                             .cornerRadius(20)
                     }
                     .frame(width: geometry.size.width/2)
-                }
+                } // HStack
             } // GeometryReader
         } // HStack
     } // var body
-
-    /// TerminalViewのデバッグ用
-    /// ランダムな文字列を返す
-    private func generateRandomString(_ length: Int) -> String {
-        let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
-        var randomString = ""
-        for _ in 0 ..< length {
-            randomString += String(letters.randomElement()!)
-        }
-        return randomString
-    }
 } // ButtonAndTerminalView
 
 struct ButtonAndTerminalView_Previews: PreviewProvider {

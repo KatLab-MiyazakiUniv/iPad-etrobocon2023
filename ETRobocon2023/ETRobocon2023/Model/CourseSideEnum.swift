@@ -4,7 +4,7 @@ enum CourseSideEnum: CaseIterable {
     case LeftCourse
     case RightCourse
 
-    var sideString: String {
+    var string: String {
         switch self {
         case .LeftCourse:
             return "Left"
@@ -12,4 +12,13 @@ enum CourseSideEnum: CaseIterable {
             return "Right"
         }
     }
+
+//    var fileName: String {
+//        switch self {
+//        case .LeftCourse:
+//            return "LineTraceLeft.csv"
+//        case .RightCourse:
+//            return "LineTraceRight.csv"
+//        }
+//    }
 }
